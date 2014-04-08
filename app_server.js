@@ -3,7 +3,9 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient;
 app.use(express.bodyParser());
 
-MongoClient.connect(process.env.MONGOHQ_URL, function(err, db){
+var dbURL = "mongodb://oceanic.mongohq.com:10061/app23902685";
+
+MongoClient.connect(dbURL, function(err, db){
     if(err) {
         console.log("Problem connecting to database:" + err + "\n\nReload the page and try again.");
     } else {
