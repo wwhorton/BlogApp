@@ -1,0 +1,31 @@
+{
+  "name": "BlogApp",
+  "version": "0.4.0",
+  "description": "Simple blogging app",
+  "main": "app_server.js",
+  "dependencies": {
+    "npm": "~1.4.3",
+    "express": "^3.5.1",
+    "mongodb": "^1.4.0",
+    "logfmt": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwhorton/BlogApp.git"
+  },
+  "keywords": [
+    "node.js",
+    "Backbone.js",
+    "blog"
+  ],
+  "author": "Bill Whorton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwhorton/BlogApp/issues"
+  },
+  "homepage": "https://github.com/wwhorton/BlogApp"
+}
