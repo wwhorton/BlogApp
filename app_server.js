@@ -3,7 +3,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient;
 app.use(express.bodyParser());
 
-MongoClient.connect('mongodb://localhost:27017/test', function(err, db){
+MongoClient.connect(process.env.MONGOHQ_URL, function(err, db){
     if(err) {
         console.log("Problem connecting to database:" + err + "\n\nReload the page and try again.");
     } else {
