@@ -22,7 +22,7 @@ MongoClient.connect(dbURL, function(err, db){
     var blog = db.collection('blog');
 
     app.get('/', function(request, response){
-        response.send('index.html');
+        response.sendfile('index.html');
     });
     
     app.get('/all', function(request, response){
