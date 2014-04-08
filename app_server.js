@@ -21,7 +21,7 @@ MongoClient.connect(dbURL, function(err, db){
     });
     var blog = db.collection('blog');
 
-    app.get('/', function(request, response){
+    app.get('/app23902685', function(request, response){
         response.send('index.html');
     });
     
