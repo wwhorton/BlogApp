@@ -7,4 +7,4 @@ server.on('request', function(request, response){
     request.pipe(response);
 });
 
-server.listen(process.env.port || 8080);
+server.listen(process.env.PORT);

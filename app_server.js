@@ -46,7 +46,7 @@ MongoClient.connect(dbURL, function(err, db){
         });
     });
 
-    app.listen(process.env.port || 8080);
+    app.listen(process.env.PORT);
     
 });
 
