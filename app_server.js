@@ -3,7 +3,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient;
 app.use(express.bodyParser());
 
-var dbURL = "mongodb://oceanic.mongohq.com:10061/app23902685";
+var dbURL = "mongodb://admin:June262010@oceanic.mongohq.com:10061/app23902685";
 
 MongoClient.connect(dbURL, function(err, db){
     if(err) {
@@ -21,7 +21,7 @@ MongoClient.connect(dbURL, function(err, db){
     });
     var blog = db.collection('blog');
 
-    app.get('/app23902685', function(request, response){
+    app.get('/', function(request, response){
         response.send('index.html');
     });
     
