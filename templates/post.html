@@ -1,0 +1,8 @@
+<% _.each(posts, function(post){ %>
+    <div class="post">
+    <header>
+        <h1><%= post.get("title") %></h1> by <address><a href="#"><%= post.get("user") %></a></address> posted on <time datetime="<%= post.get("date") %></time>
+    </header>
+    <p><%= post.get("body") %></p>
+    </div>
+<% }); %>

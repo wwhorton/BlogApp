@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: "Type";
+  src: url('../fonts/Harting_plain.ttf') format('truetype'); }
+
+* html {
+  font-size: 112.5%; }
+
+html {
+  font-size: 18px;
+  line-height: 1.66667em; }
+
+html {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  html:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+body {
+  margin-left: 8.47458%;
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  font-family: "Type", courier;
+  max-width: 960px; }
+
+#main_logo {
+  width: 59.18367%;
+  float: left;
+  margin-right: 2.04082%;
+  display: inline;
+  font-size: 11.11111em;
+  line-height: 1.05em; }
+  #main_logo:first-letter {
+    font-size: 1.66667em;
+    line-height: 2em; }
+
+nav ul {
+  list-style-type: none;
+  margin-left: 8.47458%;
+  margin-right: 8.47458%;
+  width: 18.36735%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline; }
+  nav ul li {
+    margin-top: 1.66667em;
+    text-align: center;
+    font-size: 1.33333em;
+    line-height: 1.25em; }
+    nav ul li a {
+      color: black; }
+    nav ul li .spacer {
+      background-color: black;
+      height: 30px; }
+
+article {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em; }
+
+header {
+  font-size: 1.11111em;
+  line-height: 1.5em;
+  font-weight: bold; }
+
+p {
+  font-family: courier; }
+
+@media handheld, screen and (max-width: 900px) {
+  #main_logo {
+    display: inline;
+    float: none; }
+
+  nav {
+    clear: both; }
+    nav ul {
+      float: none;
+      text-align: center; }
+      nav ul li {
+        display: inline; }
+        nav ul li .spacer {
+          display: none; } }
+@media handheld, screen and (max-width: 360px) {
+  #main_logo {
+    font-size: 5.55556em;
+    line-height: 1.2em; }
+
+  nav ul li {
+    display: block; } }
