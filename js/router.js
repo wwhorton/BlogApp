@@ -18,6 +18,7 @@ define([
     });
     
     var initialize = function(){
+        alert("Router initializing!");
         var blogAppView = new BlogAppView;
         blogAppView.initialize();
         

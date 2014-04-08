@@ -5,7 +5,7 @@ define([
     'collections/BlogAppCollection',
     'text!templates/post.html'
 ], function($, _, Backbone, BlogAppCollection, Template){
-    
+    alert("BlogAppView begun!");
     var BlogPostView = Backbone.View.extend({
         el: $('#posts'),
         initialize: function(){

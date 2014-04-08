@@ -21,13 +21,14 @@ MongoClient.connect(dbURL, function(err, db){
     });
     var blog = db.collection('blog');
 
-    app.get('/', function(request, response){
+    /*app.get('/', function(request, response){
         response.sendfile('index.html');
-    });
+        console.log("Sending index.html.");
+    });*/
     
-    app.get('/all', function(request, response){
+    app.get('/', function(request, response){
         blog.find({}).toArray(function(err, docs){
-            response.jsonp(docs);
+            response.json(docs);
         });
     });
     
@@ -42,7 +43,7 @@ MongoClient.connect(dbURL, function(err, db){
     
     app.get('/user/:name', function(request, response){
         blog.find({'name': request.params.name}).toArray(function(err, docs){
-            response.jsonp(docs);
+            response.json(docs);
         });
     });
 
