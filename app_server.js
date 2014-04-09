@@ -19,7 +19,7 @@ app.get('/', function(request, response){
             if (err) return console.error.bind(console, "List All error:");
             
             if (posts != []) {
-                console.log(posts);
+                console.log(JSON.stringify(posts.toObject()));
                 
             } else {
                 console.log("Query results empty.");
