@@ -17,8 +17,8 @@ app.get('/', function(request, response){
         schema.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts) {
-            $.each(posts, function(index, value){
-                console.log(index + ": " value); //Placeholder for actual processing
+            for( var key in posts ){
+                console.log(key + ": " posts[key]); //Placeholder for actual processing
             });
             } else {
             console.log("Query results empty.");
