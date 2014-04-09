@@ -34,7 +34,7 @@ app.get('/', function(request, response){
 app.post('/', function(request, response){
     var newPost = new schemas.Post({title: request.body.title, user: request.body.user, date: Date.now, body: request.body.body});
     newPost.save(function(err, newPost, updated){
-        if (err) return console.error.bind(console, "Problem saving " + newPost.id + ": ");
+        if (err) return console.error.bind(console, "Problem saving.");
         });
         
     response.sendfile(__dirname + '/index.html');
