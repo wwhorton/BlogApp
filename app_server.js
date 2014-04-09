@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var db = require('js/db');
+var db = require('./js/db.js');
 
 
 app.use(express.bodyParser());
