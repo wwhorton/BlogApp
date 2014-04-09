@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var db = require('js/db');
-var schema = require('js/schemas');
+
 
 app.use(express.bodyParser());
      
@@ -16,12 +16,13 @@ app.get('/', function(request, response){
         */
         schema.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
+            
             if (posts) {
-            for( var key in posts ){
-                console.log(key + ": " posts[key]); //Placeholder for actual processing
-            });
+                for( var key in posts ){
+                    console.log(key + ": " posts[key]); //Placeholder for actual processing
+                } 
             } else {
-            console.log("Query results empty.");
+                console.log("Query results empty.");
             }
         });
         
