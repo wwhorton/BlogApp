@@ -18,8 +18,10 @@ app.get('/', function(request, response){
         schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             
-            if (posts) {
-                console.log(posts); //Placeholder for actual processing
+            if (posts != []) {
+                for (var key in posts){
+                    console.log(key + ": " + posts); //Placeholder for actual processing
+                }
             } else {
                 console.log("Query results empty.");
             }
