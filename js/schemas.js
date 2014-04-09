@@ -5,7 +5,7 @@ var postSchema = mongoose.Schema({
     title: String,
     user: String,
     body: String,
-    date: { type: Date, default: Date.now }
+    date: { type: Date, default: Date.now() }
 });
 
 var userSchema = mongoose.Schema({
