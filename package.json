@@ -8,7 +8,8 @@
     "express": "^3.5.1",
     "mongodb": "^1.4.0",
     "logfmt": "^1.1.2",
-    "mongoose": "^3.8.8"
+    "mongoose": "^3.8.8",
+    "ejs": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
