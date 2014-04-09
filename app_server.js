@@ -19,10 +19,8 @@ app.get('/', function(request, response){
             if (err) return console.error.bind(console, "List All error:");
             
             if (posts != []) {
-                console.log("Something in query object!");
-                for (var key in posts){
-                    console.log(key + ": " + posts); //Placeholder for actual processing
-                }
+                console.log(posts);
+                
             } else {
                 console.log("Query results empty.");
             }
