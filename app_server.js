@@ -1,51 +1,47 @@
 var express = require('express');
 var app = express();
-var MongoClient = require('mongodb').MongoClient;
+var db = require('js/db');
+
 app.use(express.bodyParser());
-
-var dbURL = "mongodb://admin:June262010@oceanic.mongohq.com:10061/app23902685";
-
-MongoClient.connect(dbURL, function(err, db){
-    if(err) {
-        console.log("Problem connecting to database:" + err + "\n\nReload the page and try again.");
-    } else {
-        console.log("Connected to database.\n");
-    }
-    
-    db.createCollection('blog', function(err, collection){   // Create table if it doesn't exist.
-        if (err) {
-            console.log("Error creating table."); 
-        } else {
-            console.log("Using table: " + collection.collectionName + "\n");
-        }
-    });
-    var blog = db.collection('blog');
-
      
-    app.get('/', function(request, response){
-        response.sendfile(__dirname + '/index.html');
-        /*blog.find({}).toArray(function(err, docs){
-            response.json(docs);
-        });*/
-    });
-    
-    app.post('/', function(request, response){
-        var newBlogPost = {'title': request.body.title, 'user': request.body.user, 'date': request.body.date, 'body': request.body.body};
-        console.log(newBlogPost);
-        blog.insert(newBlogPost, function(err, records){
-            console.log("Post added.");
+app.get('/', function(request, response){
+        /* Return every post
+          
+        1. Query database with wildcard
+        2. For each post, create post object
+        3. Create view for each post
+        4. Display each view
+                
+        */
+        Post.find(function(err, posts){
+            if (err) return console.error.bind(console, "List All error:");
+            $.each(posts, function(index, value){
+                console.log(index + ": " value); //Placeholder for actual processing
             });
-        response.end();
-    });
-    
-    app.get('/user/:name', function(request, response){
-        blog.find({'name': request.params.name}).toArray(function(err, docs){
-            response.json(docs);
         });
+        
+        response.sendfile(__dirname + '/index.html');
+        
     });
 
-    app.listen(process.env.PORT);
-    
+  
+app.post('/', function(request, response){
+    var newPost = new Post({title: request.body.title, user: request.body.user, date: Date.now, body: request.body.body});
+    newPost.save(function(err, newPost, updated){
+        if (err) return console.error.bind(console, "Problem saving " + newPost.id + ": ");
+        });
+        
+    response.sendfile(__dirname + '/index.html');
 });
+
+/*  
+    
+app.get('/user/:name', function(request, response){
+    blog.find({'name': request.params.name}).toArray(function(err, docs){
+        response.json(docs);
+    });
+});
+*/
+app.listen(process.env.PORT);
 
     
