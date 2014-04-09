@@ -23,9 +23,10 @@ MongoClient.connect(dbURL, function(err, db){
 
      
     app.get('/', function(request, response){
-        blog.find({}).toArray(function(err, docs){
+        response.sendfile(__dirname + '/index.html');
+        /*blog.find({}).toArray(function(err, docs){
             response.json(docs);
-        });
+        });*/
     });
     
     app.post('/', function(request, response){
