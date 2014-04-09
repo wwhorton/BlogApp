@@ -21,11 +21,7 @@ MongoClient.connect(dbURL, function(err, db){
     });
     var blog = db.collection('blog');
 
-    /*app.get('/', function(request, response){
-        response.sendfile('index.html');
-        console.log("Sending index.html.");
-    });*/
-    
+     
     app.get('/', function(request, response){
         blog.find({}).toArray(function(err, docs){
             response.json(docs);
