@@ -19,6 +19,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
+                console.log(posts);
                 response.render('post', {posts:posts}); 
                 
             } else {
