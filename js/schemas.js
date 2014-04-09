@@ -14,8 +14,8 @@ var userSchema = mongoose.Schema({
 });
 
 //Create models for posts and users
-var Post = mongoose.model('Post', schemas.postSchema);
-var User = mongoose.model('User', schemas.userSchema);
+var Post = mongoose.model('Post', postSchema);
+var User = mongoose.model('User', userSchema);
 
 
 //Export the models
