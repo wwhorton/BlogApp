@@ -12,7 +12,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
-                response.render('layout', {posts:posts}); 
+                response.render('post', {posts:posts}); 
                 
             } else {
                 console.log("Query results empty.");
