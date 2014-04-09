@@ -12,9 +12,9 @@ mongoose.connect(dbURL);
 var db = mongoose.connection;
 
 //Event handlers for the connection
-db.on('error', console.error.bind(console, 'Connection error:'));
-db.on('connected', console.log.bind(console, 'Connected to:'));
-db.on('disconnected', console.log.bind(console, 'Disconnected from:'));
+db.on('error', console.error.bind(console, 'Connection error.'));
+db.on('connected', console.log.bind(console, 'Connected.'));
+db.on('disconnected', console.log.bind(console, 'Disconnected.'));
 
 //Close connection when app stops
 process.on('exit', function(){
