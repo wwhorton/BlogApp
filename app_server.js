@@ -5,6 +5,7 @@ var Schemas = require('./js/schemas.js');
 var Post = require('./js/Post.js');
 
 app.use(express.bodyParser());
+app.set('view engine', 'ejs');
      
 app.get('/', function(request, response){
         /* Return every post
