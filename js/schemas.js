@@ -1,3 +1,5 @@
+var mongoose = require('mongoose');
+
 //Schemas for posts and users
 var postSchema = mongoose.Schema({
     title: String,
