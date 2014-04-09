@@ -19,9 +19,7 @@ app.get('/', function(request, response){
             if (err) return console.error.bind(console, "List All error:");
             
             if (posts) {
-                for( var key in posts ){
-                    console.log(key + ": " posts[key]); //Placeholder for actual processing
-                } 
+                console.log(posts); //Placeholder for actual processing
             } else {
                 console.log("Query results empty.");
             }
