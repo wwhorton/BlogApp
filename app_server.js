@@ -6,7 +6,7 @@ var Post = require('./js/Post.js');
 
 app.use(express.bodyParser());
 app.set('view engine', 'ejs');
-     
+app.set('views', __dirname + '/templates');     
 app.get('/', function(request, response){
         /* Return every post
           
@@ -19,7 +19,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
-                response.render('./templates/post', {posts:posts}); 
+                response.render('post', {posts:posts}); 
                 
             } else {
                 console.log("Query results empty.");
