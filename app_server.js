@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 var db = require('./js/db.js');
-var schemas = require('./js/schemas.js');
-
+var Schemas = require('./js/schemas.js');
+var Post = require('./js/Post.js');
 
 app.use(express.bodyParser());
      
@@ -15,24 +15,21 @@ app.get('/', function(request, response){
         4. Display each view
                 
         */
-        schemas.Post.find(function(err, posts){
+        Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
-            
             if (posts != []) {
-                console.log(posts);
+                
+                response.render('index', posts); 
                 
             } else {
                 console.log("Query results empty.");
             }
         });
-        
-        response.sendfile(__dirname + '/index.html');
-        
     });
 
   
 app.post('/', function(request, response){
-    var newPost = new schemas.Post({title: request.body.title, user: request.body.user, date: Date.now(), body: request.body.body});
+    var newPost = new Schemas.Post({title: request.body.title, user: request.body.user, date: Date.now(), body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.error.bind(console, "Problem saving.");
         });
