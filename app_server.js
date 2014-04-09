@@ -15,9 +15,13 @@ app.get('/', function(request, response){
         */
         Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
+            if (posts) {
             $.each(posts, function(index, value){
                 console.log(index + ": " value); //Placeholder for actual processing
             });
+            } else {
+            console.log("Query results empty.");
+            }
         });
         
         response.sendfile(__dirname + '/index.html');
