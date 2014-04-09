@@ -1,7 +1,6 @@
 
 //Required modules
 var mongoose = require('mongoose');
-var schemas = require('./schemas');
 
 //Variables needed by db object
 var username = "admin";

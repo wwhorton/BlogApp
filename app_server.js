@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var db = require('./js/db.js');
+var schemas = require('./js/schemas.js');
 
 
 app.use(express.bodyParser());
@@ -14,16 +15,16 @@ app.get('/', function(request, response){
         4. Display each view
                 
         */
-        schema.Post.find(function(err, posts){
+        schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             
-            /*if (posts) {
+            if (posts) {
                 for( var key in posts ){
                     console.log(key + ": " posts[key]); //Placeholder for actual processing
                 } 
             } else {
                 console.log("Query results empty.");
-            }*/
+            }
             console.log("Didn't explode.");
         });
         
