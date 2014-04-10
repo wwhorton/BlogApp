@@ -12,14 +12,14 @@
  
   <div class="row">
     <div class="large-12 columns">
-      <div class="nav-bar right">
-       <ul class="button-group">
-         <li><a href="#" data-reveal-id="newPost" class="button" data-reveal>Add New Post</a></li>
-         <li><a href="#" class="button">Login</a></li>
-        </ul>
+      <div class="nav-bar right" data-magellan-expedition="fixed" >
+       <dl class="sub-nav button-group">
+         <dd data-magellan-arrival="newPost"><a href="#" data-reveal-id="newPost" class="button" data-reveal>Add New Post</a></li>
+         <dd data-magellan-arrival="login"><a href="#" class="button">Login</a></li>
+        </dl>
       </div>
       <h1>Whorton's Basic Blog App!</h1>
-      <small>It's basic! It's blog!</small>
+      <h2>It's basic! It's blog!</h2>
       <hr />
     </div>
   </div>
@@ -46,7 +46,7 @@
   
   <!-- New Post Modal -->
     
-  <div id="newPost" class="reveal-modal" data-reveal>
+  <div id="newPost" class="reveal-modal" data-reveal data-magellan-destination="newPost">
   <form action="http://murmuring-spire-3618.herokuapp.com/submit" method="post" >
   <fieldset>
     <legend>New Post</legend>
