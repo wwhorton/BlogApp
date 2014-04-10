@@ -1,11 +1,13 @@
 <div class="row">
     <div class="large-10 columns">
         <dl class="accordion" data-accordion>
-        <% posts.forEach(function(post, i){ %>
+        
+        <% posts = sort_by:'date'(posts); 
+            posts.forEach(function(post, i){ %>
         <dd>
             <a href="#post<%= i %>"><h3><%= post.title %></h3></a>
             <div id="post<%= i %>" class="content">
-            <h6>Written by <a href="#"><%= post.user %></a> on <time datetime="<%= post.date %>"></time>.</h6>
+            <h6>Written by <a href="#"><%= post.user %></a> on <time><%= post.date %></time>.</h6>
             <%= post.body %>
             </div>
         </dd>
