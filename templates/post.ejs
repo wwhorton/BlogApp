@@ -7,9 +7,9 @@
             <div id=<%= post._id %> class="content">
             
             <h6>Written by <a href="#"><%= post.user %></a> on <time datetime="<%= post.date %>"></time>.</h6>
-                   
+            <p>       
             <%= post.body %>
-            
+            </p>
             </div>
         </dd>
         <% }); %>
