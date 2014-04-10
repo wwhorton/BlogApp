@@ -2,11 +2,11 @@
     <div class="large-6 columns">
         <dl class="accordion" data-accordion>
         <% posts.forEach(function(post){ %>
-        <dd>
+        <dd class="">
             <a href="#<%= post._id %>"><h3><%= post.title %></h3></a>
-            <div id="<%= post._id %>" class="content-active">
+            <div id="<%= post._id %>" class="content">
             <h6>Written by <a href="#"><%= post.user %></a> on <time datetime="<%= post.date %>"></time>.</h6>
-            <p><%= post.body %></p>
+            <%= post.body %>
             </div>
         </dd>
         <% }); %>
