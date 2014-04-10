@@ -2,8 +2,7 @@
     <div class="large-10 columns">
         <dl class="accordion" data-accordion>
         
-        <% posts = sort_by:'date'(posts); 
-            posts.forEach(function(post, i){ %>
+        <% posts.forEach(function(post, i){ %>
         <dd>
             <a href="#post<%= i %>"><h3><%= post.title %></h3></a>
             <div id="post<%= i %>" class="content">
