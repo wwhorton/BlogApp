@@ -1,10 +1,13 @@
 var express = require('express');
 var app = express();
+var partials = require('express-partials');
 var db = require('./js/db.js');
 var Schemas = require('./js/schemas.js');
 var Post = require('./js/Post.js');
 
 app.use(express.bodyParser());
+app.use(partials());
+
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/templates');     
 
