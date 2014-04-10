@@ -3,8 +3,8 @@
         <dl class="accordion" data-accordion>
         <% posts.forEach(function(post){ %>
         <dd>
-            <a href="#<%= post.title %>"><h3><%= post.title %></h3></a>
-            <div id=<%= post.title %> class="content">
+            <a href="#<%= post._id %>"><h3><%= post.title %></h3></a>
+            <div id=<%= post._id %> class="content">
             
             <h6>Written by <a href="#"><%= post.user %></a> on <time datetime="<%= post.date %>"></time>.</h6>
                    
