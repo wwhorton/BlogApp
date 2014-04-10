@@ -25,7 +25,7 @@ app.get('/', function(request, response){
 
   
 app.post('/', function(request, response){
-    var newPost = new Schemas.Post({title: request.body.title, user: request.body.user, date: Date.now(), body: request.body.body});
+    var newPost = new Schemas.Post({title: request.body.title, user: request.body.user, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.error.bind(console, "Problem saving.");
         });
