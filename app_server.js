@@ -30,7 +30,7 @@ app.post('/submit', function(request, response){
         if (err) return console.error.bind(console, "Problem saving.");
         });
         
-    response.sendfile(__dirname + '/index.html');
+    response.render('post', {posts:posts});
 });
 
 /*  
