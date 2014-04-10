@@ -7,6 +7,7 @@ var Post = require('./js/Post.js');
 
 app.use(express.bodyParser());
 app.use(partials());
+app.use(express.static(__dirname));
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/templates');     
