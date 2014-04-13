@@ -36,7 +36,7 @@ app.get('/', function(request, response){
     });
 
 // Create new post    
-app.post('/', auth.checkLogin, function(request, response, next){
+app.post('/', auth.checkLogin(request, response, next), function(request, response, next){
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.error.bind(console, "Problem saving.");
@@ -47,7 +47,7 @@ app.post('/', auth.checkLogin, function(request, response, next){
 
 
 // Edit and update existing post
-app.put('/', auth.checkLogin, function(request, response, next){
+app.put('/', auth.checkLogin(request, response, next), function(request, response, next){
     var thisPost = Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     //Check that post's username and session username are the same
     if(request.body.username == request.user.username){
@@ -61,7 +61,7 @@ app.put('/', auth.checkLogin, function(request, response, next){
 
 
 // Delete post
-app.delete('/', auth.checkLogin, function(request, response, next){
+app.delete('/', auth.checkLogin(request, response, next), function(request, response, next){
     var thisPost = Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     //Check that post's username and session username are the same
     if(request.body.username == request.user.username){
