@@ -81,7 +81,7 @@ app.post('/login', function(request, response){
 app.get('/logout', function(request, response){
     request.logout();
     response.redirect('/');
-);
+});
 
 app.post('/newUser', function(request, response){
     var newUser = new Schemas.User({username: request.body.username, password: request.body.password});
