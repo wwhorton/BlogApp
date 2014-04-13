@@ -4,7 +4,7 @@ var partials = require('express-partials');
 var db = require('./js/db.js');
 var Schemas = require('./js/schemas.js');
 var Post = require('./js/Post.js');
-var Passport = require('.js/loginConfig.js');
+var Passport = require('./js/loginConfig.js');
 var Flash = require('connect-flash');
 
 app.use(express.bodyParser());
