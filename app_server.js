@@ -13,8 +13,8 @@ app.use(Flash());
 app.use(express.static(__dirname));
 app.use(express.cookieParser());
 app.use(express.session({secret: 'rea1ly very Secret phRase'}));
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(Passport.initialize());
+app.use(Passport.session());
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/templates');     
