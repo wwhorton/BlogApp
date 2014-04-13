@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whorton's Simple Blog App</title>
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <script src="/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+      <!-- Nav Bar -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Whorton's Basic Blog App!  <small>It's basic! It's blog!</small></h1>
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+        <div class="sticky"> 
+        <ul class="inline-list"> 
+            <li >
+                <a href="#" data-reveal-id="newPost" class="button" data-reveal>Add New Post</a>
+            </li>
+            <li >
+                <a href="#" class="button">Login</a>
+            </li>
+        </ul>
+        </div>  
+    </div>
+  </div>
+ 
+  <!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+ 
+  <div class="row">
+ 
+    <!-- Main Blog Content -->
+    <div class="large-12 columns" role="content">
+ 
+    <%- body %>  
+ 
+    </div>
+ 
+    <!-- End Main Content -->
+     
+  </div>
+ 
+  <!-- End Main Content -->
+  
+  <!-- New Post Modal -->
+    
+  <div id="newPost" class="reveal-modal" data-reveal data-magellan-destination="newPost">
+  <form action="http://murmuring-spire-3618.herokuapp.com/submit" method="post" >
+  <fieldset>
+    <legend>New Post</legend>
+        <div class="row">
+            <div class="large-4 columns">
+            <label>Username:
+                <input type="text" name="username" required />
+            </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-8 columns">
+            <label>Title:
+                <input type="text" name="title" required />
+            </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-8 columns">
+            <label>Post:
+                <textarea name="body" required /></textarea>
+            </label>
+            </div>
+        </div>
+        <input type="submit" class=".button"/>
+  </fieldset>
+  </form>
+  <a class="close-reveal-modal">&#215;</a> </div>
+ 
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        
+        <div class="large-6 large-offset-3 columns">
+          <ul class="inline-list right">
+            <li><a href="http://williamwhorton.com">williamwhorton.com</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/foundation/foundation.magellan.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

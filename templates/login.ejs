@@ -1,0 +1,31 @@
+
+<% if (!request.user.username){ %>
+    <form action="http://murmuring-spire-3618.herokuapp.com/login" name="login" id="loginForm" method="post" >
+    Username:<input type="text" name="username" id="username" required />
+    Password:<input type="password" name="password" id="password" required />
+    <input type="submit" />
+    <button id="createNewUser">Create New User</button>
+    </form>
+<% } %>
+
+    
+<script>
+
+// Logout button listener
+
+$("#logout").click(function(){
+    window.location.replace("http://murmuring-spire-3618.herokuapp.com/logout");
+});
+
+// Create button listener
+$("#createNewUser").click(function(){
+    $.post("http://murmuring-spire-3618.herokuapp.com/newUser", {
+        data: {
+            username: $("#username").val,
+            password: $("#password").val
+            }
+    });
+});
+
+
+</script>
