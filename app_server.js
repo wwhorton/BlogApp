@@ -7,14 +7,16 @@ var Post = require('./js/Post.js');
 var Passport = require('./js/loginConfig.js');
 var Flash = require('connect-flash');
 
-app.use(express.bodyParser());
-app.use(partials());
-app.use(Flash());
-app.use(express.static(__dirname));
-app.use(express.cookieParser());
-app.use(express.session({secret: 'rea1ly very Secret phRase'}));
-app.use(Passport.initialize());
-app.use(Passport.session());
+app.configure(function(){
+    app.use(express.bodyParser());
+    app.use(partials());
+    app.use(Flash());
+    app.use(express.static(__dirname));
+    app.use(express.cookieParser());
+    app.use(express.session({secret: 'rea1ly very Secret phRase'}));
+    app.use(Passport.initialize());
+    app.use(Passport.session());
+});
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/templates');     
