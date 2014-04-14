@@ -5,7 +5,7 @@
                     <a href="#post<%= i %>"><h1><%= post.title %></h1></a>
                     <h2>Written by <span><%= post.username %></span> on <time><%= post.date %></time>.<h2>
                 </header>
-                <div class="contentPanel">
+                <div class="content">
                     <p>
                         <%= post.body %>
                     </p>
@@ -23,16 +23,16 @@
         <script>
         $("#accordion").accordion({ 
             header: "header"
-            //active: "false",
-            //collapsible: "true"
+            active: "false",
+            collapsible: "true"
         });
         // JavaScript to provide Edit/Delete button functionality
         
             $(".deletePostBtn").on('click', function(){
                 
                 $.ajax('/', {
-                    data: { title: $(this).parents('.contentPanel').siblings('header').find('h1').text(),
-                            username: $(this).parents('.contentPanel').siblings('header').find('span').text(),
+                    data: { title: $(this).parents('.content').siblings('header').find('h1').text(),
+                            username: $(this).parents('.content').siblings('header').find('span').text(),
                             body: $(this).parent().siblings('p').text()
                           },
                     type: "DELETE"

@@ -84,9 +84,9 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
     //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
             if (error) console.log("Could not delete post.");
-           
+ 
         });
-    response.redirect('/');
+    //response.redirect('/');
     //}
     
 });
