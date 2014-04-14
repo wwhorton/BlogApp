@@ -45,6 +45,7 @@ app.get('/', function(request, response){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
                 response.render('post', {posts:posts}); 
+                console.log(posts);
                 
             } else {
                 console.log("Query results empty.");
