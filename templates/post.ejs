@@ -52,11 +52,11 @@
                 $("#postForm :submit").click(function( e ){
                     e.preventDefault();
                     $.ajax('/', {
-                        data: { title: $(this).closest('h1').text(), 
-                                body: $(this).closest('p').text()
+                        data: { title: $("#titleField").val(), 
+                                body: $("#postField").val(),
+                                username: $("#userField").val()
                             },
-                        type: "PUT",
-                        success: alert("Post updated.")
+                        type: "PUT"
                     });
                 });                
             });
