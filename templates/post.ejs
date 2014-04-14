@@ -25,10 +25,10 @@
         // JavaScript to provide Edit/Delete button functionality
         
             $(".deletePostBtn").on('click', function(){
-                alert($(this).parent().siblings('header').find('h1').text());
+                
                 $.ajax('/', {
-                    data: { title: $(this).siblings('h1').text(), 
-                            body: $(this).closest('p').text()
+                    data: { title: $(this).parent().siblings('header').find('h1').text(), 
+                            body: $(this).parent().siblings('header').find('p').text()
                           },
                     type: "DELETE",
                     success: window.location.replace("http://murmuring-spire-3618.herokuapp.com/")
