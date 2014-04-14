@@ -10,11 +10,12 @@ Post:<textarea name="body" rows="8" cols="40" id="postField" ></textarea><br />
 // jQuery UI modal setup
 
 $("#postForm").dialog({ 
+            autoOpen: false,
             modal: true,
             resizable: true
 });
 
-$("#addNewPost").click(function(){
+$("#addNewPost").on('click', function(){
     $("#postForm").dialog('open');
 });
 

@@ -3,7 +3,7 @@
     <form action="http://murmuring-spire-3618.herokuapp.com/login" name="login" id="loginForm" method="post" >
     Username:<input type="text" name="username" id="username" required />
     Password:<input type="text" name="password" id="password" required />
-    <input type="submit" />
+    <input type="submit" value="Login"/>
     <button id="createNewUser">Create New User</button>
     </form>
 
@@ -19,7 +19,7 @@ $("#logout").click(function(e){
 });
 
 // Create button listener
-$("#createNewUser").click(function(e){
+$("#createNewUser").on('click', function(e){
     e.preventDefault();
     $.post("http://murmuring-spire-3618.herokuapp.com/newUser", {
         data: {
