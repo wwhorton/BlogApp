@@ -73,7 +73,7 @@ app.put('/', function(request, response){ // Pulled for testing: passport.authen
             if (error) return console.error.bind(console, "Could not delete post.");
         });
     //}
-    response.redirect('/');
+    //response.redirect('/');
 });
 
 
