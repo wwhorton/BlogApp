@@ -11,8 +11,8 @@
             </article>
             <% if (locals.user){ %>
             <%    if (locals.user.username == post.username) { %>
-                <button id="deletePost<%= i %>" type="button">Delete</button>
-                <button id="editPost<%= i %>" type="button">Edit</button>
+                <button class="deletePostBtn" type="button">Delete</button>
+                <button class="editPostBtn" type="button">Edit</button>
             <% } } %>
         <% }); %>
         
@@ -22,41 +22,40 @@
         $(".post").accordion({ header: "h1" });
          
         // JavaScript to provide Edit/Delete button functionality
-        if ("#deletePost<%= i %>").length){ // if this button exists, the other does to
-            
-            $("#deletePost<%= i %>").click(function(){
+        
+            $(".deletePostBtn").click(function(){
                 $.ajax('/', {
-                    data: { title: $("#post<%= i %>" h1).text(), 
+                    data: { title: $(this).closest('h1').text(), 
                             username: <% locals.user.username ? locals.user.username : '' %>,
-                            body: $("#post<%= i %>" p).text()
+                            body: $(this).closest('p').text()
                           },
                     type: DELETE,
                     success: alert("Post deleted.")
                 });
             });
-            $("#editPost<%= i %>").click(function(){
+            $(".editPostBtn").click(function(){
                 
                 //Fill new post form fields with values from post
                 
                 $("#userField").val("<% locals.user.username ? locals.user.username : '' %>");
-                $("#titleField").val("$("#post<%= i %>" h1).text()");
-                $("#postField").val("$("#post<%= i %>" p).text()");
+                $("#titleField").val("$(this).closest('h1').text()");
+                $("#postField").val("$(this).closest('p').text()");
                 
                 //Change submit button to use Ajax method instead of default
                 
                 $("#postForm :submit").click(function( e ){
                     e.preventDefault();
                     $.ajax('/', {
-                        data: { title: $("#post<%= i %>" h1).text, 
+                        data: { title: $(this).closest('h1').text(), 
                                 username: <% locals.user.username ? locals.user.username : '' %>,
-                                body: $("#post<%= i %>" p).text
+                                body: $(this).closest('p').text()
                             },
                         type: PUT,
                         success: alert("Post updated.")
                     });
                 });                
             });
-        }
+        
         </script>
 
 
