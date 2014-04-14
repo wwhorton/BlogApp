@@ -1,15 +1,15 @@
         <div id="accordion">
         <% posts.forEach(function(post, i){ %>
             <article id="post<%= i %>" class="post">
-            <header>
-            <a href="#post<%= i %>"><h1><%= post.title %></h1></a>
-            <h2>Written by <a href="#"><%= post.username %></a> on <time><%= post.date %></time>.<h2>
-            </header>
-            <p>
-                <%= post.body %>
-            </p>
-            <button class="deletePostBtn" type="button">Delete</button>
-            <button class="editPostBtn" type="button">Edit</button>
+                <header>
+                    <a href="#post<%= i %>"><h1><%= post.title %></h1></a>
+                    <h2>Written by <a href="#"><%= post.username %></a> on <time><%= post.date %></time>.<h2>
+                </header>
+                <p>
+                    <%= post.body %>
+                    <button class="deletePostBtn" type="button">Delete</button>
+                    <button class="editPostBtn" type="button">Edit</button>
+                </p>
             </article>
              
 
@@ -25,7 +25,7 @@
         // JavaScript to provide Edit/Delete button functionality
         
             $(".deletePostBtn").on('click', function(){
-                alert($(this).siblings('h1').text());
+                alert($(this).parent().siblings('header').find('h1').text());
                 $.ajax('/', {
                     data: { title: $(this).siblings('h1').text(), 
                             body: $(this).closest('p').text()
