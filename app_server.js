@@ -83,7 +83,7 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
-            if (err) console.log("Could not delete post.");
+            if (error) console.log("Could not delete post.");
             response.redirect('http://murmuring-spire-3618.herokuapp.com/');
         });
     //}
