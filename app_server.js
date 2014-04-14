@@ -80,7 +80,7 @@ app.put('/', passport.authenticate('local'), function(request, response){
 
 // Delete post
 app.delete('/',  function(request, response){ // Pulled for testing: passport.authenticate('local'),
-    var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
+    var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username});
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
