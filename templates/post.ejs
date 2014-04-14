@@ -3,7 +3,7 @@
             <article id="post<%= i %>" class="post">
                 <header>
                     <a href="#post<%= i %>"><h1><%= post.title %></h1></a>
-                    <h2>Written by <%= post.username %> on <time><%= post.date %></time>.<h2>
+                    <h2>Written by <span><%= post.username %></span> on <time><%= post.date %></time>.<h2>
                 </header>
                 <div class="contentPanel">
                     <p>
@@ -22,9 +22,9 @@
         
         <script>
         $("#accordion").accordion({ 
-            header: "header",
-            active: "false",
-            collapsible: "true"
+            header: "header"
+            //active: "false",
+            //collapsible: "true"
         });
         // JavaScript to provide Edit/Delete button functionality
         
@@ -35,8 +35,7 @@
                             username: $(this).parents('.contentPanel').siblings('header').find('span').text(),
                             body: $(this).parent().siblings('p').text()
                           },
-                    type: "DELETE",
-                    success: window.location.replace("http://murmuring-spire-3618.herokuapp.com/")
+                    type: "DELETE"
                         
                 });
             });
