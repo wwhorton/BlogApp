@@ -32,7 +32,7 @@
                 $.ajax('/', {
                     data: { title: $(this).parent().siblings('header').find('h1').text(),
                             username: $(this).parent().siblings('header').find('.author').text(),
-                            body: $(this).parent().siblings('p').html()
+                            body: $(this).parent().siblings('p').text()
                           },
                     type: "DELETE"
                         
@@ -42,10 +42,10 @@
             $(".editPostBtn").click(function(){
                 
                 //Fill new post form fields with values from post
-                
-                $("#userField").val("$(this).closest('a').text()");
-                $("#titleField").val("$(this).closest('h1').text()");
-                $("#postField").val("$(this).closest('p').text()");
+                $("#postForm").dialog('open');
+                $("#userField").val("$(this).parent().siblings('header').find('.author').text()");
+                $("#titleField").val("$(this).parent().siblings('header').find('h1').text()");
+                $("#postField").val("$(this).parent().siblings('p').text()");
                 
                 //Change submit button to use Ajax method instead of default
                 

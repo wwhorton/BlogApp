@@ -65,14 +65,14 @@ app.post('/', function(request, response){ // Pulled for testing: passport.authe
 
 
 // Edit and update existing post
-app.put('/', passport.authenticate('local'), function(request, response){
+app.put('/', function(request, response){ // Pulled for testing: passport.authenticate('local'), 
     var thisPost = Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     //Check that post's username and session username are the same
-    if(request.body.username == request.user.username){
+    //if(request.body.username == request.user.username){
         thisPost.update(thisPost, function(error){
             if (err) return console.error.bind(console, "Could not delete post.");
         });
-    }
+    //}
     response.redirect('/');
 });
 
@@ -95,8 +95,8 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
 // Authentication routes
 
 app.post('/login', function(request, response){
-    passport.authenticate('local', { successRedirect: 'http://murmuring-spire-3618.herokuapp.com/',
-                                    failureRedirect: 'http://murmuring-spire-3618.herokuapp.com/',
+    passport.authenticate('local', { successRedirect: '/',
+                                    failureRedirect: '/',
                                     failureFlash: true });
 });
 
