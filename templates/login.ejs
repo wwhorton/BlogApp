@@ -13,16 +13,18 @@
 
 // Logout button listener
 
-$("#logout").click(function(){
+$("#logout").click(function(e){
+    e.preventDefault();
     window.location.replace("http://murmuring-spire-3618.herokuapp.com/logout");
 });
 
 // Create button listener
-$("#createNewUser").click(function(){
+$("#createNewUser").click(function(e){
+    e.preventDefault();
     $.post("http://murmuring-spire-3618.herokuapp.com/newUser", {
         data: {
-            username: $("#username").val,
-            password: $("#password").val
+            username: $("#username").val(),
+            password: $("#password").val()
             }
     });
 });
