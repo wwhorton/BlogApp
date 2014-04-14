@@ -25,7 +25,7 @@
             $("#deletePost<%= i %>").click(function(){
                 $.ajax('/', {
                     data: { title: $("#post<%= i %>" h1).text(), 
-                            username: <% request.user.username %>,
+                            username: <% locals.user.username ? locals.user.username : '' %>,
                             body: $("#post<%= i %>" p).text()
                           },
                     type: DELETE,
@@ -36,7 +36,7 @@
                 
                 //Fill new post form fields with values from post
                 
-                $("#userField").val("<% request.user.username %>");
+                $("#userField").val("<% locals.user.username ? locals.user.username : '' %>");
                 $("#titleField").val("$("#post<%= i %>" h1).text()");
                 $("#postField").val("$("#post<%= i %>" p).text()");
                 
@@ -46,7 +46,7 @@
                     e.preventDefault();
                     $.ajax('/', {
                         data: { title: $("#post<%= i %>" h1).text, 
-                                username: <% request.user.username %>,
+                                username: <% locals.user.username ? locals.user.username : '' %>,
                                 body: $("#post<%= i %>" p).text
                             },
                         type: PUT,
