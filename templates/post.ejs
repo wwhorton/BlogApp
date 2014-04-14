@@ -5,14 +5,14 @@
                     <a href="#post<%= i %>"><h1><%= post.title %></h1></a>
                     <h2>Written by <a href="#"><%= post.username %></a> on <time><%= post.date %></time>.<h2>
                 </header>
-                <p>
-                    <%= post.body %>
-                    <button class="deletePostBtn" type="button">Delete</button>
-                    <button class="editPostBtn" type="button">Edit</button>
-                </p>
-                <div class="buttonRow">
-                    <button class="deletePostBtn" type="button">Delete</button>
-                    <button class="editPostBtn" type="button">Edit</button>
+                <div class="contentPanel">
+                    <p>
+                        <%= post.body %>
+                    </p>
+                    <div class="buttonRow">
+                        <button class="deletePostBtn" type="button">Delete</button>
+                        <button class="editPostBtn" type="button">Edit</button>
+                    </div>
                 </div>
             </article>
              
@@ -31,7 +31,7 @@
             $(".deletePostBtn").on('click', function(){
                 
                 $.ajax('/', {
-                    data: { title: $(this).parent().siblings('header').find('h1').text(), 
+                    data: { title: $(this).parents('.contentPanel').siblings('header').find('h1').text(), 
                             body: $(this).parent().siblings('p').text()
                           },
                     type: "DELETE",
