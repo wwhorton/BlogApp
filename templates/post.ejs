@@ -10,6 +10,10 @@
                     <button class="deletePostBtn" type="button">Delete</button>
                     <button class="editPostBtn" type="button">Edit</button>
                 </p>
+                <div class="buttonRow">
+                    <button class="deletePostBtn" type="button">Delete</button>
+                    <button class="editPostBtn" type="button">Edit</button>
+                </div>
             </article>
              
 
@@ -28,7 +32,7 @@
                 
                 $.ajax('/', {
                     data: { title: $(this).parent().siblings('header').find('h1').text(), 
-                            body: $(this).parent().siblings('header').find('p').text()
+                            body: $(this).parent().siblings('p').text()
                           },
                     type: "DELETE",
                     success: window.location.replace("http://murmuring-spire-3618.herokuapp.com/")
