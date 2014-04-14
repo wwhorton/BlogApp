@@ -26,7 +26,6 @@
             $(".deletePostBtn").click(function(){
                 $.ajax('/', {
                     data: { title: $(this).closest('h1').text(), 
-                            username: <% request.user.username ? request.user.username : '' %>,
                             body: $(this).closest('p').text()
                           },
                     type: DELETE,
@@ -47,7 +46,6 @@
                     e.preventDefault();
                     $.ajax('/', {
                         data: { title: $(this).closest('h1').text(), 
-                                username: <% request.user.username ? request.user.username : '' %>,
                                 body: $(this).closest('p').text()
                             },
                         type: PUT,
