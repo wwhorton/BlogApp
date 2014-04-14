@@ -83,10 +83,11 @@ app.delete('/', passport.authenticate('local'), function(request, response){
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
-            if (err) return console.error.bind(console, "Could not delete post.");
+            if (err) console.log("Could not delete post.");
+            response.redirect('http://murmuring-spire-3618.herokuapp.com/');
         });
     //}
-    response.redirect('/');
+    
 });
 
 // Authentication routes
