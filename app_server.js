@@ -53,7 +53,7 @@ app.get('/', function(request, response){
     });
 
 // Create new post    
-app.post('/', passport.authenticate('local'), function(request, response){
+app.post('/', function(request, response){ // Pulled for testing: passport.authenticate('local'),
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.error.bind(console, "Problem saving.");
