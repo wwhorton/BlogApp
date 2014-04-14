@@ -20,8 +20,10 @@
         <script>
         // Accordion setup
         $(".post").accordion({ header: "h1" });
-        /*
+         
         // JavaScript to provide Edit/Delete button functionality
+        if ("#deletePost<%= i %>").length){ // if this button exists, the other does to
+            
             $("#deletePost<%= i %>").click(function(){
                 $.ajax('/', {
                     data: { title: $("#post<%= i %>" h1).text(), 
@@ -53,7 +55,8 @@
                         success: alert("Post updated.")
                     });
                 });                
-            });*/
+            });
+        }
         </script>
 
 
