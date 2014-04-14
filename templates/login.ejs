@@ -25,7 +25,10 @@ $("#createNewUser").click(function(e){
         data: {
             username: $("#username").val(),
             password: $("#password").val()
-            }
+            },
+        success: function(){
+            window.location.replace("http://murmuring-spire-3618.herokuapp.com/");
+        }    
     });
 });
 
