@@ -1,4 +1,4 @@
-        <div id="accordion">
+        
         <% posts.forEach(function(post, i){ %>
             <article id="post<%= i %>" class="post">
                 <header>
@@ -18,14 +18,14 @@
              
 
         <% }); %>        
-        </div>
+
         
         <script>
-        $("#accordion").accordion({ 
+        /*$("#accordion").accordion({ 
             header: "header",
             active: "false",
             collapsible: "true"
-        });
+        });*/
         // JavaScript to provide Edit/Delete button functionality
         
             $(".deletePostBtn").on('click', function(){
