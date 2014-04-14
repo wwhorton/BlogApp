@@ -9,8 +9,8 @@
             <%= post.body %>
             </p>
             </article>
-            <% if (locals.user){ %>
-            <%    if (locals.user.username == post.username) { %>
+            <% if (request.user){ %>
+            <%    if (request.user.username == post.username) { %>
                 <button class="deletePostBtn" type="button">Delete</button>
                 <button class="editPostBtn" type="button">Edit</button>
             <% } } %>
@@ -26,7 +26,7 @@
             $(".deletePostBtn").click(function(){
                 $.ajax('/', {
                     data: { title: $(this).closest('h1').text(), 
-                            username: <% locals.user.username ? locals.user.username : '' %>,
+                            username: <% request.user.username ? request.user.username : '' %>,
                             body: $(this).closest('p').text()
                           },
                     type: DELETE,
@@ -37,7 +37,7 @@
                 
                 //Fill new post form fields with values from post
                 
-                $("#userField").val("<% locals.user.username ? locals.user.username : '' %>");
+                $("#userField").val("<% request.user.username ? request.user.username : '' %>");
                 $("#titleField").val("$(this).closest('h1').text()");
                 $("#postField").val("$(this).closest('p').text()");
                 
@@ -47,7 +47,7 @@
                     e.preventDefault();
                     $.ajax('/', {
                         data: { title: $(this).closest('h1').text(), 
-                                username: <% locals.user.username ? locals.user.username : '' %>,
+                                username: <% request.user.username ? request.user.username : '' %>,
                                 body: $(this).closest('p').text()
                             },
                         type: PUT,
