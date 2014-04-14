@@ -33,7 +33,7 @@
                 $.ajax('/', {
                     data: { title: $(this).parents('.contentPanel').siblings('header').find('h1').text(),
                             username: $(this).parents('.contentPanel').siblings('header').find('.author').text(),
-                            body: $(this).parent().siblings('p').text()
+                            body: $(this).parents('.contentPanel').find('p').text()
                           },
                     type: "DELETE"
                         
