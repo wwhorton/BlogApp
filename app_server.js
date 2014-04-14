@@ -92,8 +92,8 @@ app.delete('/', passport.authenticate('local'), function(request, response){
 // Authentication routes
 
 app.post('/login', function(request, response){
-    passport.authenticate('local', { successRedirect: '/',
-                                    failureRedirect: '/',
+    passport.authenticate('local', { successRedirect: 'http://murmuring-spire-3618.herokuapp.com/',
+                                    failureRedirect: 'http://murmuring-spire-3618.herokuapp.com/',
                                     failureFlash: true });
 });
 
