@@ -18,7 +18,7 @@
 <button id="addNewPost">Add New Post</button>
 <div id="login">
 <% include login.ejs %>
-<% if (request.user.username) { %>
+<% if (locals.user) { %>
     <button id="logout">Logout</button>
 <% } %>
 </div>

@@ -9,10 +9,11 @@
             <%= post.body %>
             </p>
             </article>
-            <% if (locals.user.username == post.username) { %>
+            <% if (locals.user){ %>
+            <%    if (locals.user.username == post.username) { %>
                 <button id="deletePost<%= i %>" type="button">Delete</button>
                 <button id="editPost<%= i %>" type="button">Edit</button>
-            <% } %>
+            <% } } %>
         <% }); %>
         
         
