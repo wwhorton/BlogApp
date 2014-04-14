@@ -23,10 +23,11 @@
         });
         // JavaScript to provide Edit/Delete button functionality
         
-            $(".deletePostBtn").click(function(){
+            $(".deletePostBtn").on('click', function(){
+                alert($(this).closest('h1').text());
                 $.ajax('/', {
-                    data: { title: $(this).closest('h1').text, 
-                            body: $(this).closest('p').text
+                    data: { title: $(this).closest('h1').text(), 
+                            body: $(this).closest('p').text()
                           },
                     type: "DELETE",
                     success: window.location.replace("http://murmuring-spire-3618.herokuapp.com/")
