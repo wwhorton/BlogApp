@@ -86,7 +86,7 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
             if (error) console.log("Could not delete post.");
            
         });
-         response.redirect('/');
+
     //}
     
 });
