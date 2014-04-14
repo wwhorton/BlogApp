@@ -28,7 +28,7 @@
                     data: { title: $(this).closest('h1').text(), 
                             body: $(this).closest('p').text()
                           },
-                    type: DELETE,
+                    type: "DELETE",
                     success: alert("Post deleted.")
                 });
             });
@@ -48,7 +48,7 @@
                         data: { title: $(this).closest('h1').text(), 
                                 body: $(this).closest('p').text()
                             },
-                        type: PUT,
+                        type: "PUT",
                         success: alert("Post updated.")
                     });
                 });                
