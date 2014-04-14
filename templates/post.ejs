@@ -6,13 +6,14 @@
                     <h2>Written by <span class="author"><%= post.username %></span> on <time><%= post.date %></time>.<h2>
                 </header>
                 
-                    <p>
-                        <%= post.body %>
-                    </p>
-                    <div class="buttonRow">
-                        <button class="deletePostBtn" type="button">Delete</button>
-                        <button class="editPostBtn" type="button">Edit</button>
-                    </div>
+                <p>
+                    <%= post.body %>
+                </p>
+                
+                <div class="buttonRow">
+                    <button class="deletePostBtn" type="button">Delete</button>
+                    <button class="editPostBtn" type="button">Edit</button>
+                </div>
                 
             </article>
              
@@ -29,7 +30,7 @@
         // JavaScript to provide Edit/Delete button functionality
         
             $(".deletePostBtn").on('click', function(){
-                
+                alert($(this).parent().siblings('header').find('h1').text());
                 $.ajax('/', {
                     data: { title: $(this).parent().siblings('header').find('h1').text(),
                             username: $(this).parent().siblings('header').find('.author').text(),
