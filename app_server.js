@@ -108,7 +108,7 @@ app.post('/newUser', function(request, response){
     
     //Check if username is taken; if so, include an error msg in the flash, if not, save. Redirect in either cases.
     
-    if (newUser.findOne( {username: newUser.username} ) ){
+    if (Schemas.User.findOne( {username: newUser.username} ) ){
         request.flash('error', 'Username already exists.');
     } else {
         newUser.save(function(err, newUser){
