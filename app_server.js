@@ -72,7 +72,7 @@ app.put('/', passport.authenticate('local'), function(request, response){
             if (err) return console.error.bind(console, "Could not delete post.");
         });
     }
-    response.redirect('http://murmuring-spire-3618.herokuapp.com/');
+    response.redirect('/');
 });
 
 
