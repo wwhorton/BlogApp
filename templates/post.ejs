@@ -3,10 +3,10 @@
             <article id="post<%= i %>" class="post">
             <header>
             <a href="#post<%= i %>"><h1><%= post.title %></h1></a>
+            <small>Written by <a href="#"><%= post.username %></a> on <time><%= post.date %></time>.<small>
             </header>
             <p>
-            <h2>Written by <a href="#"><%= post.username %></a> on <time><%= post.date %></time>.<h2>
-            <%= post.body %>
+                <%= post.body %>
             </p>
             </article>
              
