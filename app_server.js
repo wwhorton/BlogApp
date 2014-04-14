@@ -81,11 +81,11 @@ app.put('/', passport.authenticate('local'), function(request, response){
 app.delete('/', passport.authenticate('local'), function(request, response){
     var thisPost = Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     //Check that post's username and session username are the same
-    if(request.body.username == request.user.username){
+    //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
             if (err) return console.error.bind(console, "Could not delete post.");
         });
-    }
+    //}
     response.redirect('/');
 });
 
