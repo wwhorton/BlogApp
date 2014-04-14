@@ -70,7 +70,7 @@ app.put('/', function(request, response){ // Pulled for testing: passport.authen
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.update(thisPost, function(error){
-            if (err) return console.error.bind(console, "Could not delete post.");
+            if (error) return console.error.bind(console, "Could not delete post.");
         });
     //}
     response.redirect('/');
