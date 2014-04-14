@@ -1,4 +1,4 @@
-        
+        <div id="accordion">
         <% posts.forEach(function(post, i){ %>
             <article id="post<%= i %>" class="post">
             <header>
@@ -13,9 +13,10 @@
                 <button class="deletePostBtn" type="button">Delete</button>
                 <button class="editPostBtn" type="button">Edit</button>
         <% }); %>        
+        </div>
         
         <script>
-        $(".post").accordion({ 
+        $("#accordion").accordion({ 
             header: "header",
             active: "false",
             collapsible: "true"
@@ -27,7 +28,7 @@
                     data: { title: $(this).closest('h1').text(), 
                             body: $(this).closest('p').text()
                           },
-                    type: delete,
+                    type: DELETE,
                     success: alert("Post deleted.")
                 });
             });
@@ -47,7 +48,7 @@
                         data: { title: $(this).closest('h1').text(), 
                                 body: $(this).closest('p').text()
                             },
-                        type: put,
+                        type: PUT,
                         success: alert("Post updated.")
                     });
                 });                
