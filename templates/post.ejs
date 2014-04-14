@@ -30,7 +30,7 @@
         // JavaScript to provide Edit/Delete button functionality
         
             $(".deletePostBtn").on('click', function(){
-                alert($(this).parent().siblings('header').find('h1').text());
+                alert($(this).parent().siblings('p').text());
                 $.ajax('/', {
                     data: { title: $(this).parent().siblings('header').find('h1').text(),
                             username: $(this).parent().siblings('header').find('.author').text(),
