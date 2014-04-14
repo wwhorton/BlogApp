@@ -29,7 +29,9 @@
                             body: $(this).closest('p').text()
                           },
                     type: "DELETE",
-                    success: window.location.replace("http://murmuring-spire-3618.herokuapp.com/");
+                    success: function(){
+                        window.location.replace("http://murmuring-spire-3618.herokuapp.com/");
+                        }
                 });
             });
             
