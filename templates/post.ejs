@@ -6,9 +6,7 @@
                     <h2>Written by <span class="author"><%= post.username %></span> on <time><%= post.date %></time>.<h2>
                 </header>
                 
-                <p>
-                    <%=post.body%>
-                </p>
+                <p><%=post.body%></p>
                 
                 <div class="buttonRow">
                     <button class="deletePostBtn" type="button">Delete</button>
@@ -36,7 +34,6 @@
                             username: $(this).parent().siblings('header').find('.author').text(),
                             body: $(this).parent().siblings('p').html()
                           },
-                    contentType: "text/plain",
                     type: "DELETE"
                         
                 });
