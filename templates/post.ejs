@@ -33,7 +33,7 @@
                 
                 //Fill new post form fields with values from post
                 
-                $("#userField").val("<% request.user.username ? request.user.username : '' %>");
+                $("#userField").val("$(this).closest('a').text()");
                 $("#titleField").val("$(this).closest('h1').text()");
                 $("#postField").val("$(this).closest('p').text()");
                 
