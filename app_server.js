@@ -4,14 +4,14 @@ var partials = require('express-partials');
 var db = require('./js/db.js');
 var Schemas = require('./js/schemas.js');
 var Post = require('./js/Post.js');
-var Flash = require('connect-flash');
+var flash = require('connect-flash');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
 app.configure(function(){
     app.use(express.bodyParser());
     app.use(partials());
-    app.use(Flash());
+    app.use(flash());
     app.use(express.static(__dirname));
     app.use(express.cookieParser());
     app.use(express.session({secret: 'rea1ly very Secret phRase'}));
@@ -81,31 +81,38 @@ app.post('/', passport.authenticate('session', flashOptions), function(request, 
 
 // Edit and update existing post
 var flashOptions = { failureFlash: "You must be logged in to edit a post." };
-app.put('/', passport.authenticate('session', flashOptions), function(request, response){  
-    Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
-        doc.title = request.body.title;
-        doc.body = request.body.body;
-        doc.username = request.body.username;
-        doc.date = Date.now;
-        doc.save();
-        if(error) console.log(error);
-            
-    });
+app.put('/', passport.authenticate('session', flashOptions), function(request, response){
+    if(request.body.username == app.locals.user.username){
+        Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
+            doc.title = request.body.title;
+            doc.body = request.body.body;
+            doc.username = request.body.username;
+            doc.date = Date.now;
+            doc.save();
+            if(error) console.log(error);        
+        });
+    } else {
+    response.status(401);
+    }
     response.end();
 });
 
 
 
 // Delete post
-var flashOptions = { failureFlash: "You must be logged in to delete a post." };
+var flashOptions = {    successFlash: "Authenticated successfully.",
+                        failureFlash: "You must be logged in to delete a post." };
 app.delete('/', passport.authenticate('session', flashOptions), function(request, response){ 
     var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
-    //if(request.body.username == request.user.username){
+    if(request.body.username == app.locals.user.username){
         thisPost.remove(thisPost, function(error){
             if (error) console.log("Could not delete post.");
- 
+            response.end(error);
         });
-    //}
+    } else {
+        response.status(401);
+    }
+        response.end();
     
 });
 

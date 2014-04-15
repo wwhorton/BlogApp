@@ -37,7 +37,7 @@
                             body: $(this).parent().siblings('p').text()
                           },
                     type: "DELETE",
-                    success: function(){
+                    done: function(){
                             window.location.href = window.location.href;
                         }
                         
@@ -63,7 +63,7 @@
                                 username: $("#userField").val()
                             },
                         type: "PUT",
-                        success: function(){
+                        done: function(){
                             window.location.href = window.location.href;
                         }
                     });
