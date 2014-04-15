@@ -36,11 +36,11 @@ passport.use(new LocalStrategy(
       if (err) { return done(err); }
       if (!user) {
         console.log("Bad username.");
-        return done(null, false, { message: 'Incorrect username.' });
+        return done(null, false, { messages: 'Incorrect username.' });
       }
       if (user.password != password) {
         console.log("Bad password.");
-        return done(null, false, { message: 'Incorrect password.' });
+        return done(null, false, { messages: 'Incorrect password.' });
       }
       console.log("Logged in.");
 
@@ -59,7 +59,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
-                response.render('post', {posts:posts, messages: request.flash('messages') }); 
+                response.render('post', {posts:posts, messages: request.flash('error')  }); 
             } else {
                 console.log("Query results empty.");
             }
