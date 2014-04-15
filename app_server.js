@@ -82,17 +82,17 @@ app.post('/', passport.authenticate('session', flashOptions), function(request, 
 // Edit and update existing post
 var flashOptions = { failureFlash: "You must be logged in to edit a post." };
 app.put('/', passport.authenticate('session', flashOptions), function(request, response){
-    if(request.body.username == request.session.passport.user){
-        Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
+    Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
+        if(doc.username == request.session.passport.user){
             doc.title = request.body.title;
             doc.body = request.body.body;
             doc.date = Date.now;
             doc.save();
             if(error) console.log(error);        
-        });
-    } else {
-    response.status(401);
-    }
+        } else {
+        response.status(401);
+        }   
+    });
     response.end();
 });
 
