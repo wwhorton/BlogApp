@@ -74,7 +74,7 @@ app.post('/', passport.authenticate('local'), function(request, response){
         if (err) return console.log("Problem saving.");
 
         });
-    //response.redirect('/');      
+    response.redirect('/');      
 });
 
 
