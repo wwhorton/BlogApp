@@ -59,7 +59,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
-                response.render('post', {posts:posts, message: request.flash('message') }); 
+                response.render('post', {posts:posts, message: request.flash('messages') }); 
             } else {
                 console.log("Query results empty.");
             }
@@ -67,8 +67,9 @@ app.get('/', function(request, response){
 
 });
 
-// Create new post    
-app.post('/', passport.authenticate('session'), function(request, response){
+// Create new post
+var flashOptions = { failureFlash: "You must be logged in to post." };
+app.post('/', passport.authenticate('session', flashOptions), function(request, response){
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.log("Problem saving.");
@@ -79,7 +80,8 @@ app.post('/', passport.authenticate('session'), function(request, response){
 
 
 // Edit and update existing post
-app.put('/', passport.authenticate('session'), function(request, response){  
+var flashOptions = { failureFlash: "You must be logged in to edit a post." };
+app.put('/', passport.authenticate('session', flashOptions), function(request, response){  
     Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
         doc.title = request.body.title;
         doc.body = request.body.body;
@@ -95,7 +97,8 @@ app.put('/', passport.authenticate('session'), function(request, response){
 
 
 // Delete post
-app.delete('/', passport.authenticate('session'), function(request, response){ 
+var flashOptions = { failureFlash: "You must be logged in to delete a post." };
+app.delete('/', passport.authenticate('session', flashOptions), function(request, response){ 
     var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
     //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
