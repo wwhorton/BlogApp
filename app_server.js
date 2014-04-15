@@ -83,7 +83,7 @@ app.post('/', passport.authenticate('session', flashOptions), function(request, 
 var flashOptions = { failureFlash: "You must be logged in to edit a post." };
 app.put('/', passport.authenticate('session', flashOptions), function(request, response){
     Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
-        if(doc.username == request.session.passport.user){
+        if(doc.username == request.session.passport.user.username){
             console.log(doc);
             doc.title = request.body.title;
             doc.body = request.body.body;
