@@ -34,7 +34,10 @@
                             username: $(this).parent().siblings('header').find('.author').text(),
                             body: $(this).parent().siblings('p').text()
                           },
-                    type: "DELETE"
+                    type: "DELETE",
+                    success: function(){
+                            window.location.href = window.location.href;
+                        }
                         
                 });
             });

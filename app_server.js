@@ -59,7 +59,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
-                response.render('post', {posts:posts}); 
+                response.render('post', {posts:posts, message: request.flash('message') }); 
             } else {
                 console.log("Query results empty.");
             }
@@ -69,7 +69,6 @@ app.get('/', function(request, response){
 
 // Create new post    
 app.post('/', passport.authenticate('session'), function(request, response){
-    console.log("Beginning to save.");
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.log("Problem saving.");
@@ -98,13 +97,11 @@ app.put('/', passport.authenticate('session'), function(request, response){
 // Delete post
 app.delete('/', passport.authenticate('session'), function(request, response){ 
     var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
-    //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.remove(thisPost, function(error){
             if (error) console.log("Could not delete post.");
  
         });
-    response.redirect('/');
     //}
     
 });
