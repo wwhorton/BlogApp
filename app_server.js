@@ -68,7 +68,7 @@ app.get('/', function(request, response){
 });
 
 // Create new post    
-app.post('/', function(request, response){ // Pulled for testing: passport.authenticate('local'),
+app.post('/', passport.authenticate('local'), function(request, response){
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.error.bind(console, "Problem saving.");
@@ -79,7 +79,7 @@ app.post('/', function(request, response){ // Pulled for testing: passport.authe
 
 
 // Edit and update existing post
-app.put('/', function(request, response){  // Pulled for testing: passport.authenticate('local'), 
+app.put('/', passport.authenticate('local'), function(request, response){  
     Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
         doc.title = request.body.title;
         doc.body = request.body.body;
@@ -95,7 +95,7 @@ app.put('/', function(request, response){  // Pulled for testing: passport.authe
 
 
 // Delete post
-app.delete('/',  function(request, response){ // Pulled for testing: passport.authenticate('local'),
+app.delete('/', passport.authenticate('local'), function(request, response){ 
     var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
