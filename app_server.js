@@ -80,7 +80,7 @@ app.post('/', passport.authenticate('session'), function(request, response){
 
 
 // Edit and update existing post
-app.put('/', passport.authenticate('local'), function(request, response){  
+app.put('/', passport.authenticate('session'), function(request, response){  
     Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
         doc.title = request.body.title;
         doc.body = request.body.body;
@@ -96,7 +96,7 @@ app.put('/', passport.authenticate('local'), function(request, response){
 
 
 // Delete post
-app.delete('/', passport.authenticate('local'), function(request, response){ 
+app.delete('/', passport.authenticate('session'), function(request, response){ 
     var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
