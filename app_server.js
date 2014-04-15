@@ -35,11 +35,14 @@ passport.use(new LocalStrategy(
     Schemas.User.findOne({ username: username }, function(err, user) {
       if (err) { return done(err); }
       if (!user) {
+        console.log("Bad username.");
         return done(null, false, { message: 'Incorrect username.' });
       }
       if (user.password != password) {
+        console.log("Bad password.");
         return done(null, false, { message: 'Incorrect password.' });
       }
+      console.log("Logged in.");
       return done(null, user);
     });
   }
@@ -57,7 +60,8 @@ app.get('/', function(request, response){
                 console.log("Query results empty.");
             }
         });
-    });
+        console.log(request.session);
+});
 
 // Create new post    
 app.post('/', function(request, response){ // Pulled for testing: passport.authenticate('local'),
