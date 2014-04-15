@@ -43,7 +43,7 @@ passport.use(new LocalStrategy(
         return done(null, false, { message: 'Incorrect password.' });
       }
       console.log("Logged in.");
-      app.locals.user = request.session.passport.user;
+
       return done(null, user);
     });
   }
@@ -53,6 +53,9 @@ passport.use(new LocalStrategy(
 
 // Main page; display all posts
 app.get('/', function(request, response){
+        if (request.session.passport.user){
+        app.locals.user = request.session.passport.user;
+        };
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
