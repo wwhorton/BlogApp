@@ -121,6 +121,7 @@ app.post('/login', passport.authenticate('local', {
 
 app.get('/logout', function(request, response){
     request.session.destroy();
+    app.locals.user = null;
     response.redirect('/');
 });
 
