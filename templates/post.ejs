@@ -48,7 +48,7 @@
                 $("#postField").val($(this).parent().siblings('p').text());
                 //Change submit button to use Ajax method instead of default action
                 
-                $("#postForm :submit").click(function( e ){
+                $("#postButton").on('click', function( e ){
                     e.preventDefault();
                     $.ajax('/', {
                         data: { _id: $(this).parents('article').attr('id'),
