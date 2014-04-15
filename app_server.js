@@ -63,7 +63,14 @@ app.post('/', function(request, response){ // Pulled for testing: passport.authe
 
 
 // Edit and update existing post
-app.put('/', function(request, response){ // Pulled for testing: passport.authenticate('local'), 
+app.put('/', function(request, response){  // Pulled for testing: passport.authenticate('local'), 
+    Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
+        thisPost.title = request.body.title;
+        thisPost.body = request.body.body;
+        thisPost.username = request.body.username;
+        thisPost.save();
+    });
+
     var thisPost = new Schemas.Post({_id: request.body._id, title: request.body.title, username: request.body.username, body: request.body.body});
     console.log(thisPost);
     //Check that post's username and session username are the same
