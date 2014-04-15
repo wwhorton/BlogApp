@@ -61,8 +61,11 @@
                                 body: $("#postField").val()
                             },
                         type: "PUT",
-                        complete: function(){
+                        success: function(){
                             window.location.href = window.location.href;
+                        },
+                        error: function(e){
+                            alert(e);
                         }
                     });
                 });                
