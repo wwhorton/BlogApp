@@ -120,7 +120,7 @@ app.post('/login', passport.authenticate('local', {
 
 
 app.get('/logout', function(request, response){
-    request.logout();
+    request.session.destroy();
     response.redirect('/');
 });
 
