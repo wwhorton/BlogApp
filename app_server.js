@@ -65,10 +65,11 @@ app.post('/', function(request, response){ // Pulled for testing: passport.authe
 // Edit and update existing post
 app.put('/', function(request, response){ // Pulled for testing: passport.authenticate('local'), 
     var thisPost = new Schemas.Post({_id: request.body._id, title: request.body.title, username: request.body.username, body: request.body.body});
+    console.log(request.body);
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.save(function(error, thisPost, updated){
-            if (error) return console.error.bind(console, "Could not delete post.");
+            if (error) console.log("Could not update post.");
         });
     //}
     //response.redirect('/');
