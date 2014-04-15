@@ -87,7 +87,7 @@ app.put('/', passport.authenticate('session', flashOptions), function(request, r
             console.log(doc);
             doc.title = request.body.title;
             doc.body = request.body.body;
-            doc.date = Date.now;
+            doc.date = Date.now();
             doc.save();
             console.log(doc + " saved.");
             if(error) console.log(error);        
