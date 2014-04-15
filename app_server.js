@@ -68,6 +68,7 @@ app.put('/', function(request, response){  // Pulled for testing: passport.authe
         doc.title = request.body.title;
         doc.body = request.body.body;
         doc.username = request.body.username;
+        doc.date = Date.now;
         doc.save();
         if(error) console.log(error);
             
