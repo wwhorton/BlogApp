@@ -5,8 +5,8 @@ var db = require('./js/db.js');
 var Schemas = require('./js/schemas.js');
 var Post = require('./js/Post.js');
 var Flash = require('connect-flash');
-var passport = require('passport')
-  , LocalStrategy = require('passport-local').Strategy;
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 
 app.configure(function(){
     app.use(express.bodyParser());
@@ -29,7 +29,7 @@ passport.use(new LocalStrategy(
       if (!user) {
         return done(null, false, { message: 'Incorrect username.' });
       }
-      if (!user.validPassword(password)) {
+      if (user.password != password) {
         return done(null, false, { message: 'Incorrect password.' });
       }
       return done(null, user);
@@ -96,7 +96,8 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
 
 app.post('/login', passport.authenticate('local', { 
                                                     successRedirect: '/',
-                                                    failureRedirect: '/' 
+                                                    failureRedirect: '/',
+                                                    failureFlash: true
                                                   })
 );
 
