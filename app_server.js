@@ -108,7 +108,8 @@ app.get('/logout', function(request, response){
 
 app.post('/newUser', function(request, response){
     var newUser = new Schemas.User({username: request.body.username, password: request.body.password});
-    alert(newUser);
+    console.log(newUser);
+    console.log(request);
     //Check if username is taken; if so, include an error msg in the flash, if not, save. Redirect in either cases.
     
     newUser.save(function(err, newUser){
