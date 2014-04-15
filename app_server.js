@@ -24,7 +24,7 @@ app.set('views', __dirname + '/templates');
 
 passport.use(new LocalStrategy(
   function(username, password, done) {
-    User.findOne({ username: username }, function(err, user) {
+    Schemas.User.findOne({ username: username }, function(err, user) {
       if (err) { return done(err); }
       if (!user) {
         return done(null, false, { message: 'Incorrect username.' });
@@ -94,10 +94,8 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
 
 // Authentication routes
 
-app.post('/login', function(request, response){
-    passport.authenticate('local', { successRedirect: '/',
-                                    failureRedirect: '/',
-                                    failureFlash: true });
+app.post('/login', passport.authenticate('local', { successRedirect: '/',
+                                                    failureRedirect: '/' }));
 });
 
 
