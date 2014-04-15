@@ -64,8 +64,8 @@
                         success: function(){
                             window.location.href = window.location.href;
                         },
-                        error: function(err, msg){
-                            alert(msg);
+                        error: function(err, errType, errMsg){
+                            alert(errMsg);
                         }
                     });
                 });                
