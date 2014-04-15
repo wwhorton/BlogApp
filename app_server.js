@@ -70,7 +70,7 @@ app.get('/', function(request, response){
 // Create new post
 var flashOptions = { failureFlash: "You must be logged in to post." };
 app.post('/', passport.authenticate('session', flashOptions), function(request, response){
-    var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
+    var newPost = new Schemas.Post({title: request.body.title, username: request.session.passport.user.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.log("Problem saving.");
 
@@ -86,7 +86,6 @@ app.put('/', passport.authenticate('session', flashOptions), function(request, r
         Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
             doc.title = request.body.title;
             doc.body = request.body.body;
-            doc.username = request.body.username;
             doc.date = Date.now;
             doc.save();
             if(error) console.log(error);        

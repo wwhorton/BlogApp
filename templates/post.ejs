@@ -48,8 +48,6 @@
                 
                 //Fill new post form fields with values from post
                 $("#postForm").dialog('open');
-                $("#userField").val($(this).parent().siblings('header').find('.author').text());
-                $("#userField").attr('type', 'hidden');
                 $("#titleField").val($(this).parent().siblings('header').find('h1').text());
                 $("#postField").val($(this).parent().siblings('p').text());
                 $("#postID").val($(this).parents('article').attr('id'));
@@ -60,8 +58,7 @@
                     $.ajax('/', {
                         data: { _id: $("#postID").val(),
                                 title: $("#titleField").val(), 
-                                body: $("#postField").val(),
-                                username: $("#userField").val()
+                                body: $("#postField").val()
                             },
                         type: "PUT",
                         complete: function(){
