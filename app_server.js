@@ -94,9 +94,12 @@ app.delete('/',  function(request, response){ // Pulled for testing: passport.au
 
 // Authentication routes
 
-app.post('/login', passport.authenticate('local', { successRedirect: '/',
-                                                    failureRedirect: '/' }));
-});
+app.post('/login', passport.authenticate('local', { 
+                                                    successRedirect: '/',
+                                                    failureRedirect: '/' 
+                                                  })
+);
+
 
 
 app.get('/logout', function(request, response){
