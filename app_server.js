@@ -69,6 +69,7 @@ app.get('/', function(request, response){
 
 // Create new post    
 app.post('/', passport.authenticate('local'), function(request, response){
+    console.log("Beginning to save.");
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
         if (err) return console.log("Problem saving.");
