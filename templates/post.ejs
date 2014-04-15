@@ -53,7 +53,7 @@
                 $("#postForm :submit").click(function( e ){
                     e.preventDefault();
                     $.ajax('/', {
-                        data: { _id: $("_id").val(),
+                        data: { _id: $("#_id").val(),
                                 title: $("#titleField").val(), 
                                 body: $("#postField").val(),
                                 username: $("#userField").val()
