@@ -46,8 +46,8 @@
                 $("#userField").val($(this).parent().siblings('header').find('.author').text());
                 $("#titleField").val($(this).parent().siblings('header').find('h1').text());
                 $("#postField").val($(this).parent().siblings('p').text());
-                $("#id").val($(this).parents('article').attr('id'));
-                alert($("#id").val());
+                $('input[name=id]').attr('value', $(this).parents('article').attr('id'));
+                alert($("#id").attr('value'));
                 //Change submit button to use Ajax method instead of default action
                 
                 $("#postForm :submit").click(function( e ){
