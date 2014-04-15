@@ -70,8 +70,9 @@ app.put('/', function(request, response){  // Pulled for testing: passport.authe
         doc.username = request.body.username;
         doc.save();
         if(error) console.log(error);
+            
     });
-    response.redirect('/');
+    response.end();
 });
 
 
