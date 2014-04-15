@@ -60,7 +60,7 @@ app.get('/', function(request, response){
                 console.log("Query results empty.");
             }
         });
-        console.log(request.session);
+        console.log(request.session.passport);
 });
 
 // Create new post    
