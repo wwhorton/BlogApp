@@ -1,4 +1,4 @@
-<p><%= messages %></p>
+
 
         
         <% posts.forEach(function(post, i){ %>
@@ -62,7 +62,6 @@
                             },
                         type: "PUT",
                         success: function(){
-                            alert("Returned with a success.");
                             window.location.href = window.location.href;
                         },
                         error: function(err, errType, errMsg){
