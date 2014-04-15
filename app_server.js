@@ -64,17 +64,17 @@ app.get('/', function(request, response){
                 console.log("Query results empty.");
             }
         });
-        console.log(app.locals.user);
+
 });
 
 // Create new post    
 app.post('/', passport.authenticate('local'), function(request, response){
     var newPost = new Schemas.Post({title: request.body.title, username: request.body.username, body: request.body.body});
     newPost.save(function(err, newPost, updated){
-        if (err) return console.error.bind(console, "Problem saving.");
+        if (err) return console.log("Problem saving.");
 
         });
-    response.redirect('/');      
+    //response.redirect('/');      
 });
 
 
