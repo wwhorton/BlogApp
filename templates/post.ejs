@@ -46,13 +46,12 @@
                 $("#userField").val($(this).parent().siblings('header').find('.author').text());
                 $("#titleField").val($(this).parent().siblings('header').find('h1').text());
                 $("#postField").val($(this).parent().siblings('p').text());
-                alert($(this).parents('article').attr('id'));
                 //Change submit button to use Ajax method instead of default action
                 
                 $("#postForm :submit").click(function( e ){
                     e.preventDefault();
                     $.ajax('/', {
-                        data: { _id: $("#id").val(),
+                        data: { _id: $(this).parents('article').attr('id'),
                                 title: $("#titleField").val(), 
                                 body: $("#postField").val(),
                                 username: $("#userField").val()
