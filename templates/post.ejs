@@ -40,7 +40,7 @@
             });
             
             $(".editPostBtn").click(function(){
-                
+                alert($(this).parents('article').val('id'));
                 //Fill new post form fields with values from post
                 $("#postForm").dialog('open');
                 $("#userField").val($(this).parent().siblings('header').find('.author').text());
