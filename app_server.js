@@ -84,10 +84,12 @@ var flashOptions = { failureFlash: "You must be logged in to edit a post." };
 app.put('/', passport.authenticate('session', flashOptions), function(request, response){
     Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
         if(doc.username == request.session.passport.user){
+            console.log(doc);
             doc.title = request.body.title;
             doc.body = request.body.body;
             doc.date = Date.now;
             doc.save();
+            console.log(doc + " saved.");
             if(error) console.log(error);        
         } else {
         response.status(401);
