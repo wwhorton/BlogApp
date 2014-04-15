@@ -2,7 +2,7 @@
         <% posts.forEach(function(post, i){ %>
             <article id="<%=post._id%>" class="post">
                 <header>
-                    <a href="<%=post._id%>"><h1><%= post.title %></h1></a>
+                    <h1><%= post.title %></h1>
                     <h2>Written by <span class="author"><%= post.username %></span> on <time><%= post.date %></time>.<h2>
                 </header>
                 
