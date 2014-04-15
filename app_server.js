@@ -69,7 +69,7 @@ app.put('/', function(request, response){ // Pulled for testing: passport.authen
     //Check that post's username and session username are the same
     //if(request.body.username == request.user.username){
         thisPost.save(function(error, thisPost, updated){
-            if (error) console.log("Could not update post.");
+            if (error) console.log("Could not update post. " + error);
         });
     //}
     //response.redirect('/');
