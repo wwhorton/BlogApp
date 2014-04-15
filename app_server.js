@@ -22,6 +22,14 @@ app.configure(function(){
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/templates');     
 
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+  done(null, user);
+});
+
 passport.use(new LocalStrategy(
   function(username, password, done) {
     Schemas.User.findOne({ username: username }, function(err, user) {
