@@ -111,8 +111,8 @@ app.delete('/', passport.authenticate('local'), function(request, response){
 // Authentication routes
 
 app.post('/login', passport.authenticate('local', { 
-                                                    //successRedirect: '/',
-                                                    //failureRedirect: '/',
+                                                    successRedirect: '/',
+                                                    failureRedirect: '/',
                                                     failureFlash: true
                                                   })
 );
