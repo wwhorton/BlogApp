@@ -59,7 +59,7 @@ app.get('/', function(request, response){
         Schemas.Post.find(function(err, posts){
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
-                response.render('post', {posts:posts, message: request.flash('messages') }); 
+                response.render('post', {posts:posts, messages: request.flash('messages') }); 
             } else {
                 console.log("Query results empty.");
             }
