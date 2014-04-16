@@ -59,55 +59,21 @@ body:after {
 /* line 28, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
-  text-transform: uppercase;
-  font-size: 6.66667em;
-  line-height: 1.25em;
-  letter-spacing: 30px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2;
   padding-left: 0.125em;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 32, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
 }
 
-/* line 45, ../sass/style.sass */
-a {
-  text-decoration: none;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  font-family: "Chunk";
-  color: black;
-  background: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #53ad6e), color-stop(100%, #cce7d4));
-  background: -webkit-radial-gradient(center, #53ad6e, #cce7d4);
-  background: -moz-radial-gradient(center, #53ad6e, #cce7d4);
-  background: -o-radial-gradient(center, #53ad6e, #cce7d4);
-  background: radial-gradient(center, #53ad6e, #cce7d4);
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  text-align: center;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  display: inline-block;
+/* line 37, ../sass/style.sass */
+nav button {
+  height: 2em;
 }
 
-/* line 60, ../sass/style.sass */
+/* line 41, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  margin-top: 1.66667em;
-  padding-top: 1.66667em;
-  padding-bottom: 1.66667em;
-  margin-bottom: 1.66667em;
-  padding-left: 3.38983%;
-  padding-right: 3.38983%;
   font-family: "Cyntho";
 }
