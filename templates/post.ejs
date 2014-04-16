@@ -42,9 +42,7 @@ $(".post").accordion({
 $(".deletePostBtn").on('click', function(){
 
     $.ajax('/', {
-        data: { title: $(this).parents('.postContent').siblings('header').find('h1').text(),
-                username: $(this).parents('.postContent').siblings('header').find('.author').text(),
-                body: $(this).parent().siblings('p').text()
+        data: { _id: $(this).parents('article').attr('id')
               },
         type: "DELETE",
         success: function(){

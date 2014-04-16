@@ -104,19 +104,14 @@ app.put('/', passport.authenticate('session', flashOptions), function(request, r
 var flashOptions = {    successFlash: "Authenticated successfully.",
                         failureFlash: "You must be logged in to delete a post." };
 app.delete('/', passport.authenticate('session', flashOptions), function(request, response){ 
-    var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
-    if(request.body.username == app.locals.user.username){
-        thisPost.remove(thisPost, function(error){
-            if (error) {
+    Schemas.Post.remove({_id: request.body._id, user: app.locals.user.username}, function(error){
+        if (error) {
             console.log("Could not delete post.");
             response.end(error);
-            } else {
+        } else {
             console.log("Deleted post.");
-            }
+        }
         });
-    } else {
-        response.status(401);
-    }
     response.end();
 });
 
