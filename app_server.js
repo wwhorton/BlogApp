@@ -105,7 +105,7 @@ var flashOptions = {    successFlash: "Authenticated successfully.",
                         failureFlash: "You must be logged in to delete a post." };
 app.delete('/', passport.authenticate('session', flashOptions), function(request, response){ 
     Schemas.Post.findOneAndRemove({_id: request.body._id}, function(doc){
-        (doc) ? console.log(doc + " was deleted.") : console.log("Document not found.");
+        (doc !== null) ? console.log(doc + " was deleted.") : console.log("Document not found.");
         response.end();
     });
 });
