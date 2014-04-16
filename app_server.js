@@ -107,14 +107,17 @@ app.delete('/', passport.authenticate('session', flashOptions), function(request
     var thisPost = Schemas.Post.findOne({title: request.body.title, username: request.body.username, body: request.body.body});
     if(request.body.username == app.locals.user.username){
         thisPost.remove(thisPost, function(error){
-            if (error) console.log("Could not delete post.");
-            response.end(alert(error));
+            if (error) {
+            console.log("Could not delete post.");
+            response.end(error);
+            } else {
+            console.log("Deleted post.");
+            }
         });
     } else {
         response.status(401);
     }
-        response.end();
-    
+    response.end();
 });
 
 // Authentication routes
