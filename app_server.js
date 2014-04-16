@@ -56,7 +56,8 @@ app.get('/', function(request, response){
         if (request.session.passport.user){
         app.locals.user = request.session.passport.user;
         };
-        Schemas.Post.find({}, null, {sort: {date -1}}, function(err, posts){
+        Schemas.Post.find(function(err, posts){
+        posts = posts.sort('-date');
             if (err) return console.error.bind(console, "List All error:");
             if (posts != []) {
                 response.render('post', {posts:posts}); 
