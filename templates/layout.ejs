@@ -10,32 +10,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Whorton's Very Basic Blogging App</title>
 </head>
+
 <body>
+
 <div id="logo"></div>
 <div id="title area"></div>
 
 <nav>
-<button id="addNewPost">Add New Post</button>
+
 <div id="login">
 <% include login.ejs %>
-<% if (locals.user) { %>
-    <button id="logout">Logout</button>
-<% } %>
 </div>
 </nav>
 
-
 <div id="posts">
-    <p><%= messages %></p>
+    <p><%= messages %></p> 
     <%- body %>
 </div>
 
+<!-- New Post modal; only shown when Add New Post is clicked -->
 <div id="form">
     <% include form.ejs %>
 </div>
-<script>
-
-</script>
 
 </body>
 </html>

@@ -1,76 +1,86 @@
+<!-- post.ejs - EJS template for displaying existing posts; includes script for buttons and display -->
 
+<!-- Show the "Add New Post" button if a user is logged in -->
+<% if (locals.user) { %>
+<button id="addNewPost">Add New Post</button>
+<% } %>
 
-        
-        <% posts.forEach(function(post, i){ %>
-            <article id="<%=post._id%>" class="post">
-                <header>
-                    <h1><%= post.title %></h1>
-                    <h2>Written by <span class="author"><%= post.username %></span> on <time><%= post.date %></time>.<h2>
-                </header>
-                
-                <p><%=post.body%></p>
-                
-                <div class="buttonRow">
-                    <button class="deletePostBtn" type="button">Delete</button>
-                    <button class="editPostBtn" type="button">Edit</button>
-                </div>
-                
-            </article>
-             
+<!-- Loop through posts array and create article for each item -->        
+<% posts.forEach(function(post, i){ %>
+    <article id="<%=post._id%>" class="post">
+        <header>
+            <h1><%= post.title %></h1>
+            <h2>Written by <span class="author"><%= post.username %></span> on <time><%= post.date %></time>.<h2>
+        </header>
+        <div class="postContent">
+            <p><%=post.body%></p>
+            <!-- Don't show edit/delete buttons unless the user is the author -->
+            <% if (post.username == locals.user.username) { %>
+            <div class="buttonRow">
+                <button class="deletePostBtn" type="button">Delete</button>
+                <button class="editPostBtn" type="button">Edit</button>
+            </div>
+            <% } %>
+        </div>
+    </article>
+<% }); %>        
 
-        <% }); %>        
+       
+<script>
 
-        
-        <script>
-        /*$("#accordion").accordion({ 
-            header: "header",
-            active: "false",
-            collapsible: "true"
-        });*/
-        // JavaScript to provide Edit/Delete button functionality
-        
-            $(".deletePostBtn").on('click', function(){
+//jQuery UI Accordion functionality
 
-                $.ajax('/', {
-                    data: { title: $(this).parent().siblings('header').find('h1').text(),
-                            username: $(this).parent().siblings('header').find('.author').text(),
-                            body: $(this).parent().siblings('p').text()
-                          },
-                    type: "DELETE",
-                    complete: function(){
-                            window.location.href = window.location.href;
-                        }
-                        
-                });
-            });
+$(".post").accordion({ 
+    header: "header",
+    active: "false",
+    collapsible: "true"
+});
+
+// JavaScript to provide Edit/Delete button functionality
+
+$(".deletePostBtn").on('click', function(){
+
+    $.ajax('/', {
+        data: { title: $(this).parents('.postContent').siblings('header').find('h1').text(),
+                username: $(this).parents('.postContent').siblings('header').find('.author').text(),
+                body: $(this).parent().siblings('p').text()
+              },
+        type: "DELETE",
+        complete: function(){
+                window.location.href = window.location.href;
+            }
             
-            $(".editPostBtn").click(function(){
-                
-                //Fill new post form fields with values from post
-                $("#postForm").dialog('open');
-                $("#titleField").val($(this).parent().siblings('header').find('h1').text());
-                $("#postField").val($(this).parent().siblings('p').text());
-                $("#postID").val($(this).parents('article').attr('id'));
-                //Change submit button to use Ajax method instead of default action
-                
-                $("#postButton").on('click', function( e ){
-                    e.preventDefault();
-                    $.ajax('/', {
-                        data: { _id: $("#postID").val(),
-                                title: $("#titleField").val(), 
-                                body: $("#postField").val()
-                            },
-                        type: "PUT",
-                        success: function(){
-                            window.location.href = window.location.href;
-                        },
-                        error: function(err, errType, errMsg){
-                            alert(errMsg);
-                        }
-                    });
-                });                
-            });
-        
-        </script>
+    });
+});
+
+$(".editPostBtn").click(function(){
+    
+    //Fill new post form fields with values from post
+    $("#postForm").dialog('open');
+    $("#titleField").val($(this).parents('.postContent').siblings('header').find('h1').text());
+    $("#postField").val($(this).parent().siblings('p').text());
+    $("#postID").val($(this).parents('article').attr('id'));
+    
+    //Change submit button to use Ajax method instead of default action
+    
+    $("#postButton").on('click', function( e ){
+        e.preventDefault();
+        $.ajax('/', {
+            data: { _id: $("#postID").val(),
+                    title: $("#titleField").val(), 
+                    body: $("#postField").val()
+                },
+            type: "PUT",
+            success: function(){
+                window.location.href = window.location.href;
+            },
+            error: function(err, errType, errMsg){
+                alert(errMsg);
+            }
+        });
+    });                
+});
+
+</script>
 
 
