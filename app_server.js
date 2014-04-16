@@ -123,7 +123,7 @@ app.post('/newUser', function(request, response){
                     username: request.body.data.username,
                     password: request.body.data.password
     });
-    Schemas.user.create( newUser, function(err){
+    Schemas.User.create( newUser, function(err){
             if (err) return console.log(err);
     });
     response.redirect('/');    
