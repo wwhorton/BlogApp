@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Chunk";
+  src: url('../fonts/chunkfive-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Cyntho";
+  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.ttf') format('truetype');
+}
+
+/* line 61, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 112.5%;
+}
+
+/* line 64, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 18px;
+  line-height: 1.66667em;
+}
+
+/* line 20, ../sass/style.sass */
+html {
+  background: white;
+}
+
+/* line 23, ../sass/style.sass */
+body {
+  width: 1000px;
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 28, ../sass/style.sass */
+header {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c9478), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #6c9478, #ffffff);
+  background: -moz-linear-gradient(top, #6c9478, #ffffff);
+  background: -o-linear-gradient(top, #6c9478, #ffffff);
+  background: linear-gradient(top, #6c9478, #ffffff);
+  position: fixed;
+  height: 160px;
+  width: 1000px;
+  z-index: 10;
+}
+/* line 35, ../sass/style.sass */
+header h1 {
+  font-family: "Chunk", arial;
+  text-transform: uppercase;
+  font-size: 6.66667em;
+  line-height: 1.25em;
+  letter-spacing: 30px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  padding-left: 0.125em;
+}
+
+/* line 43, ../sass/style.sass */
+#wrapper {
+  overflow: hidden;
+}
+
+/* line 48, ../sass/style.sass */
+nav ul {
+  list-style-type: none;
+  margin-left: 8.47458%;
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  position: fixed;
+  top: 129px;
+  left: 0px;
+}
+/* line 56, ../sass/style.sass */
+nav li {
+  text-align: center;
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 60, ../sass/style.sass */
+nav li a {
+  text-decoration: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-family: "Chunk";
+  color: black;
+  background: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #53ad6e), color-stop(100%, #cce7d4));
+  background: -webkit-radial-gradient(center, #53ad6e, #cce7d4);
+  background: -moz-radial-gradient(center, #53ad6e, #cce7d4);
+  background: -o-radial-gradient(center, #53ad6e, #cce7d4);
+  background: radial-gradient(center, #53ad6e, #cce7d4);
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* line 72, ../sass/style.sass */
+article {
+  min-height: 650px;
+  padding-left: 8.47458%;
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+
+/* line 77, ../sass/style.sass */
+p {
+  background-color: rgba(173, 155, 83, 0.4);
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  margin-top: 1.66667em;
+  padding-top: 1.66667em;
+  padding-bottom: 1.66667em;
+  margin-bottom: 1.66667em;
+  padding-left: 3.38983%;
+  padding-right: 3.38983%;
+  font-family: "Cyntho";
+}
