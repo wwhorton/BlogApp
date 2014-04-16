@@ -75,9 +75,8 @@ app.post('/', passport.authenticate('session', flashOptions), function(request, 
     Schemas.Post.create( newPost, function(err){
         if (err) return console.log("Problem saving.");
     });
-    response.end();      
+    response.redirect('/');      
 });
-
 
 // Edit and update existing post
 var flashOptions = { failureFlash: "You must be logged in to edit a post." };
@@ -112,8 +111,6 @@ app.post('/login', passport.authenticate('local', {
                                                     failureFlash: true
                                                   })
 );
-
-
 
 app.get('/logout', function(request, response){
     request.session.destroy();
