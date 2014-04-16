@@ -108,7 +108,7 @@ app.delete('/', passport.authenticate('session', flashOptions), function(request
     if(request.body.username == app.locals.user.username){
         thisPost.remove(thisPost, function(error){
             if (error) console.log("Could not delete post.");
-            response.end(error);
+            response.end(alert(error));
         });
     } else {
         response.status(401);
