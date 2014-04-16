@@ -59,7 +59,7 @@ $(".editPostBtn").click(function(){
     //Fill new post form fields with values from post
     $("#postForm").dialog('open');
     $("#titleField").val($(this).parents('.postContent').siblings('header').find('h1').text());
-    $("#postField").val($(this).parent().siblings('p').text());
+    $("#postField").val($(this).parent().siblings('pre').text());
     $("#postID").val($(this).parents('article').attr('id'));
     
     //Change submit button to use Ajax method instead of default action
