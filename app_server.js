@@ -49,33 +49,33 @@ passport.use(new LocalStrategy(
   }
 ));
 
-
-
 // Main page; display all posts
 app.get('/', function(request, response){
-        if (request.session.passport.user){
+    if (request.session.passport.user){
         app.locals.user = request.session.passport.user;
-        };
-        Schemas.Post.find().sort(' -date ').exec(function(err, posts){
-            if (err) return console.error.bind(console, "List All error:");
-            if (posts != []) {
-                response.render('post', {posts:posts}); 
-            } else {
-                console.log("Query results empty.");
-            }
-        });
-
+    };
+    Schemas.Post.find().sort(' -date ').exec(function(err, posts){
+        if (err) return console.log(err);
+        if (posts != []) {
+            response.render('post', {posts:posts}); 
+        } else {
+            console.log("Query results empty.");
+        }
+    });
 });
 
 // Create new post
 var flashOptions = { failureFlash: "You must be logged in to post." };
 app.post('/', passport.authenticate('session', flashOptions), function(request, response){
-    var newPost = new Schemas.Post({title: request.body.title, username: request.session.passport.user.username, body: request.body.body});
-    newPost.save(function(err, newPost, updated){
+    var newPost = {
+        title: request.body.title, 
+        username: request.session.passport.user.username, 
+        body: request.body.body
+    };
+    Schemas.Post.create( newPost, function(err){
         if (err) return console.log("Problem saving.");
-
-        });
-    response.redirect('/');      
+    });
+    //response.end();      
 });
 
 
@@ -89,17 +89,15 @@ app.put('/', passport.authenticate('session', flashOptions), function(request, r
         date: Date.now()
     };
     
-    Schemas.Post.findByIdAndUpdate( request.body._id, updateValues, function(error){
-        (error) ? console.log("Post updated.") : console.log("Update failed.");
+    Schemas.Post.findByIdAndUpdate( request.body._id, updateValues, function(doc){
         response.end();
     });
 });
 
-
-
 // Delete post
 var flashOptions = {    successFlash: "Authenticated successfully.",
-                        failureFlash: "You must be logged in to delete a post." };
+                        failureFlash: "You must be logged in to delete a post."
+                   };
 app.delete('/', passport.authenticate('session', flashOptions), function(request, response){ 
     Schemas.Post.findOneAndRemove({_id: request.body._id}, function(doc){
         response.end();
@@ -133,7 +131,6 @@ app.post('/newUser', function(request, response){
                 response.redirect('/');
         });
 });
-
 
 app.listen(process.env.PORT);
 
