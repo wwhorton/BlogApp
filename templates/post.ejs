@@ -47,9 +47,11 @@ $(".deletePostBtn").on('click', function(){
                 body: $(this).parent().siblings('p').text()
               },
         type: "DELETE",
-        complete: function(){
-                window.location.href = window.location.href;
-            }
+        success: function(){
+            window.location.href = window.location.href;
+        },
+        error: function(e, type, msg){
+            alert(type + " : " + msg);
             
     });
 });
