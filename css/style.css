@@ -59,20 +59,19 @@ body:after {
 /* line 28, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
-  padding-left: 0.125em;
 }
 
-/* line 32, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
 }
 
-/* line 37, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 nav button {
-  height: 2em;
+  height: 60px;
 }
 
-/* line 41, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
