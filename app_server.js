@@ -75,7 +75,7 @@ app.post('/', passport.authenticate('session', flashOptions), function(request, 
     Schemas.Post.create( newPost, function(err){
         if (err) return console.log("Problem saving.");
     });
-    //response.end();      
+    response.end();      
 });
 
 
