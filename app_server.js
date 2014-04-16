@@ -82,20 +82,17 @@ app.post('/', passport.authenticate('session', flashOptions), function(request, 
 // Edit and update existing post
 var flashOptions = { failureFlash: "You must be logged in to edit a post." };
 app.put('/', passport.authenticate('session', flashOptions), function(request, response){
-    Schemas.Post.findOne({_id: request.body._id}, function(error, doc){
-        if(doc.username == request.session.passport.user.username){
-            console.log(doc);
-            doc.title = request.body.title;
-            doc.body = request.body.body;
-            doc.date = Date.now();
-            doc.save();
-            console.log(doc + " saved.");
-            if(error) console.log(error);        
-        } else {
-        response.status(401);
-        }   
+    
+    var updateValues = {
+        title: request.body.title,
+        body: request.body.body,
+        date: Date.now()
+    };
+    
+    Schemas.Post.findByIdAndUpdate( request.body._id, updateValues, function(error){
+        (error) ? console.log("Post updated.") : console.log("Update failed.");
+        response.end();
     });
-    response.end();
 });
 
 
@@ -105,7 +102,6 @@ var flashOptions = {    successFlash: "Authenticated successfully.",
                         failureFlash: "You must be logged in to delete a post." };
 app.delete('/', passport.authenticate('session', flashOptions), function(request, response){ 
     Schemas.Post.findOneAndRemove({_id: request.body._id}, function(doc){
-        (doc == null) ? console.log(doc + " was deleted.") : console.log("Document not found.");
         response.end();
     });
 });
