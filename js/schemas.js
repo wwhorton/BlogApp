@@ -9,7 +9,9 @@ var postSchema = mongoose.Schema({
 });
 
 var userSchema = mongoose.Schema({
-    username: String,
+    username: { type: String,
+                unique: true
+              },
     password: String
 });
 

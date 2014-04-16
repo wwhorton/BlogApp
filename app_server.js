@@ -119,14 +119,14 @@ app.get('/logout', function(request, response){
 });
 
 app.post('/newUser', function(request, response){
-    var newUser = new Schemas.User({username: request.body.data.username, password: request.body.data.password});
-    //Check if username is taken; if so, include an error msg in the flash, if not, save. Redirect in either cases.
-    
-    newUser.save(function(err, newUser){
-            console.log("Saving new user.");
-            if (err) return console.error.bind(console, "Problem saving.");
-                response.redirect('/');
-        });
+    var newUser = {
+                    username: request.body.data.username,
+                    password: request.body.data.password
+    });
+    Schemas.user.create( newUser, function(err){
+            if (err) return console.log(err);
+    });
+    response.redirect('/');    
 });
 
 app.listen(process.env.PORT);
