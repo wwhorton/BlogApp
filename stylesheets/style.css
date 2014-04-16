@@ -70,8 +70,12 @@ h1 {
 nav button {
   height: 60px;
 }
+/* line 38, ../sass/style.sass */
+nav input :submit {
+  height: 60px;
+}
 
-/* line 40, ../sass/style.sass */
+/* line 41, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
