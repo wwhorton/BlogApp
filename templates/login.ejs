@@ -36,8 +36,13 @@ $("#createNewUser").on('click', function(e){
             password: $("#password").val()
             },
         success: function(){
-            window.location.replace("http://murmuring-spire-3618.herokuapp.com/");
-        }    
+            window.location.href = window.location.href;
+            },
+        error: function(e, type, msg){
+            alert("Username is already taken.");
+            console.log("Create User error: " e );
+            window.location.href = window.location.href;
+            }
     });
 });
 
