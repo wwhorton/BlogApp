@@ -4,7 +4,6 @@
 @import "susy"
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
-+font-face("Cyntho", font-files("cynthoslabpro-regular-webfont-webfont.ttf"))
 
 //Vertical rhythm setup
 $base-font-size: 16px
@@ -32,7 +31,6 @@ body
     padding-left: 0
     padding-right: 0
     
-
 #backgroundDiv
     +background(image-url("/img/lorem_white_336x280.gif"))
     +background-size(100%)
@@ -41,14 +39,13 @@ body
     
 #wrapper
     overflow: hidden
-    font-family: "Cyntho", arial
+    font-family: arial
     background-color: #fff
-    +single-box-shadow
     +rhythm(.5,.5,.5,.5)
     padding-left: .5rem
     padding-right: .5rem
-
-  
+    //+single-box-shadow
+    
 h1
     font-family: "Chunk", arial
 
@@ -76,7 +73,6 @@ input
 #loginFields
     +span-columns(4)
 
-    
 label
     +span-columns(4)
 
@@ -91,12 +87,11 @@ header
 
     
     h2
-        +rhythm(0,.25,.25,0)
-        
+        +rhythm(.25,.25,0)
+        margin-left: .25rem
 
 .postContent
     +rhythm(.5,.5,.5,.5)
-    
         
 p
     +background(rgba(173, 155, 83, .4))
