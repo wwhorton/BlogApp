@@ -125,7 +125,7 @@ header {
   -ms-border-radius: 4px 4px 0px 0px;
   -o-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
-  background: linear-gradient(top, #53ad6e, #295637);
+  background-color: linear-gradient(top, #53ad6e, #295637);
 }
 /* line 66, ../sass/style.sass */
 header h2 {
