@@ -125,13 +125,11 @@ header {
   -o-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
   background-color: #53ad6e;
-  margin-top: 0em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
-  margin-bottom: 0em;
 }
 
-/* line 65, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
