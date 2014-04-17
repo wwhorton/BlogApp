@@ -39,12 +39,15 @@ body
 h1
     font-family: "Chunk", arial
 
-nav  
-  
-    button
-        height: 3.75em
-        +border-radius(4px)
-        background-color: $color
+nav
+    display: block
+
+button
+    height: 2rem
+    +border-radius(4px)
+    background-color: $color
+    display: inline-block
+    +span-columns(2,4)
         
 input
     +span-columns(4,4)
@@ -56,10 +59,6 @@ input
 label
     display: block
     
-button
-    display: inline-block
-    +span-columns(2,4)
-        
 header
     +border-radius(4px 4px 0px 0px)
     background-color: $color
