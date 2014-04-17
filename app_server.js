@@ -108,7 +108,7 @@ app.delete('/', passport.authenticate('session', flashOptions), function(request
 app.post('/login', function(request, response){
     passport.authenticate('local', { failureFlash: true });
     response.end();
-);
+});
 
 app.get('/logout', function(request, response){
     request.session.destroy();
