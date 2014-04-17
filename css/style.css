@@ -63,7 +63,7 @@ nav {
   float: left;
   margin-right: 5.26316%;
   display: inline;
-  margin-bottom: 0.75em;
+  margin: 0.75em;
 }
 
 /* line 43, ../sass/style.sass */
@@ -130,13 +130,14 @@ header {
   background: -moz-linear-gradient(top, #53ad6e, #295637);
   background: -o-linear-gradient(top, #53ad6e, #295637);
   background: linear-gradient(top, #53ad6e, #295637);
+  margin-top: -0.3em;
 }
 /* line 66, ../sass/style.sass */
 header h2 {
   margin-top: 0em;
   padding-top: 0.375em;
   padding-bottom: 0.375em;
-  margin-bottom: -0.3em;
+  margin-bottom: 0em;
 }
 
 /* line 68, ../sass/style.sass */
