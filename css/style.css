@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Chunk";
-  src: url('/stylesheets/fonts/chunkfive-webfont.ttf') format('truetype');
+  src: url('../fonts/chunkfive-webfont.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Cyntho";
-  src: url('/stylesheets/fonts/cynthoslabpro-regular-webfont-webfont.ttf') format('truetype');
+  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.ttf') format('truetype');
 }
 
 /* line 61, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
