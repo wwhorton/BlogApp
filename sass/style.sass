@@ -12,19 +12,15 @@ $base-line-height: 24px
 
 
 //Grid setup
-//$media-layout: 480px 4
-//$media-layout: 768px 8
-//$media-layout: 980px 16
+$media-layout: 480px 4
+$media-layout: 768px 8
+$media-layout: 980px 16
 
 +establish-baseline
-
-$page-width: 960px
-$total-columns: 4
 
 $color: rgb(83, 173, 110)
   
 body
-    max-width: $page-width
     +container
     +susy-grid-background
     
@@ -43,16 +39,20 @@ nav
         background-color: $color
         
 input
-    +span-columns(3)
+    +span-columns(4)
+
+#loginFields
+    clear: both
     
 #loginButtons
+    clear: both
     button
-        +span-columns(1)
+        +span-columns(2)
         
 header
     +border-radius(4px 4px 0px 0px)
     background-color: $color
-    +rhythm(0, 1, 1, 0)
+    +rhythm(0, .5, .5, 0)
     
 p
     background-color: rgba(173, 155, 83, .4)
