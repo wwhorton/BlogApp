@@ -30,7 +30,8 @@ body
     +container
     //+susy-grid-background
     +background(image-url("/img/lorem_white_336x280.gif"))
-    +background-size(cover)
+    //+background-size(cover)
+    +single-box-shadow
 
     
 #wrapper
@@ -69,9 +70,7 @@ label
 #posts
     +span-columns(4)
 
-.post
-    +single-box-shadow
-    
+   
 header
     +border-radius(4px 4px 0px 0px)
     +background(linear-gradient(top, $color, shade($color, 50%)))
