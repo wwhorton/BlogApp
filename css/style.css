@@ -43,6 +43,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: fixed;
 }
 /* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body:after {
@@ -51,18 +52,19 @@ body:after {
   clear: both;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
+  background-color: white;
 }
 
-/* line 39, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 42, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -72,7 +74,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 47, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -92,7 +94,7 @@ button:last-child {
   margin-right: 0;
 }
 
-/* line 54, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -100,7 +102,7 @@ input {
   display: inline;
 }
 
-/* line 57, ../sass/style.sass */
+/* line 60, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -108,7 +110,7 @@ input {
   display: inline;
 }
 
-/* line 60, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 #loginButtons {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -116,7 +118,7 @@ input {
   margin-bottom: 0.75em;
 }
 
-/* line 63, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -124,7 +126,7 @@ label {
   display: inline;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -132,14 +134,14 @@ label {
   display: inline;
 }
 
-/* line 69, ../sass/style.sass */
+/* line 72, ../sass/style.sass */
 article {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 72, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -152,8 +154,9 @@ header {
   background: -o-linear-gradient(top, #a9d6b7, #546b5b);
   background: linear-gradient(top, #a9d6b7, #546b5b);
   margin-top: -0.3em;
+  font-family: arial;
 }
-/* line 76, ../sass/style.sass */
+/* line 81, ../sass/style.sass */
 header h2 {
   margin-top: 0em;
   padding-top: 0.375em;
@@ -161,15 +164,15 @@ header h2 {
   margin-bottom: 0em;
 }
 
-/* line 79, ../sass/style.sass */
+/* line 85, ../sass/style.sass */
 .postContent {
-  margin-top: 0em;
-  padding-top: 0.375em;
-  padding-bottom: 0.375em;
-  margin-bottom: 0.75em;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-/* line 83, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -179,7 +182,7 @@ p {
   display: inline;
 }
 
-/* line 88, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 pre {
   font-family: arial;
 }

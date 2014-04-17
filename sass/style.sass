@@ -31,10 +31,13 @@ body
     //+susy-grid-background
     +background(image-url("/img/lorem_white_336x280.gif"))
     +background-size(cover)
+    position: fixed
     
 #wrapper
     overflow: hidden
     font-family: "Cyntho", arial
+    background-color: #fff
+
   
 h1
     font-family: "Chunk", arial
@@ -66,18 +69,21 @@ label
 #posts
     +span-columns(4)
 
-article
+.post
     +single-box-shadow
     
 header
     +border-radius(4px 4px 0px 0px)
     +background(linear-gradient(top, $color, shade($color, 50%)))
     margin-top: rhythm(-.2, 16px)
+    font-family: arial
+    
     h2
         +rhythm(0,.25,.25,0)
+        
 
 .postContent
-    +rhythm(0,.25,.25,.5)
+    +rhythm(1,1,1,1)
     
         
 p
