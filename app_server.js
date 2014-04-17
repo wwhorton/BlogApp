@@ -109,7 +109,7 @@ app.post('/login', function(request, response){
     passport.authenticate('local', { successRedirect: '/',
                                      failureRedirect: '/',
                                      failureFlash: true });
-    response.end();
+
 });
 
 app.get('/logout', function(request, response){
