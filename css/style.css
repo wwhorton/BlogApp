@@ -83,7 +83,7 @@ nav {
 }
 
 /* line 58, ../sass/style.sass */
-button {
+.button {
   height: 2rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -99,7 +99,7 @@ button {
   margin-bottom: 0.75em;
 }
 /* line 184, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
-button:last-child {
+.button:last-child {
   float: right;
   margin-right: 0;
 }
@@ -117,14 +117,6 @@ input textarea {
 }
 
 /* line 73, ../sass/style.sass */
-#loginFields {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-
-/* line 76, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -132,7 +124,7 @@ label {
   display: inline;
 }
 
-/* line 79, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -140,7 +132,7 @@ label {
   display: inline;
 }
 
-/* line 82, ../sass/style.sass */
+/* line 79, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -154,7 +146,7 @@ header {
   background: linear-gradient(top, #a9d6b7, #546b5b);
   font-family: arial;
 }
-/* line 87, ../sass/style.sass */
+/* line 84, ../sass/style.sass */
 header h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -163,7 +155,7 @@ header h2 {
   margin-left: 0.25rem;
 }
 
-/* line 92, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 .postContent {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -171,7 +163,7 @@ header h2 {
   margin-bottom: 0.75em;
 }
 
-/* line 95, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -181,7 +173,7 @@ p {
   display: inline;
 }
 
-/* line 100, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 pre {
   font-family: arial;
 }

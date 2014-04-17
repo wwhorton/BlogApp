@@ -17,16 +17,15 @@ $("#logout").click(function(e){
 
 <!-- Only show the login fields and buttons if there isn't a user object currently stored -->
 <% if (!locals.user) { %> 
-<div id="loginBlock">
-    <div id="loginFields">
-    <label for="username">Username:</label><input type="text" name="username" id="username" required />
-    <label for="password">Password:</label><input type="text" name="password" id="password" required />
-    </div>
-    <div id="loginButtons">
-    <button id="loginUser">Login</button>
-    <button id="createNewUser">Register</button>
-    </div>
-</div>
+
+    <form action="http://murmuring-spire-3618.herokuapp.com/login" name="login" id="loginForm" method="post" >
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required />
+    <label for="password">Password:</label>
+    <input type="text" name="password" id="password" required />
+    <input type="submit" value="Login" class="button"/>
+    <button id="createNewUser" class="button">Create New User</button>
+    </form>
     
 <script>
 
@@ -43,26 +42,7 @@ $("#createNewUser").on('click', function(e){
             },
         error: function(e, type, msg){
             alert("Username is already taken.");
-            console.log("Create User error: " + e );
-            window.location.href = window.location.href;
-            }
-    });
-});
-
-// Create button listener
-$("#loginUser").on('click', function(e){
-    e.preventDefault();
-    $.post("http://murmuring-spire-3618.herokuapp.com/login", {
-        data: {
-            username: $("#username").val(),
-            password: $("#password").val()
-            },
-        success: function(){
-            window.location.href = window.location.href;
-            },
-        error: function(e, type, msg){
-            alert("Invalid name or password.");
-            console.log("Login User error: " + e );
+            console.log("Create User error: " e );
             window.location.href = window.location.href;
             }
     });
