@@ -30,3 +30,97 @@
 2014-04-16 19:01:36    remove stylesheets/style.css 
 2014-04-16 19:01:37    create stylesheets/screen.css 
 2014-04-16 19:01:38    create stylesheets/style.css 
+2014-04-17 09:08:40 overwrite stylesheets/style.css 
+2014-04-17 09:12:40 overwrite stylesheets/style.css 
+2014-04-17 09:50:04     error sass/style.sass (Line 26: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 09:50:04 overwrite stylesheets/style.css 
+2014-04-17 10:36:36     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:36:36 overwrite stylesheets/style.css 
+2014-04-17 10:37:19     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:37:19 overwrite stylesheets/style.css 
+2014-04-17 10:37:41     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:37:41 overwrite stylesheets/style.css 
+2014-04-17 10:38:44     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:38:44 identical stylesheets/style.css 
+2014-04-17 10:39:44     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:39:44 identical stylesheets/style.css 
+2014-04-17 10:40:51    remove .sass-cache/ 
+2014-04-17 10:40:51    remove stylesheets/screen.css 
+2014-04-17 10:40:51    remove stylesheets/style.css 
+2014-04-17 10:40:52    create stylesheets/screen.css 
+2014-04-17 10:40:52     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:40:52    create stylesheets/style.css 
+2014-04-17 10:40:54     error sass/style.sass (Line 24: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 3 spaces.)
+2014-04-17 10:40:54 overwrite stylesheets/style.css 
+2014-04-17 10:42:12     error sass/style.sass (Line 36: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.)
+2014-04-17 10:42:12 overwrite stylesheets/style.css 
+2014-04-17 10:42:36     error sass/style.sass (Line 5: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:42:36 overwrite stylesheets/style.css 
+2014-04-17 10:43:21    remove .sass-cache/ 
+2014-04-17 10:43:21    remove stylesheets/screen.css 
+2014-04-17 10:43:21    remove stylesheets/style.css 
+2014-04-17 10:43:22    create stylesheets/screen.css 
+2014-04-17 10:43:22     error sass/style.sass (Line 5: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:43:22    create stylesheets/style.css 
+2014-04-17 10:43:24     error sass/style.sass (Line 5: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:43:24 overwrite stylesheets/style.css 
+2014-04-17 10:44:27     error sass/style.sass (Line 5: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:44:27 overwrite stylesheets/style.css 
+2014-04-17 10:44:37    remove .sass-cache/ 
+2014-04-17 10:44:37    remove stylesheets/screen.css 
+2014-04-17 10:44:37    remove stylesheets/style.css 
+2014-04-17 10:44:38    create stylesheets/screen.css 
+2014-04-17 10:44:38     error sass/style.sass (Line 5: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:44:38    create stylesheets/style.css 
+2014-04-17 10:44:40     error sass/style.sass (Line 5: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:44:40 overwrite stylesheets/style.css 
+2014-04-17 10:45:43     error sass/style.sass (Line 6: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:45:43 overwrite stylesheets/style.css 
+2014-04-17 10:45:59    remove .sass-cache/ 
+2014-04-17 10:45:59    remove stylesheets/screen.css 
+2014-04-17 10:45:59    remove stylesheets/style.css 
+2014-04-17 10:46:00    create stylesheets/screen.css 
+2014-04-17 10:46:00     error sass/style.sass (Line 6: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:46:00    create stylesheets/style.css 
+2014-04-17 10:46:02     error sass/style.sass (Line 6: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:46:02 overwrite stylesheets/style.css 
+2014-04-17 10:49:16    remove .sass-cache/ 
+2014-04-17 10:49:16    remove stylesheets/screen.css 
+2014-04-17 10:49:16    remove stylesheets/style.css 
+2014-04-17 10:49:16    create stylesheets/screen.css 
+2014-04-17 10:49:16     error sass/style.sass (Line 6: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:49:16    create stylesheets/style.css 
+2014-04-17 10:49:18     error sass/style.sass (Line 6: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:49:18 overwrite stylesheets/style.css 
+2014-04-17 10:49:52     error sass/style.sass (Line 6: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:49:52 overwrite stylesheets/style.css 
+2014-04-17 10:50:19     error sass/style.sass (Line 14: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:50:19 overwrite stylesheets/style.css 
+2014-04-17 10:50:56    remove .sass-cache/ 
+2014-04-17 10:50:56    remove stylesheets/screen.css 
+2014-04-17 10:50:56    remove stylesheets/style.css 
+2014-04-17 10:50:56    create stylesheets/screen.css 
+2014-04-17 10:50:56     error sass/style.sass (Line 14: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:50:56    create stylesheets/style.css 
+2014-04-17 10:50:58     error sass/style.sass (Line 14: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:50:58 overwrite stylesheets/style.css 
+2014-04-17 10:51:18     error sass/style.sass (Line 14: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:51:18 overwrite stylesheets/style.css 
+2014-04-17 10:55:00     error sass/style.sass (Line 14: Invalid CSS after "...ase-font-size) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-17 10:55:00 identical stylesheets/style.css 
+2014-04-17 10:56:58     error sass/style.sass (Line 19: Invalid CSS after "...x-width: 768px)": expected media query list, was "{")
+2014-04-17 10:56:58 overwrite stylesheets/style.css 
+2014-04-17 10:57:20    remove .sass-cache/ 
+2014-04-17 10:57:20    remove stylesheets/screen.css 
+2014-04-17 10:57:20    remove stylesheets/style.css 
+2014-04-17 10:57:20    create stylesheets/screen.css 
+2014-04-17 10:57:20     error sass/style.sass (Line 19: Invalid CSS after "...x-width: 768px)": expected media query list, was "{")
+2014-04-17 10:57:20    create stylesheets/style.css 
+2014-04-17 10:57:22     error sass/style.sass (Line 19: Invalid CSS after "...x-width: 768px)": expected media query list, was "{")
+2014-04-17 10:57:22 overwrite stylesheets/style.css 
+2014-04-17 11:00:00 overwrite stylesheets/style.css 
+2014-04-17 11:00:08    remove .sass-cache/ 
+2014-04-17 11:00:08    remove stylesheets/screen.css 
+2014-04-17 11:00:08    remove stylesheets/style.css 
+2014-04-17 11:00:08    create stylesheets/screen.css 
+2014-04-17 11:00:10    create stylesheets/style.css 

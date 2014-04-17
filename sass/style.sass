@@ -1,44 +1,52 @@
 @import "compass"
-@import "compass/layout"
+@import "compass/typography/vertical_rhythm"
 @import "susy"
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
 +font-face("Cyntho", font-files("cynthoslabpro-regular-webfont-webfont.ttf"))
 
-$base-font-size: 18px
-$base-line-height: 30px
+//Vertical rhythm setup
+$base-font-size: 16px
+$base-line-height: 24px
++establish-baseline
 
-$total-columns: 12
-$column-width: 4em
-$gutter-width: 1em
-$grid-padding: $gutter-width
+
+//Grid setup
+$mobile: 4
+$tablet: 8
+$desktop: 16
+
+@media only screen and (max-width: 768px)
+    +layout($tablet)
+
+
+@media only screen and (min-width: 980px)
+    +layout($desktop)
+
 
 +establish-baseline
 
 $color: rgb(83, 173, 110)
-
-html
-  background: #fff
   
 body
-  width: 960px
-  +container
-  +susy-grid-background
+    //width: 960px
+    +container
+    //+susy-grid-background
   
-h1
-  font-family: "Chunk", arial
     
 #wrapper
-  overflow: hidden
+    overflow: hidden
   
+h1
+    font-family: "Chunk", arial
+
 nav  
   
-  button
-    height: 60px
-  input :submit
-    height: 60px
+    button
+        height: 3.75em
+
     
 p
-  background-color: rgba(173, 155, 83, .4)
-  font-family: "Cyntho"
+    background-color: rgba(173, 155, 83, .4)
+    font-family: "Cyntho"
  
