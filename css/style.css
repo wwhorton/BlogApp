@@ -71,9 +71,9 @@ nav button {
 
 /* line 41, ../sass/style.sass */
 input {
-  width: 32.20339%;
+  width: 100%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 5.26316%;
   display: inline;
   display: block;
 }
@@ -91,9 +91,9 @@ label {
 /* line 51, ../sass/style.sass */
 button {
   display: inline-block;
-  width: 15.25424%;
+  width: 47.36842%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 5.26316%;
   display: inline;
 }
 

@@ -231,3 +231,11 @@
 2014-04-17 13:13:10    remove css/style.css 
 2014-04-17 13:13:10    create css/screen.css 
 2014-04-17 13:13:11    create css/style.css 
+2014-04-17 13:15:03     error sass/style.sass (Line 30: Invalid CSS after "100%": expected expression (e.g. 1px, bold), was ";")
+2014-04-17 13:15:03 overwrite css/style.css 
+2014-04-17 13:16:43 overwrite css/style.css 
+2014-04-17 13:16:44    remove .sass-cache/ 
+2014-04-17 13:16:44    remove css/screen.css 
+2014-04-17 13:16:44    remove css/style.css 
+2014-04-17 13:16:44    create css/screen.css 
+2014-04-17 13:16:46    create css/style.css 
