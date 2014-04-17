@@ -136,3 +136,17 @@
 2014-04-17 11:21:37    remove css/style.css 
 2014-04-17 11:21:38    create css/screen.css 
 2014-04-17 11:21:39    create css/style.css 
+2014-04-17 11:30:16     error sass/style.sass (Line 36: Undefined mixin 'span'.)
+2014-04-17 11:30:16 overwrite css/style.css 
+2014-04-17 11:31:56 overwrite css/style.css 
+2014-04-17 11:36:15 overwrite css/style.css 
+2014-04-17 11:47:45     error sass/style.sass (Line 45: Undefined mixin 'span'.)
+2014-04-17 11:47:45 overwrite css/style.css 
+2014-04-17 11:48:04 overwrite css/style.css 
+2014-04-17 11:48:50 overwrite css/style.css 
+2014-04-17 11:48:59 identical css/style.css 
+2014-04-17 11:49:22    remove .sass-cache/ 
+2014-04-17 11:49:22    remove css/screen.css 
+2014-04-17 11:49:22    remove css/style.css 
+2014-04-17 11:49:22    create css/screen.css 
+2014-04-17 11:49:24    create css/style.css 

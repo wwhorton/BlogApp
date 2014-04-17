@@ -30,7 +30,7 @@ html {
   line-height: 1.5em;
 }
 
-/* line 31, ../sass/style.sass */
+/* line 23, ../sass/style.sass */
 body {
   *zoom: 1;
   max-width: 59em;
@@ -47,17 +47,22 @@ body:after {
   clear: both;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 26, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  font-family: "Cyntho", arial;
 }
 
-/* line 37, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 42, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 nav button {
   height: 3.75em;
   -webkit-border-radius: 4px;
@@ -68,7 +73,23 @@ nav button {
   background-color: #53ad6e;
 }
 
-/* line 47, ../sass/style.sass */
+/* line 41, ../sass/style.sass */
+input {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+
+/* line 45, ../sass/style.sass */
+#loginButtons button {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+
+/* line 48, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -76,9 +97,13 @@ header {
   -o-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
   background-color: #53ad6e;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 
-/* line 52, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";

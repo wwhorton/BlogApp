@@ -12,17 +12,9 @@ $base-line-height: 24px
 
 
 //Grid setup
-$mobile: 4
-$tablet: 8
-$desktop: 16
-
-@media only screen and (max-width: 768px)
-    +layout($tablet)
-
-
-@media only screen and (min-width: 980px)
-    +layout($desktop)
-
+$media-layout: 480px 4
+$media-layout: 768px 8
+$media-layout: 980px 16
 
 +establish-baseline
 
@@ -33,6 +25,8 @@ body
     
 #wrapper
     overflow: hidden
+    +span-columns(2)
+    font-family: "Cyntho", arial
   
 h1
     font-family: "Chunk", arial
@@ -44,10 +38,17 @@ nav
         +border-radius(4px)
         background-color: $color
         
+input
+    +span-columns(2)
+    
+#loginButtons
+    button
+        +span-columns(1)
+        
 header
     +border-radius(4px 4px 0px 0px)
     background-color: $color
-
+    +rhythm(1)
     
 p
     background-color: rgba(173, 155, 83, .4)

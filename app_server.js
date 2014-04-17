@@ -126,7 +126,7 @@ app.post('/newUser', function(request, response){
     Schemas.User.create( newUser, function(err){
             if (err) return console.log(err);
     });
-    response.redirect('/');    
+    response.end();    
 });
 
 app.listen(process.env.PORT);

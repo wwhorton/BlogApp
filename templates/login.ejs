@@ -17,13 +17,16 @@ $("#logout").click(function(e){
 
 <!-- Only show the login fields and buttons if there isn't a user object currently stored -->
 <% if (!locals.user) { %> 
-
-    <form action="http://murmuring-spire-3618.herokuapp.com/login" name="login" id="loginForm" method="post" >
+<div id="loginBlock">
+    <div id="loginFields">
     Username:<input type="text" name="username" id="username" required />
     Password:<input type="text" name="password" id="password" required />
-    <input type="submit" value="Login"/>
+    </div>
+    <div id="loginButtons">
+    <button id="loginUser">Login</button>
     <button id="createNewUser">Create New User</button>
-    </form>
+    </div>
+</div>
     
 <script>
 
@@ -41,6 +44,25 @@ $("#createNewUser").on('click', function(e){
         error: function(e, type, msg){
             alert("Username is already taken.");
             console.log("Create User error: " e );
+            window.location.href = window.location.href;
+            }
+    });
+});
+
+// Create button listener
+$("#loginUser").on('click', function(e){
+    e.preventDefault();
+    $.post("http://murmuring-spire-3618.herokuapp.com/login", {
+        data: {
+            username: $("#username").val(),
+            password: $("#password").val()
+            },
+        success: function(){
+            window.location.href = window.location.href;
+            },
+        error: function(e, type, msg){
+            alert("Invalid name or password.");
+            console.log("Login User error: " e );
             window.location.href = window.location.href;
             }
     });
