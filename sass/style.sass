@@ -29,10 +29,7 @@ $desktop: 16
 $color: rgb(83, 173, 110)
   
 body
-    //width: 960px
     +container
-    //+susy-grid-background
-  
     
 #wrapper
     overflow: hidden
@@ -44,6 +41,12 @@ nav
   
     button
         height: 3.75em
+        +border-radius(4px)
+        background-color: $color
+        
+header
+    +border-radius(4px 4px 0px 0px)
+    background-color: $color
 
     
 p
