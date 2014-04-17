@@ -154,12 +154,12 @@ header {
   background: linear-gradient(top, #a9d6b7, #546b5b);
   font-family: arial;
 }
-/* line 88, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 header h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
+  padding-bottom: 0.375em;
+  margin-bottom: 0.375em;
   margin-left: 0.25rem;
 }
 

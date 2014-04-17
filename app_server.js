@@ -110,7 +110,7 @@ app.post('/login', function(request, response){
                                      failureRedirect: '/',
                                      failureFlash: true });
     response.end();
-);
+});
 
 app.get('/logout', function(request, response){
     request.session.destroy();
