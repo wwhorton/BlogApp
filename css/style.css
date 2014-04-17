@@ -90,8 +90,13 @@ button {
   margin-right: 5.26316%;
   display: inline;
 }
+/* line 184, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+button:last-child {
+  float: right;
+  margin-right: 0;
+}
 
-/* line 51, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -99,7 +104,7 @@ input {
   display: inline;
 }
 
-/* line 54, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -107,7 +112,7 @@ input {
   display: inline;
 }
 
-/* line 57, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -115,7 +120,7 @@ label {
   display: inline;
 }
 
-/* line 60, ../sass/style.sass */
+/* line 61, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -123,7 +128,7 @@ label {
   display: inline;
 }
 
-/* line 63, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -133,7 +138,7 @@ header {
   background-color: #53ad6e;
 }
 
-/* line 67, ../sass/style.sass */
+/* line 68, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
