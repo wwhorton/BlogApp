@@ -30,12 +30,19 @@ html {
   line-height: 1.5em;
 }
 
-/* line 30, ../sass/style.sass */
+/* line 14, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 31, ../sass/style.sass */
 body {
   *zoom: 1;
-  max-width: 304px;
-  max-width: 19rem;
-  _width: 304px;
+  max-width: 320px;
+  max-width: 20rem;
+  _width: 320px;
   padding-left: 8px;
   padding-left: 0.5rem;
   padding-right: 8px;
@@ -50,18 +57,18 @@ body:after {
   clear: both;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
 }
 
-/* line 38, ../sass/style.sass */
+/* line 39, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 43, ../sass/style.sass */
+/* line 44, ../sass/style.sass */
 nav button {
   height: 3.75em;
   -webkit-border-radius: 4px;
@@ -72,7 +79,7 @@ nav button {
   background-color: #53ad6e;
 }
 
-/* line 48, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -81,17 +88,17 @@ input {
   display: block;
 }
 
-/* line 52, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 #loginFields {
   display: block;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 56, ../sass/style.sass */
 label {
   display: block;
 }
 
-/* line 58, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 button {
   display: inline-block;
   width: 47.36842%;
@@ -100,7 +107,7 @@ button {
   display: inline;
 }
 
-/* line 62, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -110,7 +117,7 @@ header {
   background-color: #53ad6e;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
