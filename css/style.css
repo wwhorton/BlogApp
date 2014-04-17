@@ -105,8 +105,12 @@ input {
   margin-right: 5.26316%;
   display: inline;
 }
-
 /* line 63, ../sass/style.sass */
+input textarea {
+  cols: 50;
+}
+
+/* line 66, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -114,7 +118,7 @@ input {
   display: inline;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 #loginButtons {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -122,7 +126,7 @@ input {
   margin-bottom: 0.75em;
 }
 
-/* line 69, ../sass/style.sass */
+/* line 72, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -130,7 +134,7 @@ label {
   display: inline;
 }
 
-/* line 72, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -138,7 +142,7 @@ label {
   display: inline;
 }
 
-/* line 75, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -155,7 +159,7 @@ header {
   margin-left: 0.75em;
   margin-right: 0.75em;
 }
-/* line 83, ../sass/style.sass */
+/* line 86, ../sass/style.sass */
 header h2 {
   margin-top: 0em;
   padding-top: 0.375em;
@@ -163,7 +167,7 @@ header h2 {
   margin-bottom: 0em;
 }
 
-/* line 87, ../sass/style.sass */
+/* line 90, ../sass/style.sass */
 .postContent {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -171,7 +175,7 @@ header h2 {
   margin-bottom: 0.75em;
 }
 
-/* line 91, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -181,7 +185,7 @@ p {
   display: inline;
 }
 
-/* line 96, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 pre {
   font-family: arial;
 }
