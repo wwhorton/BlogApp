@@ -22,7 +22,7 @@ $color: rgb(83, 173, 110)
   
 body
     +container
-    +susy-grid-background
+    //+susy-grid-background
     
 #wrapper
     overflow: hidden
@@ -42,17 +42,17 @@ input
     +span-columns(4)
 
 #loginFields
-    clear: both
+    display: block
     
 #loginButtons
-    clear: both
+    display: block
     button
+        display: inline-block
         +span-columns(2)
         
 header
     +border-radius(4px 4px 0px 0px)
     background-color: $color
-    +rhythm(0, .5, .5, 0)
     
 p
     background-color: rgba(173, 155, 83, .4)
