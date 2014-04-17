@@ -21,7 +21,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 29, ../sass/style.sass */
+/* line 28, ../sass/style.sass */
 body {
   *zoom: 1;
   max-width: 320px;
@@ -43,7 +43,7 @@ body:after {
   clear: both;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 34, ../sass/style.sass */
 #backgroundDiv {
   background: url(/img/lorem_white_336x280.gif);
   -webkit-background-size: 100%;
@@ -54,7 +54,7 @@ body:after {
   width: 100%;
 }
 
-/* line 41, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: arial;
@@ -67,12 +67,12 @@ body:after {
   padding-right: 0.5rem;
 }
 
-/* line 50, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 53, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -82,7 +82,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 59, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -104,19 +104,19 @@ button:last-child {
   margin-right: 0;
 }
 
-/* line 68, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 71, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
 
-/* line 74, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -124,7 +124,7 @@ input textarea {
   display: inline;
 }
 
-/* line 77, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -132,7 +132,7 @@ label {
   display: inline;
 }
 
-/* line 80, ../sass/style.sass */
+/* line 79, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -140,7 +140,7 @@ label {
   display: inline;
 }
 
-/* line 83, ../sass/style.sass */
+/* line 82, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -152,10 +152,9 @@ header {
   background: -moz-linear-gradient(top, #a9d6b7, #546b5b);
   background: -o-linear-gradient(top, #a9d6b7, #546b5b);
   background: linear-gradient(top, #a9d6b7, #546b5b);
-  margin-top: -0.3em;
   font-family: arial;
 }
-/* line 90, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
 header h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -164,7 +163,7 @@ header h2 {
   margin-left: 0.25rem;
 }
 
-/* line 94, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 .postContent {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -172,7 +171,7 @@ header h2 {
   margin-bottom: 0.75em;
 }
 
-/* line 97, ../sass/style.sass */
+/* line 95, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -182,7 +181,7 @@ p {
   display: inline;
 }
 
-/* line 102, ../sass/style.sass */
+/* line 100, ../sass/style.sass */
 pre {
   font-family: arial;
 }
