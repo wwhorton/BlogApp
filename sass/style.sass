@@ -23,7 +23,7 @@ $grid-padding: $gutter-width / 2
 $container-style: magic
 +border-box-sizing
 
-$color: rgb(83, 173, 110)
+$color: lighten(rgb(83, 173, 110), 15%)
   
 body
     +container
@@ -38,7 +38,8 @@ h1
 
 nav
     +span-columns(4)
-    margin: rhythm(.5, 16px)
+    margin-top: rhythm(.5, 16px)
+    margin-bottom: rhythm(.5, 16px)
 
 button
     height: 2rem
@@ -65,7 +66,12 @@ header
     margin-top: rhythm(-.2, 16px)
     h2
         +rhythm(0,.25,.25,0)
+
+.postContent
+    +rhythm(0,.25,.25,0)
+        
 p
     +background(rgba(173, 155, 83, .4))
     font-family: "Cyntho"
+
  
