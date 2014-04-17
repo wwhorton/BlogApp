@@ -97,9 +97,9 @@ header {
   -o-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
   background-color: #53ad6e;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   margin-bottom: 0em;
 }
 
