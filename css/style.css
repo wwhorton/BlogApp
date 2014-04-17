@@ -30,13 +30,16 @@ html {
   line-height: 1.5em;
 }
 
-/* line 23, ../sass/style.sass */
+/* line 30, ../sass/style.sass */
 body {
   *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 304px;
+  max-width: 19rem;
+  _width: 304px;
+  padding-left: 8px;
+  padding-left: 0.5rem;
+  padding-right: 8px;
+  padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,18 +50,18 @@ body:after {
   clear: both;
 }
 
-/* line 27, ../sass/style.sass */
+/* line 34, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
 }
 
-/* line 31, ../sass/style.sass */
+/* line 38, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 nav button {
   height: 3.75em;
   -webkit-border-radius: 4px;
@@ -69,7 +72,7 @@ nav button {
   background-color: #53ad6e;
 }
 
-/* line 41, ../sass/style.sass */
+/* line 48, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -78,17 +81,17 @@ input {
   display: block;
 }
 
-/* line 45, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 #loginFields {
   display: block;
 }
 
-/* line 48, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 label {
   display: block;
 }
 
-/* line 51, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 button {
   display: inline-block;
   width: 47.36842%;
@@ -97,7 +100,7 @@ button {
   display: inline;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -107,7 +110,7 @@ header {
   background-color: #53ad6e;
 }
 
-/* line 59, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
