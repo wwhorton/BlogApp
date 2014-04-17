@@ -332,3 +332,7 @@ Load paths:
 2014-04-17 15:35:00 overwrite css/style.css 
 2014-04-17 15:35:52 overwrite css/style.css 
 2014-04-17 15:37:07 overwrite css/style.css 
+2014-04-17 15:38:37     error sass/style.sass (Line 68: Invalid CSS after "rhythm(.5, 16px": expected ")", was "")
+2014-04-17 15:38:37 overwrite css/style.css 
+2014-04-17 15:40:07     error sass/style.sass (Line 68: Invalid CSS after "rhythm(.5, 16px": expected ")", was "")
+2014-04-17 15:40:07 identical css/style.css 

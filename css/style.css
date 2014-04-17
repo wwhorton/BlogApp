@@ -1,193 +1,86 @@
-@font-face {
-  font-family: "Chunk";
-  src: url('../fonts/chunkfive-webfont.ttf') format('truetype');
-}
+/*
+Syntax error: Invalid CSS after "rhythm(.5, 16px": expected ")", was ""
+        on line 68 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass
 
-@font-face {
-  font-family: "Cyntho";
-  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.ttf') format('truetype');
-}
-
-/* line 61, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 100%;
-}
-
-/* line 64, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-/* line 14, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 29, ../sass/style.sass */
-body {
-  *zoom: 1;
-  max-width: 320px;
-  max-width: 20rem;
-  _width: 320px;
-  padding-left: 8px;
-  padding-left: 0.5rem;
-  padding-right: 8px;
-  padding-right: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-/* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-body:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 36, ../sass/style.sass */
-#backgroundDiv {
-  background: url(/img/lorem_white_336x280.gif);
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  position: fixed;
-  width: 100%;
-}
-
-/* line 42, ../sass/style.sass */
-#wrapper {
-  overflow: hidden;
-  font-family: "Cyntho", arial;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  margin-top: 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  margin-bottom: 0.75em;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-/* line 52, ../sass/style.sass */
-h1 {
-  font-family: "Chunk", arial;
-}
-
-/* line 55, ../sass/style.sass */
-nav {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-
-/* line 61, ../sass/style.sass */
-button {
-  height: 2rem;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #a9d6b7;
-  width: 47.36842%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-/* line 184, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
-button:last-child {
-  float: right;
-  margin-right: 0;
-}
-
-/* line 70, ../sass/style.sass */
-input {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-/* line 73, ../sass/style.sass */
-input textarea {
-  cols: 50;
-}
-
-/* line 76, ../sass/style.sass */
-#loginFields {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-
-/* line 80, ../sass/style.sass */
-label {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-
-/* line 83, ../sass/style.sass */
-#posts {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-
-/* line 86, ../sass/style.sass */
-header {
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  -ms-border-radius: 4px 4px 0px 0px;
-  -o-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a9d6b7), color-stop(100%, #546b5b));
-  background: -webkit-linear-gradient(top, #a9d6b7, #546b5b);
-  background: -moz-linear-gradient(top, #a9d6b7, #546b5b);
-  background: -o-linear-gradient(top, #a9d6b7, #546b5b);
-  background: linear-gradient(top, #a9d6b7, #546b5b);
-  margin-top: -0.3em;
-  font-family: arial;
-}
-/* line 93, ../sass/style.sass */
-header h2 {
-  margin-top: 0em;
-  padding-top: 0.375em;
-  padding-bottom: 0.375em;
-  margin-bottom: 0em;
-}
-
-/* line 97, ../sass/style.sass */
-.postContent {
-  margin-top: 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  margin-bottom: 0.75em;
-}
-
-/* line 101, ../sass/style.sass */
-p {
-  background: rgba(173, 155, 83, 0.4);
-  font-family: arial;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-
-/* line 106, ../sass/style.sass */
-pre {
-  font-family: arial;
-}
+Backtrace:
+D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass:68
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/scss/parser.rb:1146:in `expected'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/lexer.rb:199:in `expected!'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:476:in `assert_tok'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:332:in `funcall'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:319:in `ident'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:237:in `unary_not'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:237:in `unary_div'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:237:in `unary_minus'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:237:in `unary_plus'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:225:in `times_div_or_mod'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:225:in `plus_or_minus'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:225:in `relational'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:225:in `eq_or_neq'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:225:in `and_expr'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:225:in `or_expr'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:298:in `space'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:246:in `expr'
+org/jruby/RubyKernel.java:2105:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:470:in `assert_expr'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:49:in `parse'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script/parser.rb:166:in `parse'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/script.rb:31:in `parse'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:880:in `parse_script'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:608:in `parse_property'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:597:in `parse_property_or_rule'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:578:in `parse_line'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:471:in `build_tree'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:490:in `append_children'
+org/jruby/RubyArray.java:1620:in `each'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:489:in `append_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:480:in `build_tree'
+org/jruby/RubyArray.java:1620:in `each'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:473:in `build_tree'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:490:in `append_children'
+org/jruby/RubyArray.java:1620:in `each'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:489:in `append_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:345:in `_to_tree'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:262:in `render'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/compass_patch.rb:60:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/compass_patch.rb:59:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/compass_patch.rb:58:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1620:in `each'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/compiler.rb:25:in `compile'
+org/jruby/RubyKernel.java:2105:in `send'
+(__FORWARDABLE__):3:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/project_watcher.rb:92:in `sass_modified'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/project_watcher.rb:85:in `sass_callback'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/watch.rb:17:in `run_callback'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/app_watcher.rb:32:in `listen_callback'
+org/jruby/RubyArray.java:1620:in `each'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/app_watcher.rb:27:in `listen_callback'
+org/jruby/RubyArray.java:1620:in `each'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/app_watcher.rb:26:in `listen_callback'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/listener.rb:221:in `initialize_adapter'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `poll'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/adapters/polling.rb:32:in `start'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"rhythm(.5, 16px\": expected \")\", was \"\"\A         on line 68 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass"; }
