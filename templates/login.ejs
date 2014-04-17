@@ -43,7 +43,7 @@ $("#createNewUser").on('click', function(e){
             },
         error: function(e, type, msg){
             alert("Username is already taken.");
-            console.log("Create User error: " e );
+            console.log("Create User error: " + e );
             window.location.href = window.location.href;
             }
     });
@@ -62,7 +62,7 @@ $("#loginUser").on('click', function(e){
             },
         error: function(e, type, msg){
             alert("Invalid name or password.");
-            console.log("Login User error: " e );
+            console.log("Login User error: " + e );
             window.location.href = window.location.href;
             }
     });
