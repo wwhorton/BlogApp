@@ -38,9 +38,6 @@ body {
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
 }
 /* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body:after {
@@ -61,14 +58,21 @@ body:after {
   overflow: hidden;
   font-family: "Cyntho", arial;
   background-color: white;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  margin-top: 0.75em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0.75em;
 }
 
-/* line 45, ../sass/style.sass */
+/* line 47, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 48, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -78,7 +82,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 53, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -99,19 +103,19 @@ button:last-child {
   margin-right: 0;
 }
 
-/* line 61, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 64, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 input textarea {
   cols: 50;
 }
 
-/* line 67, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -119,7 +123,7 @@ input textarea {
   display: inline;
 }
 
-/* line 71, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -127,7 +131,7 @@ label {
   display: inline;
 }
 
-/* line 74, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -135,7 +139,7 @@ label {
   display: inline;
 }
 
-/* line 77, ../sass/style.sass */
+/* line 79, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -152,7 +156,7 @@ header {
   margin-left: 0.75em;
   margin-right: 0.75em;
 }
-/* line 85, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 header h2 {
   margin-top: 0em;
   padding-top: 0.375em;
@@ -160,7 +164,7 @@ header h2 {
   margin-bottom: 0em;
 }
 
-/* line 89, ../sass/style.sass */
+/* line 91, ../sass/style.sass */
 .postContent {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -168,7 +172,7 @@ header h2 {
   margin-bottom: 0.75em;
 }
 
-/* line 93, ../sass/style.sass */
+/* line 95, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -178,7 +182,7 @@ p {
   display: inline;
 }
 
-/* line 98, ../sass/style.sass */
+/* line 100, ../sass/style.sass */
 pre {
   font-family: arial;
 }
