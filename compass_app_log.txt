@@ -349,3 +349,10 @@ Load paths:
 2014-04-17 16:01:05 overwrite css/style.css 
 2014-04-17 16:08:55 overwrite css/style.css 
 2014-04-17 16:20:09 identical css/style.css 
+2014-04-17 16:28:19     error sass/style.sass (Line 104: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.)
+2014-04-17 16:28:19 overwrite css/style.css 
+2014-04-17 16:28:55     error sass/style.sass (Line 103: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.)
+2014-04-17 16:28:55 overwrite css/style.css 
+2014-04-17 16:30:36     error sass/style.sass (Line 103: Invalid CSS after "hidden": expected expression (e.g. 1px, bold), was ";")
+2014-04-17 16:30:36 overwrite css/style.css 
+2014-04-17 16:31:48 overwrite css/style.css 
