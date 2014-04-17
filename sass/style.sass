@@ -23,7 +23,7 @@ $grid-padding: $gutter-width / 2
 $container-style: magic
 +border-box-sizing
 
-$color: lighten(rgb(83, 173, 110), 15%)
+$color: lighten(rgb(83, 173, 110), 25%)
   
 body
     +container
@@ -53,6 +53,9 @@ input
     
 #loginFields
     +span-columns(4)
+
+#loginButtons
+    +rhythm(.5,0,0,.5)
     
 label
     +span-columns(4)
@@ -68,7 +71,7 @@ header
         +rhythm(0,.25,.25,0)
 
 .postContent
-    +rhythm(0,.25,.25,0)
+    +rhythm(0,.25,.25,.5)
         
 p
     +background(rgba(173, 155, 83, .4))
