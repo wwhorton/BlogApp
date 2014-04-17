@@ -75,19 +75,21 @@ input {
   float: left;
   margin-right: 1.69492%;
   display: inline;
+  display: block;
 }
 
-/* line 44, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 #loginFields {
   display: block;
 }
 
-/* line 47, ../sass/style.sass */
-#loginButtons {
+/* line 48, ../sass/style.sass */
+label {
   display: block;
 }
-/* line 49, ../sass/style.sass */
-#loginButtons button {
+
+/* line 51, ../sass/style.sass */
+button {
   display: inline-block;
   width: 15.25424%;
   float: left;
@@ -95,7 +97,7 @@ input {
   display: inline;
 }
 
-/* line 53, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -103,13 +105,9 @@ header {
   -o-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
   background-color: #53ad6e;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
 }
 
-/* line 58, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
