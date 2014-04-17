@@ -38,6 +38,8 @@ body {
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 /* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body:after {
@@ -46,14 +48,18 @@ body:after {
   clear: both;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 #backgroundDiv {
   background: url(/img/lorem_white_336x280.gif);
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
   position: fixed;
   width: 100%;
 }
 
-/* line 39, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
@@ -67,12 +73,12 @@ body:after {
   margin-bottom: 0.75em;
 }
 
-/* line 47, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 50, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -82,7 +88,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -103,19 +109,19 @@ button:last-child {
   margin-right: 0;
 }
 
-/* line 63, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 66, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 input textarea {
   cols: 50;
 }
 
-/* line 69, ../sass/style.sass */
+/* line 72, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -123,7 +129,7 @@ input textarea {
   display: inline;
 }
 
-/* line 73, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -131,7 +137,7 @@ label {
   display: inline;
 }
 
-/* line 76, ../sass/style.sass */
+/* line 79, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -139,7 +145,7 @@ label {
   display: inline;
 }
 
-/* line 79, ../sass/style.sass */
+/* line 82, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -156,7 +162,7 @@ header {
   margin-left: 0.75em;
   margin-right: 0.75em;
 }
-/* line 87, ../sass/style.sass */
+/* line 90, ../sass/style.sass */
 header h2 {
   margin-top: 0em;
   padding-top: 0.375em;
@@ -164,7 +170,7 @@ header h2 {
   margin-bottom: 0em;
 }
 
-/* line 91, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 .postContent {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -172,7 +178,7 @@ header h2 {
   margin-bottom: 0.75em;
 }
 
-/* line 95, ../sass/style.sass */
+/* line 98, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -182,7 +188,7 @@ p {
   display: inline;
 }
 
-/* line 100, ../sass/style.sass */
+/* line 103, ../sass/style.sass */
 pre {
   font-family: arial;
 }
