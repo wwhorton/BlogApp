@@ -30,11 +30,11 @@ html {
   line-height: 1.5em;
 }
 
-/* line 23, ../sass/style.sass */
+/* line 25, ../sass/style.sass */
 body {
   *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
+  max-width: 19em;
+  _width: 19em;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
@@ -47,22 +47,22 @@ body:after {
   clear: both;
 }
 
-/* line 26, ../sass/style.sass */
+/* line 28, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
-  width: 15.25424%;
+  width: 47.36842%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 5.26316%;
   display: inline;
   font-family: "Cyntho", arial;
 }
 
-/* line 31, ../sass/style.sass */
+/* line 33, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 38, ../sass/style.sass */
 nav button {
   height: 3.75em;
   -webkit-border-radius: 4px;
@@ -73,23 +73,23 @@ nav button {
   background-color: #53ad6e;
 }
 
-/* line 41, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 input {
-  width: 15.25424%;
+  width: 47.36842%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 5.26316%;
   display: inline;
 }
 
-/* line 45, ../sass/style.sass */
+/* line 47, ../sass/style.sass */
 #loginButtons button {
-  width: 6.77966%;
+  width: 21.05263%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 5.26316%;
   display: inline;
 }
 
-/* line 48, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -103,7 +103,7 @@ header {
   margin-bottom: 0em;
 }
 
-/* line 53, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
