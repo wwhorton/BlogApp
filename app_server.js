@@ -105,12 +105,12 @@ app.delete('/', passport.authenticate('session', flashOptions), function(request
 
 // Authentication routes
 
-app.post('/login', function(request, response){
-    passport.authenticate('local', { successRedirect: '/',
-                                     failureRedirect: '/',
-                                     failureFlash: true });
-
-});
+app.post('/login', passport.authenticate('local', { 
+                                                    successRedirect: '/',
+                                                    failureRedirect: '/',
+                                                    failureFlash: true
+                                                  })
+);
 
 app.get('/logout', function(request, response){
     request.session.destroy();
