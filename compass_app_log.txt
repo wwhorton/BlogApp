@@ -270,3 +270,9 @@
 2014-04-17 14:13:13    create css/style.css 
 2014-04-17 14:15:20 overwrite css/style.css 
 2014-04-17 14:17:09 overwrite css/style.css 
+2014-04-17 14:25:26     error sass/style.sass (Line 63: Invalid CSS after "...de($color, 50%)": expected ")", was "")
+2014-04-17 14:25:26 overwrite css/style.css 
+2014-04-17 14:25:36 overwrite css/style.css 
+2014-04-17 14:26:52     error sass/style.sass (Line 41: Invalid CSS after "margin-bottom": expected selector, was "(rhythm(.5, 16px))")
+2014-04-17 14:26:52 overwrite css/style.css 
+2014-04-17 14:27:14 overwrite css/style.css 

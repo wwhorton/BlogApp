@@ -38,6 +38,7 @@ h1
 
 nav
     +span-columns(4)
+    margin-bottom: (rhythm(.5, 16px))
 
 button
     height: 2rem
@@ -60,10 +61,10 @@ label
     
 header
     +border-radius(4px 4px 0px 0px)
-    background-color: $color
+    background: linear-gradient(top, $color, shade($color, 50%))
     
     h2
-        +rhythm(0,.25,.25,0)
+        +rhythm(0,.25,.25,-.2)
 p
     background-color: rgba(173, 155, 83, .4)
     font-family: "Cyntho"
