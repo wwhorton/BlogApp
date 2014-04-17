@@ -38,7 +38,6 @@ body {
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  background: url(/img/lorem_white_336x280.gif);
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
@@ -50,19 +49,26 @@ body:after {
   clear: both;
 }
 
-/* line 37, ../sass/style.sass */
+/* line 34, ../sass/style.sass */
+#backgroundDiv {
+  background: url(/img/lorem_white_336x280.gif);
+  position: fixed;
+  width: 100%;
+}
+
+/* line 39, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
   background-color: white;
 }
 
-/* line 43, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 46, ../sass/style.sass */
+/* line 48, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -72,7 +78,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 51, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -92,7 +98,7 @@ button:last-child {
   margin-right: 0;
 }
 
-/* line 58, ../sass/style.sass */
+/* line 60, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -100,7 +106,7 @@ input {
   display: inline;
 }
 
-/* line 61, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -108,7 +114,7 @@ input {
   display: inline;
 }
 
-/* line 64, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 #loginButtons {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -116,7 +122,7 @@ input {
   margin-bottom: 0.75em;
 }
 
-/* line 67, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -124,7 +130,7 @@ label {
   display: inline;
 }
 
-/* line 70, ../sass/style.sass */
+/* line 72, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -132,7 +138,7 @@ label {
   display: inline;
 }
 
-/* line 74, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -146,8 +152,10 @@ header {
   background: linear-gradient(top, #a9d6b7, #546b5b);
   margin-top: -0.3em;
   font-family: arial;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
 }
-/* line 80, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 header h2 {
   margin-top: 0em;
   padding-top: 0.375em;
@@ -155,15 +163,15 @@ header h2 {
   margin-bottom: 0em;
 }
 
-/* line 84, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 .postContent {
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 0.75em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0.75em;
 }
 
-/* line 88, ../sass/style.sass */
+/* line 91, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -173,7 +181,7 @@ p {
   display: inline;
 }
 
-/* line 93, ../sass/style.sass */
+/* line 96, ../sass/style.sass */
 pre {
   font-family: arial;
 }

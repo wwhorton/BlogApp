@@ -29,10 +29,12 @@ $color: lighten(rgb(83, 173, 110), 25%)
 body
     +container
     //+susy-grid-background
-    +background(image-url("/img/lorem_white_336x280.gif"))
-    //+background-size(cover)
     +single-box-shadow
 
+#backgroundDiv
+    +background(image-url("/img/lorem_white_336x280.gif"))
+    position: fixed
+    width: 100%
     
 #wrapper
     overflow: hidden
@@ -70,19 +72,20 @@ label
 #posts
     +span-columns(4)
 
-   
 header
     +border-radius(4px 4px 0px 0px)
     +background(linear-gradient(top, $color, shade($color, 50%)))
     margin-top: rhythm(-.2, 16px)
     font-family: arial
+    margin-left: rhythm(.5, 16px)
+    margin-right: rhythm(.5, 16px)
     
     h2
         +rhythm(0,.25,.25,0)
         
 
 .postContent
-    +rhythm(1,1,1,1)
+    +rhythm(.5,.5,.5,.5)
     
         
 p
