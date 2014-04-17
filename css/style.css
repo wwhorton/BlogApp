@@ -70,7 +70,10 @@ h1 {
 
 /* line 42, ../sass/style.sass */
 nav {
-  display: block;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
 }
 
 /* line 45, ../sass/style.sass */
@@ -82,33 +85,37 @@ button {
   -o-border-radius: 4px;
   border-radius: 4px;
   background-color: #53ad6e;
-  display: inline-block;
   width: 47.36842%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
 
-/* line 52, ../sass/style.sass */
+/* line 51, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
-  display: block;
 }
 
-/* line 56, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 #loginFields {
-  display: block;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
 }
 
-/* line 59, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 label {
-  display: block;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
 }
 
-/* line 62, ../sass/style.sass */
+/* line 61, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -118,7 +125,7 @@ header {
   background-color: #53ad6e;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
