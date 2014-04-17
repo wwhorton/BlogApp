@@ -19,17 +19,6 @@ html {
   line-height: 1.5em;
 }
 
-/* line 61, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 100%;
-}
-
-/* line 64, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
 /* line 14, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -37,7 +26,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 31, ../sass/style.sass */
+/* line 28, ../sass/style.sass */
 body {
   *zoom: 1;
   max-width: 320px;
@@ -57,18 +46,18 @@ body:after {
   clear: both;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 32, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
 }
 
-/* line 39, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 42, ../sass/style.sass */
+/* line 39, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -76,7 +65,7 @@ nav {
   display: inline;
 }
 
-/* line 45, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -96,7 +85,7 @@ button:last-child {
   margin-right: 0;
 }
 
-/* line 52, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -104,7 +93,7 @@ input {
   display: inline;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 #loginFields {
   width: 100%;
   float: left;
@@ -112,7 +101,7 @@ input {
   display: inline;
 }
 
-/* line 58, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -120,7 +109,7 @@ label {
   display: inline;
 }
 
-/* line 61, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -128,7 +117,7 @@ label {
   display: inline;
 }
 
-/* line 64, ../sass/style.sass */
+/* line 61, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -142,7 +131,7 @@ header {
   margin-bottom: 0em;
 }
 
-/* line 68, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
