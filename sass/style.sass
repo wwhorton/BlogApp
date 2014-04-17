@@ -1,5 +1,6 @@
 @import "compass"
 @import "compass/typography/vertical_rhythm"
+@import "compass/css3/background-size"
 @import "susy"
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
@@ -28,6 +29,8 @@ $color: lighten(rgb(83, 173, 110), 25%)
 body
     +container
     //+susy-grid-background
+    +background(image-url("/img/lorem_white_336x280.gif"))
+    +background-size(cover)
     
 #wrapper
     overflow: hidden
@@ -62,6 +65,9 @@ label
 
 #posts
     +span-columns(4)
+
+article
+    +single-box-shadow
     
 header
     +border-radius(4px 4px 0px 0px)
@@ -72,9 +78,13 @@ header
 
 .postContent
     +rhythm(0,.25,.25,.5)
+    
         
 p
     +background(rgba(173, 155, 83, .4))
-    font-family: "Cyntho"
+    font-family: arial
+    +span-columns(4)
 
+pre
+    font-family: arial
  

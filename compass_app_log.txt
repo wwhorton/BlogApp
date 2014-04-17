@@ -288,3 +288,31 @@
 2014-04-17 14:40:25    create css/style.css 
 2014-04-17 14:44:25 overwrite css/style.css 
 2014-04-17 14:44:44 overwrite css/style.css 
+2014-04-17 14:50:43 overwrite css/style.css 
+2014-04-17 14:51:21 overwrite css/style.css 
+2014-04-17 14:55:41     error sass/style.sass (Line 31: Invalid CSS after "...m_white_336x280": expected ")", was ".gif")
+2014-04-17 14:55:41 overwrite css/style.css 
+2014-04-17 14:55:53     error sass/style.sass (Line 31: Invalid CSS after "...m_white_336x280": expected ")", was ".gif))")
+2014-04-17 14:55:53 overwrite css/style.css 
+2014-04-17 14:57:56     error sass/style.sass (Line 32: Invalid CSS after "...m_white_336x280": expected ")", was ".gif))")
+2014-04-17 14:57:56 overwrite css/style.css 
+2014-04-17 14:58:24     error sass/style.sass (Line 3: File to import not found or unreadable: "compass/css3/background-size.
+Load paths:
+  D:/Users/Bill/Documents/GitHub/BlogApp/sass
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  C:/Users/William/Desktop/CompassApp/vendor/assets/stylesheets)
+2014-04-17 14:58:24 overwrite css/style.css 
+2014-04-17 14:58:40 overwrite css/style.css 
+2014-04-17 14:58:50    remove .sass-cache/ 
+2014-04-17 14:58:50    remove css/screen.css 
+2014-04-17 14:58:50    remove css/style.css 
+2014-04-17 14:58:51    create css/screen.css 
+2014-04-17 14:58:52    create css/style.css 
