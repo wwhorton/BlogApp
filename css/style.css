@@ -32,6 +32,7 @@ html {
 
 /* line 26, ../sass/style.sass */
 body {
+  max-width: 960px;
   *zoom: 1;
   max-width: 19em;
   _width: 19em;
@@ -61,18 +62,18 @@ body:after {
   clear: both;
 }
 
-/* line 30, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: "Cyntho", arial;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 39, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 nav button {
   height: 3.75em;
   -webkit-border-radius: 4px;
@@ -83,15 +84,15 @@ nav button {
   background-color: #53ad6e;
 }
 
-/* line 44, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 input {
-  width: 47.36842%;
+  width: 73.68421%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
 
-/* line 48, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 #loginButtons button {
   width: 21.05263%;
   float: left;
@@ -99,7 +100,7 @@ input {
   display: inline;
 }
 
-/* line 51, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 header {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
@@ -113,7 +114,7 @@ header {
   margin-bottom: 0em;
 }
 
-/* line 56, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 p {
   background-color: rgba(173, 155, 83, 0.4);
   font-family: "Cyntho";
