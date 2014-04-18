@@ -30,7 +30,14 @@
        
 <script>
 
-//jQuery UI Accordion functionality
+//Accordion functionality
+
+$('#posts header').click(function(h) {
+        //Close all <div> but the <div> right after the clicked <header>
+    $(h.target).next('div').siblings('div').slideUp();
+        //Toggle open/close on the <div> after the <a>, opening it if not open.
+        $(h.target).next('div').slideToggle();
+});
 
 $("#posts").accordion({ 
     header: "header",
