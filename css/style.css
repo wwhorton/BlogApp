@@ -133,6 +133,11 @@ label {
 }
 
 /* line 79, ../sass/style.sass */
+.ui-accordion {
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 82, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px 4px 4px 4px;
@@ -148,14 +153,15 @@ label {
   font-family: arial;
   color: black;
   border: none;
+  padding: 0px;
 }
 
-/* line 87, ../sass/style.sass */
+/* line 91, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 90, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -164,12 +170,12 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 94, ../sass/style.sass */
+/* line 98, ../sass/style.sass */
 .ui-dialog {
   overflow: none;
 }
 
-/* line 98, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -177,7 +183,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 102, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -186,7 +192,7 @@ h2 {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 107, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 .ui-accordion-content pre {
   font-family: arial;
   width: 100%;
