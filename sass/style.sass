@@ -4,9 +4,19 @@
 @import "compass/css3/background-size"
 @import "susy"
 
-+font-face("Chunk", font-files("chunkfive-webfont.ttf"))
+=device($type)
+    @if $type == mobile
+        @media (min-width: 480px)
+            @content
+    @else if $type == tablet
+        @media (min-width: 768px)
+            @content
+    @else if $type == desktop
+        @media (min-width: 980px)
+            @content
 
-+font-face("Cyntho", font-files("cynthoslabpro-regular-webfont-webfont.woff", "cynthoslabpro-regular-webfont-webfont.ttf", "cynthoslabpro-regular-webfont-webfont.svg"), "cynthoslabpro-regular-webfont-webfont.eot", normal, normal)
+
++font-face("Chunk", font-files("chunkfive-webfont.ttf"))
 
 +font-face("Cabin", font-files("cabin-regular-webfont.woff", "cabin-regular-webfont.ttf", "cabin-regular-webfont.svg"), "cabin-regular-webfont.eot", normal, normal)
 +font-face("Cabin", font-files("cabin-bold-webfont.woff", "cabin-bold-webfont.ttf", "cabin-bold-webfont.svg"), "cabin-bold-webfont.eot", bold, normal)
@@ -23,7 +33,7 @@ $base-line-height: 24px
 //$media-layout: 768px 8
 //$media-layout: 980px 16
 
-$total-columns: 4
+$total-columns: 8
 $column-width: 4rem
 $gutter-width: 1rem    
 $grid-padding: $gutter-width / 2 
@@ -52,7 +62,8 @@ body
     +rhythm(.5,.5,.5,.5)
     padding-left: .5rem
     padding-right: .5rem
-    //+single-box-shadow
+    +device(tablet)
+        +single-box-shadow
     
 h1
     font-family: "Chunk", Rockwell, serif
@@ -77,15 +88,20 @@ input
     
     textarea
         cols: 40
+        +device(tablet)
+            cols: 60
     
 label
     +span-columns(4)
+    +device(tablet)
+        +span-columns(2)
 
 #posts
     +span-columns(4)
+    +device(tablet)
+        +span-columns(6)
 
 .ui-accordion
-    padding: 0px 0px 0px 0px
     font-family: "Cabin", arial
     
 .ui-accordion-header,
@@ -110,6 +126,8 @@ h2
     p
         +background(rgba(173, 155, 83, .4))
         +span-columns(4)
+        +device(tablet)
+            +span-columns(4)
 
     pre
         +force-wrap

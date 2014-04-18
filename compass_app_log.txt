@@ -449,3 +449,18 @@ Load paths:
 2014-04-18 19:16:14    create css/style.css 
 2014-04-18 19:19:26 overwrite css/style.css 
 2014-04-18 19:19:48 overwrite css/style.css 
+2014-04-18 19:36:43     error sass/style.sass (Line 7: Invalid CSS after "($type) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-18 19:36:43 overwrite css/style.css 
+2014-04-18 19:41:39     error sass/style.sass (Line 7: Invalid CSS after "($type) ": expected expression (e.g. 1px, bold), was "{")
+2014-04-18 19:41:39 identical css/style.css 
+2014-04-18 19:46:05     error sass/style.sass (Line 9: Invalid CSS after "...-width: 480px) ": expected media query list, was "{ @content }")
+2014-04-18 19:46:05 overwrite css/style.css 
+2014-04-18 19:49:14     error sass/style.sass (Line 9: Invalid CSS after "...-width: 480px) ": expected media query list, was "@content")
+2014-04-18 19:49:14 overwrite css/style.css 
+2014-04-18 19:51:46     error sass/style.sass (Line 65: Invalid CSS after "(tablet) ": expected expression (e.g. 1px, bold), was "{ +single-box-s...")
+2014-04-18 19:51:46 overwrite css/style.css 
+2014-04-18 19:53:20     error sass/style.sass (Line 91: Invalid CSS after "(tablet) ": expected expression (e.g. 1px, bold), was "{ cols: 60 }")
+2014-04-18 19:53:20 overwrite css/style.css 
+2014-04-18 19:53:23     error sass/style.sass (Line 91: Invalid CSS after "(tablet) ": expected expression (e.g. 1px, bold), was "{ cols: 60 }")
+2014-04-18 19:53:23 identical css/style.css 
+2014-04-18 19:53:55 overwrite css/style.css 

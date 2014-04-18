@@ -4,14 +4,6 @@
 }
 
 @font-face {
-  font-family: "Cyntho";
-  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.eot');
-  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.eot?#iefix') format('eot'), url('../fonts/cynthoslabpro-regular-webfont-webfont.woff') format('woff'), url('../fonts/cynthoslabpro-regular-webfont-webfont.ttf') format('truetype'), url('../fonts/cynthoslabpro-regular-webfont-webfont.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Cabin";
   src: url('../fonts/cabin-regular-webfont.eot');
   src: url('../fonts/cabin-regular-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-regular-webfont.woff') format('woff'), url('../fonts/cabin-regular-webfont.ttf') format('truetype'), url('../fonts/cabin-regular-webfont.svg') format('svg');
@@ -61,12 +53,12 @@ html {
   box-sizing: border-box;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 46, ../sass/style.sass */
 body {
   *zoom: 1;
-  max-width: 320px;
-  max-width: 20rem;
-  _width: 320px;
+  max-width: 640px;
+  max-width: 40rem;
+  _width: 640px;
   padding-left: 8px;
   padding-left: 0.5rem;
   padding-right: 8px;
@@ -84,7 +76,7 @@ body:after {
   clear: both;
 }
 
-/* line 43, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 #backgroundDiv {
   background: url(/img/lorem_white_336x280.gif);
   -webkit-background-size: 100%;
@@ -95,7 +87,7 @@ body:after {
   width: 100%;
 }
 
-/* line 49, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   background-color: white;
@@ -106,23 +98,31 @@ body:after {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+@media (min-width: 768px) {
+  /* line 59, ../sass/style.sass */
+  #wrapper {
+    -webkit-box-shadow: 0px 0px 5px #333333;
+    -moz-box-shadow: 0px 0px 5px #333333;
+    box-shadow: 0px 0px 5px #333333;
+  }
+}
 
-/* line 57, ../sass/style.sass */
+/* line 68, ../sass/style.sass */
 h1 {
   font-family: "Chunk", Rockwell, serif;
 }
 
-/* line 60, ../sass/style.sass */
+/* line 71, ../sass/style.sass */
 nav {
-  width: 100%;
+  width: 48.71795%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 2.5641%;
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 77, ../sass/style.sass */
 .button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -131,9 +131,9 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
   background-color: #a9d6b7;
-  width: 47.36842%;
+  width: 23.07692%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 2.5641%;
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -144,41 +144,64 @@ nav {
   margin-right: 0;
 }
 
-/* line 75, ../sass/style.sass */
+/* line 86, ../sass/style.sass */
 input {
-  width: 100%;
+  width: 48.71795%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 2.5641%;
   display: inline;
 }
-/* line 78, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
+@media (min-width: 768px) {
+  /* line 89, ../sass/style.sass */
+  input textarea {
+    cols: 60;
+  }
+}
 
-/* line 81, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 label {
-  width: 100%;
+  width: 48.71795%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 2.5641%;
   display: inline;
 }
+@media (min-width: 768px) {
+  /* line 94, ../sass/style.sass */
+  label {
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+}
 
-/* line 84, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 #posts {
-  width: 100%;
+  width: 48.71795%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 2.5641%;
   display: inline;
 }
+@media (min-width: 768px) {
+  /* line 99, ../sass/style.sass */
+  #posts {
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+}
 
-/* line 87, ../sass/style.sass */
+/* line 104, ../sass/style.sass */
 .ui-accordion {
-  padding: 0px 0px 0px 0px;
   font-family: "Cabin", arial;
 }
 
-/* line 91, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px 4px 4px 4px;
@@ -196,12 +219,12 @@ label {
   font-weight: bold;
 }
 
-/* line 99, ../sass/style.sass */
+/* line 115, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 102, ../sass/style.sass */
+/* line 118, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -210,7 +233,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 106, ../sass/style.sass */
+/* line 122, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -218,15 +241,24 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 110, ../sass/style.sass */
+/* line 126, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
-  width: 100%;
+  width: 48.71795%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 2.5641%;
   display: inline;
 }
-/* line 114, ../sass/style.sass */
+@media (min-width: 768px) {
+  /* line 126, ../sass/style.sass */
+  .ui-accordion-content p {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+}
+/* line 132, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
