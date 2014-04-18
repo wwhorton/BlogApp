@@ -9,10 +9,11 @@
 <div id="posts">        
 <% posts.forEach(function(post, i){ %>
     <article id="<%=post._id%>" >
+        <div class="postContent">
         <header>
             <h2><%= post.title %></h2>
         </header>
-        <div class="postContent">
+        
         <small>Written by <span class="author"><%= post.username %></span> on <time><%= post.date %></time>.</small>
             <p><pre><%=post.body%></pre></p>
             <!-- Don't show edit/delete buttons unless the user is the author -->
@@ -32,7 +33,6 @@
 
 //Accordion functionality
 $('article > header').on('click', function(e) {
-    alert('Clicked!');
     //Close all <div> but the <div> right after the clicked <a>
     $(e.target).next('div.postContent').siblings('div.postContent').slideUp('fast');
 
