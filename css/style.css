@@ -5,30 +5,34 @@
 
 @font-face {
   font-family: "Arvo";
-  src: url('../fonts/normal');
-  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/Arvo-Regular.ttf') format('truetype');
+  src: url('../fonts/Arvo-Regular.ttf');
+  src: url('../fonts/Arvo-Regular.ttf?#iefix') format('eot'), url('../fonts/Arvo-Regular.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Arvo";
-  src: url('../fonts/bold');
-  src: url('../fonts/bold?#iefix') format('eot'), url('../fonts/Arvo-Bold.ttf') format('truetype');
+  src: url('../fonts/Arvo-Bold.ttf');
+  src: url('../fonts/Arvo-Bold.ttf?#iefix') format('eot'), url('../fonts/Arvo-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arvo";
+  src: url('../fonts/Arvo-Italic.ttf');
+  src: url('../fonts/Arvo-Italic.ttf?#iefix') format('eot'), url('../fonts/Arvo-Italic.ttf') format('truetype');
   font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Arvo";
-  src: url('../fonts/normal');
-  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/Arvo-Italic.ttf') format('truetype');
-  font-weight: italic;
-}
-
-@font-face {
-  font-family: "Arvo";
-  src: url('../fonts/bold');
-  src: url('../fonts/bold?#iefix') format('eot'), url('../fonts/Arvo-BoldItalic.ttf') format('truetype');
-  font-weight: italic;
+  src: url('../fonts/Arvo-BoldItalic.ttf');
+  src: url('../fonts/Arvo-BoldItalic.ttf?#iefix') format('eot'), url('../fonts/Arvo-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* line 61, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -181,6 +185,7 @@ label {
   background: linear-gradient(top, #a9d6b7, #546b5b);
   color: black;
   border: none;
+  font-weight: bold;
 }
 
 /* line 96, ../sass/style.sass */
@@ -197,7 +202,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 107, ../sass/style.sass */
+/* line 103, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -205,7 +210,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 111, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   width: 100%;
@@ -213,7 +218,7 @@ h2 {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 115, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;

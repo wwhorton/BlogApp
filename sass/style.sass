@@ -5,10 +5,10 @@
 @import "susy"
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
-+font-face("Arvo", font-files("Arvo-Regular.ttf"), normal, normal)
-+font-face("Arvo", font-files("Arvo-Bold.ttf"), bold, normal)
-+font-face("Arvo", font-files("Arvo-Italic.ttf"), normal, italic)
-+font-face("Arvo", font-files("Arvo-BoldItalic.ttf"), bold, italic)
++font-face("Arvo", font-files("Arvo-Regular.ttf"), "Arvo-Regular.ttf" , normal, normal)
++font-face("Arvo", font-files("Arvo-Bold.ttf"), "Arvo-Bold.ttf", bold, normal)
++font-face("Arvo", font-files("Arvo-Italic.ttf"), "Arvo-Italic.ttf", normal, italic)
++font-face("Arvo", font-files("Arvo-BoldItalic.ttf"), "Arvo-BoldItalic.ttf", bold, italic)
 
 //Vertical rhythm setup
 $base-font-size: 16px
@@ -91,7 +91,7 @@ label
     +background(linear-gradient(top, $color, shade($color, 50%)))
     color: #000
     border: none
-
+    font-weight: bold
     
 .ui-accordion-header .ui-icon
     display: none
@@ -99,10 +99,6 @@ label
 h2
     +rhythm(.25,.25,.25,.25)
     margin-left: .25rem
-        
-.ui-dialog
-    
-        
         
 .ui-accordion-content
     +rhythm(.5,.5,.5,.5)
@@ -114,13 +110,3 @@ h2
 
     pre
         +force-wrap
-        
-    
-
-
-
-   
-
-
-
- 
