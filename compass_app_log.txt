@@ -390,3 +390,6 @@ Load paths:
 2014-04-18 17:44:36    remove css/style.css 
 2014-04-18 17:44:37    create css/screen.css 
 2014-04-18 17:44:38    create css/style.css 
+2014-04-18 17:58:35     error sass/style.sass (Line 8: Invalid CSS after "...-webfont.ttf"))": expected expression (e.g. 1px, bold), was "ForoLig-webfont...")
+2014-04-18 17:58:35 overwrite css/style.css 
+2014-04-18 17:59:11 overwrite css/style.css 
