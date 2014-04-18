@@ -2,7 +2,7 @@
 
 <!-- Show the "Add New Post" button if a user is logged in -->
 <% if (locals.user) { %>
-<button id="addNewPost" class"button">Add New Post</button>
+<button id="addNewPost" class="button">Add New Post</button>
 <% } %>
 
 <!-- Loop through posts array and create article for each item -->
@@ -36,7 +36,8 @@ $("#posts").accordion({
     header: "header",
     active: "false",
     collapsible: "true",
-    icons: "false"
+    icons: "false",
+    heightStyle: "content"
 });
 
 // JavaScript to provide Edit/Delete button functionality

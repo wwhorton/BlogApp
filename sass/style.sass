@@ -76,7 +76,8 @@ label
 #posts
     +span-columns(4)
 
-.ui-accordion-header
+.ui-accordion-header,
+.ui-widget-header
     +border-radius(4px 4px 4px 4px)
     +background(linear-gradient(top, $color, shade($color, 50%)))
     font-family: arial
@@ -88,15 +89,15 @@ label
 
 .ui-accordion-content
     +rhythm(.5,.5,.5,.5)
-        
-p
-    +background(rgba(173, 155, 83, .4))
-    font-family: arial
-    +span-columns(4)
 
-pre
-    font-family: arial
-    +span-columns(4)
+    p
+        +background(rgba(173, 155, 83, .4))
+        font-family: arial
+        +span-columns(4)
+
+    pre
+        font-family: arial
+        +span-columns(4)
     
 
 

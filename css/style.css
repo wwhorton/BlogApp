@@ -133,7 +133,8 @@ label {
 }
 
 /* line 79, ../sass/style.sass */
-.ui-accordion-header {
+.ui-accordion-header,
+.ui-widget-header {
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -ms-border-radius: 4px 4px 4px 4px;
@@ -146,8 +147,9 @@ label {
   background: linear-gradient(top, #a9d6b7, #546b5b);
   font-family: arial;
 }
-/* line 84, ../sass/style.sass */
-.ui-accordion-header h2 {
+/* line 85, ../sass/style.sass */
+.ui-accordion-header h2,
+.ui-widget-header h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
   padding-bottom: 0.375em;
@@ -155,7 +157,7 @@ label {
   margin-left: 0.25rem;
 }
 
-/* line 89, ../sass/style.sass */
+/* line 90, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -163,7 +165,7 @@ label {
   margin-bottom: 0.75em;
 }
 
-/* line 92, ../sass/style.sass */
+/* line 93, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -173,7 +175,7 @@ p {
   display: inline;
 }
 
-/* line 97, ../sass/style.sass */
+/* line 98, ../sass/style.sass */
 pre {
   font-family: arial;
   width: 100%;
