@@ -147,8 +147,9 @@ label {
   background: linear-gradient(top, #a9d6b7, #546b5b);
   font-family: arial;
   color: black;
+  border: none;
 }
-/* line 86, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 .ui-accordion-header h2,
 .ui-widget-header h2 {
   margin-top: 0.375em;
@@ -158,14 +159,15 @@ label {
   margin-left: 0.25rem;
 }
 
-/* line 91, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
+  border: none;
 }
-/* line 94, ../sass/style.sass */
+/* line 96, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -174,7 +176,7 @@ label {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 99, ../sass/style.sass */
+/* line 101, ../sass/style.sass */
 .ui-accordion-content pre {
   font-family: arial;
   width: 100%;
