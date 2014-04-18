@@ -32,11 +32,13 @@
 
 //Accordion functionality
 
-$('#posts header').click(function(h) {
-        //Close all <div> but the <div> right after the clicked <header>
-    $(h.target).next('div').siblings('div').slideUp();
-        //Toggle open/close on the <div> after the <a>, opening it if not open.
-        $(h.target).next('div').slideToggle();
+$('#posts header').click(function(e) {
+
+    //Close all <div> but the <div> right after the clicked <a>
+    $(e.target).next('div').siblings('div').slideUp('fast');
+
+    //Toggle open/close on the <div> after the <h3>, opening it if not open.
+    $(e.target).next('div').slideToggle('fast');
 });
 
 
