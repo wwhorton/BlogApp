@@ -5,10 +5,13 @@
 @import "susy"
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
-+font-face("Arvo", font-files("Arvo-Regular.ttf"), "Arvo-Regular.ttf" , normal, normal)
-+font-face("Arvo", font-files("Arvo-Bold.ttf"), "Arvo-Bold.ttf", bold, normal)
-+font-face("Arvo", font-files("Arvo-Italic.ttf"), "Arvo-Italic.ttf", normal, italic)
-+font-face("Arvo", font-files("Arvo-BoldItalic.ttf"), "Arvo-BoldItalic.ttf", bold, italic)
+
++font-face("Cyntho", font-files("cynthoslabpro-regular-webfont-webfont.woff", "cynthoslabpro-regular-webfont-webfont.ttf", "cynthoslabpro-regular-webfont-webfont.svg"), "cynthoslabpro-regular-webfont-webfont.eot", normal, normal)
+
++font-face("Cabin", font-files("cabin-regular-webfont.woff", "cabin-regular-webfont.ttf", "cabin-regular-webfont.svg"), "cabin-regular-webfont.eot", normal, normal)
++font-face("Cabin", font-files("cabin-bold-webfont.woff", "cabin-bold-webfont.ttf", "cabin-bold-webfont.svg"), "cabin-bold-webfont.eot", bold, normal)
++font-face("Cabin", font-files("cabin-italic-webfont.woff", "cabin-italic-webfont.ttf", "cabin-italic-webfont.svg"), "cabin-italic-webfont.eot", normal, italic)
++font-face("Cabin", font-files("cabin-bolditalic-webfont.woff", "cabin-bolditalic-webfont.ttf", "cabin-bolditalic-webfont.svg"), "cabin-bolditalic-webfont.eot", bold, italic)
 
 //Vertical rhythm setup
 $base-font-size: 16px
@@ -35,7 +38,7 @@ body
     //+susy-grid-background
     padding-left: 0
     padding-right: 0
-    font-family: "Arvo", "Calisto MT", serif
+    font-family: "Cabin", arial
 
 #backgroundDiv
     +background(image-url("/img/lorem_white_336x280.gif"))
@@ -52,7 +55,7 @@ body
     //+single-box-shadow
     
 h1
-    font-family: "Chunk", Rockwell, serif
+    font-family: "Cyntho", Rockwell, serif
 
 nav
     +span-columns(4)
@@ -83,7 +86,7 @@ label
 
 .ui-accordion
     padding: 0px 0px 0px 0px
-    font-family: "Arvo", "Calisto MT", serif
+    font-family: "Cabin", arial
     
 .ui-accordion-header,
 .ui-widget-header

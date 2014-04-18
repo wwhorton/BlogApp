@@ -435,3 +435,15 @@ Load paths:
 2014-04-18 18:47:58    create css/style.css 
 2014-04-18 18:48:32 overwrite css/style.css 
 2014-04-18 18:49:06 overwrite css/style.css 
+2014-04-18 19:00:30     error sass/style.sass (Line 8: Invalid CSS after "...webfont-webfont": expected ")", was ".eot, normal, n...")
+2014-04-18 19:00:30 overwrite css/style.css 
+2014-04-18 19:15:02     error sass/style.sass (Line 9: Invalid CSS after "...webfont-webfont": expected ")", was ".eot, normal, n...")
+2014-04-18 19:15:02 overwrite css/style.css 
+2014-04-18 19:15:42     error sass/style.sass (Line 9: Invalid CSS after "...webfont-webfont": expected ")", was ".eot, normal, n...")
+2014-04-18 19:15:42 identical css/style.css 
+2014-04-18 19:16:07 overwrite css/style.css 
+2014-04-18 19:16:12    remove .sass-cache/ 
+2014-04-18 19:16:12    remove css/screen.css 
+2014-04-18 19:16:12    remove css/style.css 
+2014-04-18 19:16:12    create css/screen.css 
+2014-04-18 19:16:14    create css/style.css 

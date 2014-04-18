@@ -4,33 +4,41 @@
 }
 
 @font-face {
-  font-family: "Arvo";
-  src: url('../fonts/Arvo-Regular.ttf');
-  src: url('../fonts/Arvo-Regular.ttf?#iefix') format('eot'), url('../fonts/Arvo-Regular.ttf') format('truetype');
+  font-family: "Cyntho";
+  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.eot');
+  src: url('../fonts/cynthoslabpro-regular-webfont-webfont.eot?#iefix') format('eot'), url('../fonts/cynthoslabpro-regular-webfont-webfont.woff') format('woff'), url('../fonts/cynthoslabpro-regular-webfont-webfont.ttf') format('truetype'), url('../fonts/cynthoslabpro-regular-webfont-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Arvo";
-  src: url('../fonts/Arvo-Bold.ttf');
-  src: url('../fonts/Arvo-Bold.ttf?#iefix') format('eot'), url('../fonts/Arvo-Bold.ttf') format('truetype');
+  font-family: "Cabin";
+  src: url('../fonts/cabin-regular-webfont.eot');
+  src: url('../fonts/cabin-regular-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-regular-webfont.woff') format('woff'), url('../fonts/cabin-regular-webfont.ttf') format('truetype'), url('../fonts/cabin-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url('../fonts/cabin-bold-webfont.eot');
+  src: url('../fonts/cabin-bold-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-bold-webfont.woff') format('woff'), url('../fonts/cabin-bold-webfont.ttf') format('truetype'), url('../fonts/cabin-bold-webfont.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Arvo";
-  src: url('../fonts/Arvo-Italic.ttf');
-  src: url('../fonts/Arvo-Italic.ttf?#iefix') format('eot'), url('../fonts/Arvo-Italic.ttf') format('truetype');
+  font-family: "Cabin";
+  src: url('../fonts/cabin-italic-webfont.eot');
+  src: url('../fonts/cabin-italic-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-italic-webfont.woff') format('woff'), url('../fonts/cabin-italic-webfont.ttf') format('truetype'), url('../fonts/cabin-italic-webfont.svg') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Arvo";
-  src: url('../fonts/Arvo-BoldItalic.ttf');
-  src: url('../fonts/Arvo-BoldItalic.ttf?#iefix') format('eot'), url('../fonts/Arvo-BoldItalic.ttf') format('truetype');
+  font-family: "Cabin";
+  src: url('../fonts/cabin-bolditalic-webfont.eot');
+  src: url('../fonts/cabin-bolditalic-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-bolditalic-webfont.woff') format('woff'), url('../fonts/cabin-bolditalic-webfont.ttf') format('truetype'), url('../fonts/cabin-bolditalic-webfont.svg') format('svg');
   font-weight: bold;
   font-style: italic;
 }
@@ -53,7 +61,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 33, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 body {
   *zoom: 1;
   max-width: 320px;
@@ -67,7 +75,7 @@ body {
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
-  font-family: "Arvo", "Calisto MT", serif;
+  font-family: "Cabin", arial;
 }
 /* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body:after {
@@ -76,7 +84,7 @@ body:after {
   clear: both;
 }
 
-/* line 40, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 #backgroundDiv {
   background: url(/img/lorem_white_336x280.gif);
   -webkit-background-size: 100%;
@@ -87,7 +95,7 @@ body:after {
   width: 100%;
 }
 
-/* line 46, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   background-color: white;
@@ -99,12 +107,12 @@ body:after {
   padding-right: 0.5rem;
 }
 
-/* line 54, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 h1 {
-  font-family: "Chunk", Rockwell, serif;
+  font-family: "Cyntho", Rockwell, serif;
 }
 
-/* line 57, ../sass/style.sass */
+/* line 60, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -114,7 +122,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 63, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 .button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -136,19 +144,19 @@ nav {
   margin-right: 0;
 }
 
-/* line 72, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 75, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
 
-/* line 78, ../sass/style.sass */
+/* line 81, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -156,7 +164,7 @@ label {
   display: inline;
 }
 
-/* line 81, ../sass/style.sass */
+/* line 84, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -164,13 +172,13 @@ label {
   display: inline;
 }
 
-/* line 84, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 .ui-accordion {
   padding: 0px 0px 0px 0px;
-  font-family: "Arvo", "Calisto MT", serif;
+  font-family: "Cabin", arial;
 }
 
-/* line 88, ../sass/style.sass */
+/* line 91, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px 4px 4px 4px;
@@ -188,12 +196,12 @@ label {
   font-weight: bold;
 }
 
-/* line 96, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 99, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -202,7 +210,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 103, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -210,7 +218,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 107, ../sass/style.sass */
+/* line 110, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   width: 100%;
@@ -218,7 +226,7 @@ h2 {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 111, ../sass/style.sass */
+/* line 114, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
