@@ -49,7 +49,7 @@ body:after {
   clear: both;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 37, ../sass/style.sass */
 #backgroundDiv {
   background: url(/img/lorem_white_336x280.gif);
   -webkit-background-size: 100%;
@@ -60,10 +60,9 @@ body:after {
   width: 100%;
 }
 
-/* line 42, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
-  font-family: arial;
   background-color: white;
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -156,17 +155,16 @@ label {
   background: -moz-linear-gradient(top, #a9d6b7, #546b5b);
   background: -o-linear-gradient(top, #a9d6b7, #546b5b);
   background: linear-gradient(top, #a9d6b7, #546b5b);
-  font-family: arial;
   color: black;
   border: none;
 }
 
-/* line 93, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 96, ../sass/style.sass */
+/* line 95, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -175,7 +173,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 104, ../sass/style.sass */
+/* line 103, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -183,18 +181,16 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 108, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
-  font-family: arial;
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 113, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 .ui-accordion-content pre {
-  font-family: arial;
   white-space: pre;
   white-space: pre-wrap;
   white-space: pre-line;

@@ -33,6 +33,7 @@ body
     padding-left: 0
     padding-right: 0
     font-family: "Foro", "Calisto MT", serif
+
 #backgroundDiv
     +background(image-url("/img/lorem_white_336x280.gif"))
     +background-size(100%)
@@ -41,7 +42,6 @@ body
     
 #wrapper
     overflow: hidden
-    font-family: arial
     background-color: #fff
     +rhythm(.5,.5,.5,.5)
     padding-left: .5rem
@@ -85,7 +85,6 @@ label
 .ui-widget-header
     +border-radius(4px 4px 4px 4px)
     +background(linear-gradient(top, $color, shade($color, 50%)))
-    font-family: arial
     color: #000
     border: none
 
@@ -107,11 +106,9 @@ h2
 
     p
         +background(rgba(173, 155, 83, .4))
-        font-family: arial
         +span-columns(4)
 
     pre
-        font-family: arial
         +force-wrap
     
 
