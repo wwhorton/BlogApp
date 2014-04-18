@@ -125,7 +125,7 @@ label {
 }
 
 /* line 76, ../sass/style.sass */
-#posts {
+.posts {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
@@ -134,11 +134,11 @@ label {
 
 /* line 79, ../sass/style.sass */
 header {
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  -ms-border-radius: 4px 4px 0px 0px;
-  -o-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -ms-border-radius: 4px 4px 4px 4px;
+  -o-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a9d6b7), color-stop(100%, #546b5b));
   background: -webkit-linear-gradient(top, #a9d6b7, #546b5b);
   background: -moz-linear-gradient(top, #a9d6b7, #546b5b);
