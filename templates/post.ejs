@@ -31,8 +31,8 @@
 <script>
 
 //Accordion functionality
-$('#posts').find('header').click(function(e) {
-
+$('article > header').on('click', function(e) {
+    alert('Clicked!');
     //Close all <div> but the <div> right after the clicked <a>
     $(e.target).next('div.postContent').siblings('div.postContent').slideUp('fast');
 
