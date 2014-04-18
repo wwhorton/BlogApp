@@ -2,7 +2,7 @@
 
 <!-- Show the "Add New Post" button if a user is logged in -->
 <% if (locals.user) { %>
-<button id="addNewPost">Add New Post</button>
+<button id="addNewPost" class"button">Add New Post</button>
 <% } %>
 
 <!-- Loop through posts array and create article for each item -->        
@@ -18,8 +18,8 @@
             <% if (locals.user) { %>
             <% if (post.username == locals.user.username) { %>
             <div class="buttonRow">
-                <button class="deletePostBtn button" type="button">Delete</button>
-                <button class="editPostBtn button" type="button">Edit</button>
+                <button class="button deletePostBtn" type="button">Delete</button>
+                <button class="button editPostBtn" type="button">Edit</button>
             </div>
             <% }} %>
         </div>
