@@ -5,7 +5,10 @@
 @import "susy"
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
-+font-face("Foro", font-files("ForoLig-webfont.ttf"))
++font-face("Arvo", font-files("Arvo-Regular.ttf"), normal, normal)
++font-face("Arvo", font-files("Arvo-Bold.ttf"), bold, normal)
++font-face("Arvo", font-files("Arvo-Italic.ttf"), normal, italic)
++font-face("Arvo", font-files("Arvo-BoldItalic.ttf"), bold, italic)
 
 //Vertical rhythm setup
 $base-font-size: 16px
@@ -32,7 +35,7 @@ body
     //+susy-grid-background
     padding-left: 0
     padding-right: 0
-    font-family: "Foro", "Calisto MT", serif
+    font-family: "Arvo", "Calisto MT", serif
 
 #backgroundDiv
     +background(image-url("/img/lorem_white_336x280.gif"))
@@ -80,6 +83,7 @@ label
 
 .ui-accordion
     padding: 0px 0px 0px 0px
+    font-family: "Arvo", "Calisto MT", serif
     
 .ui-accordion-header,
 .ui-widget-header
@@ -110,6 +114,7 @@ h2
 
     pre
         +force-wrap
+        
     
 
 
