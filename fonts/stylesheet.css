@@ -28,3 +28,7 @@
     font-style: normal;
 
 }
+
+
+
++font-face("Cyntho", font-files("cynthoslabpro-regular-webfont-webfont.woff", "cynthoslabpro-regular-webfont-webfont.ttf", "cynthoslabpro-regular-webfont-webfont.svg"), "cynthoslabpro-regular-webfont-webfont.eot", normal, normal)

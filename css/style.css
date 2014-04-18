@@ -109,7 +109,7 @@ body:after {
 
 /* line 57, ../sass/style.sass */
 h1 {
-  font-family: "Cyntho", Rockwell, serif;
+  font-family: "Chunk", Rockwell, serif;
 }
 
 /* line 60, ../sass/style.sass */
@@ -236,4 +236,5 @@ h2 {
   white-space: -moz-pre-wrap;
   white-space: -hp-pre-wrap;
   word-wrap: break-word;
+  font-family: "Cabin", arial;
 }
