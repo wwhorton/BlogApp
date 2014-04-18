@@ -31,14 +31,13 @@
 <script>
 
 //Accordion functionality
-$('#posts .postContent:first').attr("style", "display: block");
 $('#posts header').click(function(e) {
 
     //Close all <div> but the <div> right after the clicked <a>
-    $(e.target).next('div').siblings('div').slideUp('fast');
+    $(e.target).next('div.postContent').siblings('div.postContent').slideUp('fast');
 
     //Toggle open/close on the <div> after the <h3>, opening it if not open.
-    $(e.target).next('div').slideToggle('fast');
+    $(e.target).next('div.postContent').slideToggle('fast');
 });
 
 
