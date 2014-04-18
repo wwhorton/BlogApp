@@ -58,7 +58,7 @@ $(".deletePostBtn").on('click', function(){
 $(".editPostBtn").click(function(){
     
     //Fill new post form fields with values from post
-    $("#postForm").dialog('open');
+    $("#postForm").dialog('open').find('header').html('<h2>Edit Post</h2>');
     $("#titleField").val($(this).parents('.postContent').siblings('header').find('h1').text());
     $("#postField").val($(this).parent().siblings('pre').text());
     $("#postID").val($(this).parents('article').attr('id'));

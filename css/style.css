@@ -164,7 +164,12 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 97, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
+#postForm {
+  overflow: none;
+}
+
+/* line 98, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -172,7 +177,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 101, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -181,7 +186,7 @@ h2 {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 106, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-accordion-content pre {
   font-family: arial;
   width: 100%;

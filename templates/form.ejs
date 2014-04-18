@@ -1,8 +1,7 @@
-<div id="newPostForm">
+<div id="postForm">
 <header>
-<h2>New Post</h2>
 </header>
-<form action="http://murmuring-spire-3618.herokuapp.com/" name="newPost" id="postForm" method="post" >
+<form action="http://murmuring-spire-3618.herokuapp.com/" name="newPost" method="post" >
 <input type="hidden" id="postID" value="" />
 <label for="title">Title:</label><input type="text" name="title" id="titleField" required /><br />
 <label for="body">Post:</label><textarea name="body" rows="8" id="postField" ></textarea><br />
@@ -21,7 +20,7 @@ $("#postForm").dialog({
 });
 
 $("#addNewPost").on('click', function(){
-    $("#postForm").dialog('open');
+    $("#postForm").dialog('open').find('header').html('<h2>New Post</h2>');
 });
 
 </script>
