@@ -157,14 +157,13 @@ header h2 {
 
 /* line 89, ../sass/style.sass */
 .postContent {
-  display: none;
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
 
-/* line 93, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -174,7 +173,7 @@ p {
   display: inline;
 }
 
-/* line 98, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 pre {
   font-family: arial;
   width: 100%;
