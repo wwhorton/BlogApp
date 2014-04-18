@@ -5,7 +5,8 @@
 <button id="addNewPost" class"button">Add New Post</button>
 <% } %>
 
-<!-- Loop through posts array and create article for each item -->        
+<!-- Loop through posts array and create article for each item -->
+<div id="posts">        
 <% posts.forEach(function(post, i){ %>
     <article id="<%=post._id%>" >
         <header>
@@ -25,7 +26,7 @@
         </div>
     </article>
 <% }); %>        
-
+</div>
        
 <script>
 
@@ -36,7 +37,7 @@ $("#posts").accordion({
     active: "false",
     collapsible: "true"
 });
-$("#posts">"class^=ui").removeClass();
+$("#posts>class^=ui").removeClass();
 
 // JavaScript to provide Edit/Delete button functionality
 
