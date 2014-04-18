@@ -16,11 +16,12 @@
 $("#postForm").dialog({ 
             autoOpen: false,
             modal: true,
-            resizable: true
+            resizable: true,
+            title: "New Post"
 });
 
 $("#addNewPost").on('click', function(){
-    $("#postForm").dialog('open').find('header').html('<h2>New Post</h2>');
+    $("#postForm").dialog('open');
 });
 
 </script>
