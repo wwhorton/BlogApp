@@ -1,5 +1,6 @@
 @import "compass"
 @import "compass/typography/vertical_rhythm"
+@import "compass/typography/text/force-wrap"
 @import "compass/css3/background-size"
 @import "susy"
 
@@ -86,7 +87,7 @@ label
     font-family: arial
     color: #000
     border: none
-    padding: 0px
+
     
 .ui-accordion-header .ui-icon
     display: none
@@ -96,7 +97,7 @@ h2
     margin-left: .25rem
         
 .ui-dialog
-    overflow: none
+    
         
         
 .ui-accordion-content
@@ -110,7 +111,7 @@ h2
 
     pre
         font-family: arial
-        +span-columns(4)
+        +force-wrap
     
 
 

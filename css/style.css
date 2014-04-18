@@ -21,7 +21,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 28, ../sass/style.sass */
+/* line 29, ../sass/style.sass */
 body {
   *zoom: 1;
   max-width: 320px;
@@ -43,7 +43,7 @@ body:after {
   clear: both;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 #backgroundDiv {
   background: url(/img/lorem_white_336x280.gif);
   -webkit-background-size: 100%;
@@ -54,7 +54,7 @@ body:after {
   width: 100%;
 }
 
-/* line 40, ../sass/style.sass */
+/* line 41, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   font-family: arial;
@@ -67,12 +67,12 @@ body:after {
   padding-right: 0.5rem;
 }
 
-/* line 49, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 h1 {
   font-family: "Chunk", arial;
 }
 
-/* line 52, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -82,7 +82,7 @@ nav {
   margin-bottom: 0.75em;
 }
 
-/* line 58, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 .button {
   height: 2rem;
   -webkit-border-radius: 4px;
@@ -104,19 +104,19 @@ nav {
   margin-right: 0;
 }
 
-/* line 67, ../sass/style.sass */
+/* line 68, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 70, ../sass/style.sass */
+/* line 71, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
 
-/* line 73, ../sass/style.sass */
+/* line 74, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -124,7 +124,7 @@ label {
   display: inline;
 }
 
-/* line 76, ../sass/style.sass */
+/* line 77, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -132,12 +132,12 @@ label {
   display: inline;
 }
 
-/* line 79, ../sass/style.sass */
+/* line 80, ../sass/style.sass */
 .ui-accordion {
   padding: 0px 0px 0px 0px;
 }
 
-/* line 82, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px 4px 4px 4px;
@@ -153,15 +153,14 @@ label {
   font-family: arial;
   color: black;
   border: none;
-  padding: 0px;
 }
 
-/* line 91, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 94, ../sass/style.sass */
+/* line 95, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -170,12 +169,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 98, ../sass/style.sass */
-.ui-dialog {
-  overflow: none;
-}
-
-/* line 102, ../sass/style.sass */
+/* line 103, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -183,7 +177,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 106, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   font-family: arial;
@@ -192,11 +186,15 @@ h2 {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 111, ../sass/style.sass */
+/* line 112, ../sass/style.sass */
 .ui-accordion-content pre {
   font-family: arial;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
 }
