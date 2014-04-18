@@ -1,9 +1,7 @@
 <!-- post.ejs - EJS template for displaying existing posts; includes script for buttons and display -->
 
 <!-- Show the "Add New Post" button if a user is logged in -->
-<% if (locals.user) { %>
-<button id="addNewPost" class="button">Add New Post</button>
-<% } %>
+
 
 <!-- Loop through posts array and create article for each item -->
 <div id="posts">        

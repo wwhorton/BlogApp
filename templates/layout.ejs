@@ -18,6 +18,9 @@
 <nav>
 <div id="login">
 <% include login.ejs %>
+<% if (locals.user) { %>
+<button id="addNewPost" class="button">Add New Post</button>
+<% } %>
 </div>
 </nav>
     <%- body %>
