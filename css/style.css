@@ -133,7 +133,7 @@ label {
 }
 
 /* line 79, ../sass/style.sass */
-header {
+.ui-accordion-header {
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -ms-border-radius: 4px 4px 4px 4px;
@@ -147,7 +147,7 @@ header {
   font-family: arial;
 }
 /* line 84, ../sass/style.sass */
-header h2 {
+.ui-accordion-header h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
   padding-bottom: 0.375em;
@@ -156,7 +156,7 @@ header h2 {
 }
 
 /* line 89, ../sass/style.sass */
-.postContent {
+.ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
