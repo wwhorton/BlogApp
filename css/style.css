@@ -115,19 +115,15 @@ body {
     -webkit-box-shadow: 0px 0px 5px #333333;
     -moz-box-shadow: 0px 0px 5px #333333;
     box-shadow: 0px 0px 5px #333333;
-    width: 100%;
-    float: left;
-    margin-right: 2.5641%;
-    display: inline;
   }
 }
 
 /* line 62, ../sass/style.sass */
 #titleArea {
   font-family: "Chunk", Rockwell, serif;
-  width: 48.27586%;
+  width: 48.71795%;
   float: left;
-  margin-right: 3.44828%;
+  margin-right: 2.5641%;
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -154,8 +150,9 @@ body {
 /* line 81, ../sass/style.sass */
 nav {
   width: 48.71795%;
-  float: left;
-  margin-right: 2.5641%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1rem;
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -200,7 +197,7 @@ nav {
 @media (min-width: 768px) {
   /* line 90, ../sass/style.sass */
   .button {
-    width: 10.25641%;
+    width: 23.07692%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
@@ -210,9 +207,10 @@ nav {
 
 /* line 103, ../sass/style.sass */
 input {
-  width: 48.71795%;
-  float: left;
-  margin-right: 2.5641%;
+  width: 23.07692%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1rem;
   display: inline;
 }
 @media (min-width: 768px) {
@@ -246,7 +244,7 @@ label {
 @media (min-width: 768px) {
   /* line 113, ../sass/style.sass */
   label {
-    width: 10.25641%;
+    width: 23.07692%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
@@ -263,7 +261,7 @@ label {
 @media (min-width: 768px) {
   /* line 118, ../sass/style.sass */
   #posts {
-    width: 74.35897%;
+    width: 100%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
