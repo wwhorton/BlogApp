@@ -209,9 +209,10 @@ input {
 @media (min-width: 768px) {
   /* line 101, ../sass/style.sass */
   input {
-    width: 48.71795%;
-    float: left;
-    margin-right: 2.5641%;
+    width: 35.89744%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1rem;
     display: inline;
   }
 }
@@ -233,8 +234,17 @@ label {
   margin-right: 2.5641%;
   display: inline;
 }
+@media (min-width: 768px) {
+  /* line 111, ../sass/style.sass */
+  label {
+    width: 10.25641%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+}
 
-/* line 116, ../sass/style.sass */
+/* line 117, ../sass/style.sass */
 #posts {
   width: 48.71795%;
   float: left;
@@ -242,7 +252,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 116, ../sass/style.sass */
+  /* line 117, ../sass/style.sass */
   #posts {
     width: 100%;
     float: left;
@@ -251,12 +261,12 @@ label {
   }
 }
 
-/* line 121, ../sass/style.sass */
+/* line 122, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 126, ../sass/style.sass */
+/* line 127, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -271,12 +281,12 @@ label {
   font-weight: bold;
 }
 
-/* line 134, ../sass/style.sass */
+/* line 135, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 137, ../sass/style.sass */
+/* line 138, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -285,7 +295,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 141, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -293,7 +303,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 145, ../sass/style.sass */
+/* line 146, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
