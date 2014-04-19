@@ -99,7 +99,6 @@ body:after {
     -webkit-box-shadow: 0px 0px 5px #333333;
     -moz-box-shadow: 0px 0px 5px #333333;
     box-shadow: 0px 0px 5px #333333;
-    padding-left: 12.82051%;
   }
 }
 
@@ -125,34 +124,40 @@ nav {
 
 /* line 66, ../sass/style.sass */
 .button {
-  height: 2rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #a9d6b7;
-  width: 23.07692%;
-  float: left;
-  margin-right: 2.5641%;
-  display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 184, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
-.button:last-child {
-  float: right;
-  margin-right: 0;
+@media (min-width: 480px) {
+  /* line 66, ../sass/style.sass */
+  .button {
+    height: 2rem;
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+  /* line 184, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+  .button:last-child {
+    float: right;
+    margin-right: 0;
+  }
 }
 @media (min-width: 768px) {
   /* line 66, ../sass/style.sass */
   .button {
-    width: 31.03448%;
+    width: 28.57143%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 7.14286%;
     display: inline;
+    height: 2.5rem;
   }
 }
 
-/* line 77, ../sass/style.sass */
+/* line 79, ../sass/style.sass */
 input {
   width: 48.71795%;
   float: left;
@@ -160,7 +165,7 @@ input {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/style.sass */
+  /* line 79, ../sass/style.sass */
   input {
     width: 64.28571%;
     float: right;
@@ -169,18 +174,18 @@ input {
     display: inline;
   }
 }
-/* line 82, ../sass/style.sass */
+/* line 84, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
 @media (min-width: 768px) {
-  /* line 82, ../sass/style.sass */
+  /* line 84, ../sass/style.sass */
   input textarea {
     cols: 60;
   }
 }
 
-/* line 87, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 label {
   width: 48.71795%;
   float: left;
@@ -188,7 +193,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 87, ../sass/style.sass */
+  /* line 89, ../sass/style.sass */
   label {
     width: 28.57143%;
     float: left;
@@ -197,7 +202,7 @@ label {
   }
 }
 
-/* line 92, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 #posts {
   width: 48.71795%;
   float: left;
@@ -205,7 +210,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 92, ../sass/style.sass */
+  /* line 94, ../sass/style.sass */
   #posts {
     width: 100%;
     float: left;
@@ -214,12 +219,12 @@ label {
   }
 }
 
-/* line 97, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 100, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -234,12 +239,12 @@ label {
   font-weight: bold;
 }
 
-/* line 108, ../sass/style.sass */
+/* line 110, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 111, ../sass/style.sass */
+/* line 113, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -248,7 +253,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 115, ../sass/style.sass */
+/* line 117, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -256,7 +261,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 119, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 .ui-accordion-content p {
   background: rgba(173, 155, 83, 0.4);
   width: 48.71795%;
@@ -264,7 +269,7 @@ h2 {
   margin-right: 2.5641%;
   display: inline;
 }
-/* line 123, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
