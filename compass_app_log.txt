@@ -643,3 +643,11 @@ Load paths:
 2014-04-18 23:46:39 overwrite css/style.css 
 2014-04-18 23:47:45 overwrite css/style.css 
 2014-04-18 23:51:41 overwrite css/style.css 
+2014-04-18 23:57:21     error sass/style.sass (Line 37: Invalid CSS after "...(0, 0, 0, 0.01)": expected expression (e.g. 1px, bold), was "; //needed for ...")
+2014-04-18 23:57:21 overwrite css/style.css 
+2014-04-18 23:57:41 overwrite css/style.css 
+2014-04-18 23:57:42    remove .sass-cache/ 
+2014-04-18 23:57:42    remove css/screen.css 
+2014-04-18 23:57:42    remove css/style.css 
+2014-04-18 23:57:43    create css/screen.css 
+2014-04-18 23:57:44    create css/style.css 

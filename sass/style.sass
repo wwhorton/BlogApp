@@ -34,7 +34,7 @@ $container-style: magic
 $color: lighten(rgb(83, 173, 110), 25%)
 
 html
-    background-color: #000
+    background-color: rgba(0, 0, 0, 0.01) //needed for susy grid
   
 body
     +container
@@ -56,12 +56,13 @@ body
     padding-right: .5rem
     @media (min-width: 768px)
         +single-box-shadow
-        +span-columns(8)
+        +pre(1)
+        +span-columns(6,8)
         
     
 #titleArea
     font-family: "Chunk", Rockwell, serif
-    +span-columns(3, 8)
+    +span-columns(3, 6)
     margin-top: rhythm(.5, 16px)
     margin-bottom: rhythm(.5, 16px)
     +adjust-leading-to(1.5)
@@ -73,17 +74,17 @@ body
         +background(image-url("/img/TypewriterBW.jpg") no-repeat )
         +background-size(auto 100%)
         position: absolute
-        +span-columns(2, 8)
         height: 14.746%
         right: 17%
         +opacity(.2)
         
 
 nav
-    +span-columns(3, 8)
+    +span-columns(4)
     margin-top: rhythm(.5, 16px)
     margin-bottom: rhythm(.5, 16px)
     @media (min-width: 768px)
+        +span-columns(3 omega, 6)
         position: absolute
         height: 14.746%
 
@@ -97,13 +98,13 @@ nav
     margin-top: rhythm(.5, 16px)
     margin-bottom: rhythm(.5, 16px)
     @media (min-width: 768px)
-        +span-columns(1, 2)
+        +span-columns(1, 3)
         height: 2.5rem
         
 input
     +span-columns(4)
     @media (min-width: 768px)
-        +span-columns(2 omega, 4)
+        +span-columns(2 omega, 3)
     
     textarea
         cols: 40
@@ -113,12 +114,12 @@ input
 label
     +span-columns(4)
     @media (min-width: 768px)
-        +span-columns(1, 4)
+        +span-columns(1, 3)
 
 #posts
     +span-columns(4)
     @media (min-width: 768px)
-        +span-columns(8)
+        +span-columns(6)
 
 .ui-accordion
     font-family: "Cabin", arial
