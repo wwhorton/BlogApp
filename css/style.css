@@ -262,14 +262,6 @@ h2 {
   border: none;
 }
 /* line 121, ../sass/style.sass */
-.ui-accordion-content p {
-  background: rgba(173, 155, 83, 0.4);
-  width: 48.71795%;
-  float: left;
-  margin-right: 2.5641%;
-  display: inline;
-}
-/* line 125, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
