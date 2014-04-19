@@ -201,15 +201,19 @@ input {
   }
 }
 
+/* line 100, ../sass/style.sass */
+.ui-dialog-content #titleField {
+  width: 92.468% !important;
+  height: 1.5rem;
+}
 @media (min-width: 768px) {
-  /* line 100, ../sass/style.sass */
-  .ui-dialog-content #postField, .ui-dialog-content #titleField {
-    width: 530px !important;
-    height: 370px !important;
+  /* line 104, ../sass/style.sass */
+  .ui-dialog-content #postField {
+    height: 15rem;
   }
 }
 
-/* line 110, ../sass/style.sass */
+/* line 108, ../sass/style.sass */
 label {
   width: 48.71795%;
   float: left;
@@ -217,7 +221,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/style.sass */
+  /* line 108, ../sass/style.sass */
   label {
     width: 21.05263%;
     float: left;
@@ -226,7 +230,7 @@ label {
   }
 }
 
-/* line 116, ../sass/style.sass */
+/* line 114, ../sass/style.sass */
 #posts {
   width: 48.71795%;
   float: left;
@@ -234,7 +238,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 116, ../sass/style.sass */
+  /* line 114, ../sass/style.sass */
   #posts {
     width: 100%;
     float: left;
@@ -243,12 +247,12 @@ label {
   }
 }
 
-/* line 121, ../sass/style.sass */
+/* line 119, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 125, ../sass/style.sass */
+/* line 123, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -263,12 +267,12 @@ label {
   font-weight: bold;
 }
 
-/* line 133, ../sass/style.sass */
+/* line 131, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 136, ../sass/style.sass */
+/* line 134, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -277,14 +281,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 140, ../sass/style.sass */
+/* line 138, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 142, ../sass/style.sass */
+/* line 140, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
