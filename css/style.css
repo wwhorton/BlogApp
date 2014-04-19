@@ -250,7 +250,16 @@ label {
   font-family: "Cabin", arial;
 }
 
-/* line 120, ../sass/style.sass */
+/* line 119, ../sass/style.sass */
+.postForm {
+  margin-left: 12.82051%;
+  width: 74.35897%;
+  float: left;
+  margin-right: 2.5641%;
+  display: inline;
+}
+
+/* line 123, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -265,12 +274,12 @@ label {
   font-weight: bold;
 }
 
-/* line 128, ../sass/style.sass */
+/* line 131, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 131, ../sass/style.sass */
+/* line 134, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -279,14 +288,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 135, ../sass/style.sass */
+/* line 138, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 137, ../sass/style.sass */
+/* line 140, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
