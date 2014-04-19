@@ -149,9 +149,9 @@ nav {
 @media (min-width: 768px) {
   /* line 66, ../sass/style.sass */
   .button {
-    width: 28.57143%;
+    width: 44.44444%;
     float: left;
-    margin-right: 7.14286%;
+    margin-right: 11.11111%;
     display: inline;
     height: 2.5rem;
   }
