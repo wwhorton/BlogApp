@@ -464,3 +464,7 @@ Load paths:
 2014-04-18 19:53:23     error sass/style.sass (Line 91: Invalid CSS after "(tablet) ": expected expression (e.g. 1px, bold), was "{ cols: 60 }")
 2014-04-18 19:53:23 identical css/style.css 
 2014-04-18 19:53:55 overwrite css/style.css 
+2014-04-18 20:02:24     error sass/style.sass (Line 55: Invalid CSS after "": expected expression (e.g. 1px, bold), was ": fixed")
+2014-04-18 20:02:24 overwrite css/style.css 
+2014-04-18 20:03:59 overwrite css/style.css 
+2014-04-18 20:04:45 overwrite css/style.css 
