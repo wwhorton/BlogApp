@@ -194,16 +194,6 @@ input {
   *margin-left: -1rem;
   display: inline;
 }
-@media (min-width: 768px) {
-  /* line 100, ../sass/style.sass */
-  input {
-    width: 35.89744%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -1rem;
-    display: inline;
-  }
-}
 /* line 105, ../sass/style.sass */
 input textarea {
   cols: 40;
@@ -221,15 +211,6 @@ label {
   float: left;
   margin-right: 2.5641%;
   display: inline;
-}
-@media (min-width: 768px) {
-  /* line 110, ../sass/style.sass */
-  label {
-    width: 10.25641%;
-    float: left;
-    margin-right: 2.5641%;
-    display: inline;
-  }
 }
 
 /* line 116, ../sass/style.sass */
