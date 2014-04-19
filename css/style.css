@@ -117,17 +117,18 @@ body {
 @media (min-width: 768px) {
   /* line 66, ../sass/style.sass */
   #logo {
-    background: url(/img/TypewriterBW.jpg) no-repeat scroll 15% 0%/25% auto transparent;
-    background-size: 65%;
+    background: url(/img/TypewriterBW.jpg) no-repeat;
     position: absolute;
+    top: 4%;
+    right: 60%;
     height: 9.4375rem;
-    width: 39rem;
+    max-width: 39rem;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2;
   }
 }
 
-/* line 75, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 nav {
   width: 48.71795%;
   float: left;
@@ -135,12 +136,16 @@ nav {
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
-  background-color: white;
-  background-color-width: 48.71795%;
-  background-color-float: right;
-  background-color-margin-right: 0;
-  background-color-*margin-left: -1rem;
-  background-color-display: inline;
+}
+@media (min-width: 768px) {
+  /* line 76, ../sass/style.sass */
+  nav {
+    width: 48.71795%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1rem;
+    display: inline;
+  }
 }
 
 /* line 84, ../sass/style.sass */
