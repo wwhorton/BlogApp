@@ -13,22 +13,22 @@
 <body>
 
 <div id="wrapper" style="overflow:hidden">
-<div id="titleArea"><h1>A Simple, Responsive Blog Engine</h1></div>
-<div id="logo"></div>
-<nav>
-<div id="login">
-<% include login.ejs %>
-<% if (locals.user) { %>
-<button id="addNewPost" class="button">Add New Post</button>
-<% } %>
-</div>
-</nav>
+    <div id="titleArea"><h1>A Simple, Responsive Blog Engine</h1></div>
+    <div id="logo"></div>
+    <nav>
+        <div id="login">
+        <% include login.ejs %>
+        <% if (locals.user) { %>
+        <button id="addNewPost" class="button">Add New Post</button>
+        <% } %>
+        </div>
+    </nav>
     <%- body %>
 
 <!-- New Post modal; only shown when Add New Post is clicked -->
-<div id="form">
-    <% include form.ejs %>
-</div>
+    <div id="form">
+        <% include form.ejs %>
+    </div>
 </div>
 </body>
 </html>
