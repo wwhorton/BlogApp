@@ -210,9 +210,8 @@ input {
   /* line 101, ../sass/style.sass */
   input {
     width: 23.07692%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -1rem;
+    float: left;
+    margin-right: 2.5641%;
     display: inline;
   }
 }
