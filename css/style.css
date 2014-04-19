@@ -199,7 +199,7 @@ input {
 @media (min-width: 768px) {
   /* line 98, ../sass/style.sass */
   input {
-    width: 35.89744%;
+    width: 73.68421%;
     float: right;
     margin-right: 0;
     *margin-left: -1rem;
@@ -223,6 +223,15 @@ label {
   float: left;
   margin-right: 2.5641%;
   display: inline;
+}
+@media (min-width: 768px) {
+  /* line 108, ../sass/style.sass */
+  label {
+    width: 21.05263%;
+    float: left;
+    margin-right: 5.26316%;
+    display: inline;
+  }
 }
 
 /* line 114, ../sass/style.sass */
