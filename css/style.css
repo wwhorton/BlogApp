@@ -49,18 +49,13 @@ html {
 }
 
 /* line 36, ../sass/style.sass */
-html {
-  background-color: rgba(0, 0, 0, 0.01);
-}
-
-/* line 39, ../sass/style.sass */
 body {
   padding-left: 0;
   padding-right: 0;
   font-family: "Cabin", arial;
 }
 @media (min-width: 768px) {
-  /* line 39, ../sass/style.sass */
+  /* line 36, ../sass/style.sass */
   body {
     background: url(/img/lorem_white_336x280.gif);
     -webkit-background-size: 100%;
@@ -71,7 +66,7 @@ body {
   }
 }
 
-/* line 49, ../sass/style.sass */
+/* line 46, ../sass/style.sass */
 #wrapper {
   *zoom: 1;
   max-width: 640px;
@@ -110,7 +105,7 @@ body {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 49, ../sass/style.sass */
+  /* line 46, ../sass/style.sass */
   #wrapper {
     -webkit-box-shadow: 0px 0px 5px #333333;
     -moz-box-shadow: 0px 0px 5px #333333;
@@ -118,7 +113,7 @@ body {
   }
 }
 
-/* line 62, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 #titleArea {
   font-family: "Chunk", Rockwell, serif;
   width: 48.71795%;
@@ -132,7 +127,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 71, ../sass/style.sass */
+  /* line 68, ../sass/style.sass */
   #logo {
     background: url(/img/TypewriterBW.jpg) no-repeat;
     -webkit-background-size: auto 100%;
@@ -147,7 +142,7 @@ body {
   }
 }
 
-/* line 81, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 nav {
   width: 48.71795%;
   float: right;
@@ -158,19 +153,17 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 81, ../sass/style.sass */
+  /* line 78, ../sass/style.sass */
   nav {
-    width: 35.89744%;
+    width: 48.71795%;
     float: right;
     margin-right: 0;
     *margin-left: -1rem;
     display: inline;
-    position: absolute;
-    height: 14.746%;
   }
 }
 
-/* line 90, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
 .button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -180,7 +173,7 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 480px) {
-  /* line 90, ../sass/style.sass */
+  /* line 88, ../sass/style.sass */
   .button {
     height: 2rem;
     width: 23.07692%;
@@ -195,7 +188,7 @@ nav {
   }
 }
 @media (min-width: 768px) {
-  /* line 90, ../sass/style.sass */
+  /* line 88, ../sass/style.sass */
   .button {
     width: 23.07692%;
     float: left;
@@ -205,7 +198,7 @@ nav {
   }
 }
 
-/* line 103, ../sass/style.sass */
+/* line 101, ../sass/style.sass */
 input {
   width: 23.07692%;
   float: right;
@@ -214,7 +207,7 @@ input {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 103, ../sass/style.sass */
+  /* line 101, ../sass/style.sass */
   input {
     width: 23.07692%;
     float: right;
@@ -223,18 +216,18 @@ input {
     display: inline;
   }
 }
-/* line 108, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
 @media (min-width: 768px) {
-  /* line 108, ../sass/style.sass */
+  /* line 106, ../sass/style.sass */
   input textarea {
     cols: 60;
   }
 }
 
-/* line 113, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 label {
   width: 48.71795%;
   float: left;
@@ -242,7 +235,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/style.sass */
+  /* line 111, ../sass/style.sass */
   label {
     width: 23.07692%;
     float: left;
@@ -251,7 +244,7 @@ label {
   }
 }
 
-/* line 118, ../sass/style.sass */
+/* line 116, ../sass/style.sass */
 #posts {
   width: 48.71795%;
   float: left;
@@ -259,7 +252,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 118, ../sass/style.sass */
+  /* line 116, ../sass/style.sass */
   #posts {
     width: 100%;
     float: left;
@@ -268,12 +261,12 @@ label {
   }
 }
 
-/* line 123, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 128, ../sass/style.sass */
+/* line 126, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -288,12 +281,12 @@ label {
   font-weight: bold;
 }
 
-/* line 136, ../sass/style.sass */
+/* line 134, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 139, ../sass/style.sass */
+/* line 137, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -302,7 +295,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 143, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -310,7 +303,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 147, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;

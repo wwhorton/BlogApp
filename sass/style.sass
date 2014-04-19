@@ -32,9 +32,6 @@ $container-style: magic
 +border-box-sizing
 
 $color: lighten(rgb(83, 173, 110), 25%)
-
-html
-    background-color: rgba(0, 0, 0, 0.01) //needed for susy grid
   
 body
     padding-left: 0
@@ -83,9 +80,10 @@ nav
     margin-top: rhythm(.5, 16px)
     margin-bottom: rhythm(.5, 16px)
     @media (min-width: 768px)
-        +span-columns(3 omega)
-        position: absolute
-        height: 14.746%
+        +span-columns(4 omega)
+        //position: absolute
+        //height: 14.746%
+
 
 .button
     +border-radius(4px)
