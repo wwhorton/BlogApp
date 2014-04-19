@@ -203,6 +203,7 @@ input {
 /* line 99, ../sass/style.sass */
 input #postField {
   cols: 40;
+  rows: 8;
 }
 @media (min-width: 768px) {
   /* line 99, ../sass/style.sass */
@@ -212,7 +213,7 @@ input #postField {
   }
 }
 
-/* line 109, ../sass/style.sass */
+/* line 110, ../sass/style.sass */
 label {
   width: 48.71795%;
   float: left;
@@ -220,7 +221,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/style.sass */
+  /* line 110, ../sass/style.sass */
   label {
     width: 21.05263%;
     float: left;
@@ -229,7 +230,7 @@ label {
   }
 }
 
-/* line 115, ../sass/style.sass */
+/* line 116, ../sass/style.sass */
 #posts {
   width: 48.71795%;
   float: left;
@@ -237,7 +238,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 115, ../sass/style.sass */
+  /* line 116, ../sass/style.sass */
   #posts {
     width: 100%;
     float: left;
@@ -246,12 +247,12 @@ label {
   }
 }
 
-/* line 120, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 124, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -266,12 +267,12 @@ label {
   font-weight: bold;
 }
 
-/* line 132, ../sass/style.sass */
+/* line 133, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 135, ../sass/style.sass */
+/* line 136, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -280,14 +281,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 139, ../sass/style.sass */
+/* line 140, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 141, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
