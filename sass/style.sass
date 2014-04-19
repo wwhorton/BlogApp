@@ -96,16 +96,15 @@ input
     @media (min-width: 768px)
         +span-columns(3 omega, 4)
     
-    textarea
+    #postField
         cols: 40
         @media (min-width: 768px)
             width: 530px
             height: 370px
             
-.ui-dialog
+#titleField
     @media (min-width: 768px)
-        input
-        @extend textarea
+        @extend #postField
     
 label
     +span-columns(4)
