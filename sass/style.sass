@@ -57,10 +57,12 @@ body
 #titleArea
     font-family: "Chunk", Rockwell, serif
     +span-columns(3, 6)
+    margin-top: rhythm(.5, 16px)
+    margin-bottom: rhythm(.5, 16px)
     @media (min-width: 768px)
-        +background(image-url("/img/TypewriterBW.jpg") no-repeat)
+        +background(image-url("/img/TypewriterBW.jpg") no-repeat 70%)
         +background-size(auto 100%)
-        +opacity(.2)
+        position: absolute
         height: 10%
         
 
