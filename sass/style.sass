@@ -38,7 +38,7 @@ body
     padding-left: 0
     padding-right: 0
     font-family: "Cabin", arial
-    //+device(tab)
+    //@media (min-width: 768px)
     //   +background(image-url("/img/lorem_white_336x280.gif"))
     //    +background-size(100%)
     //    background-attachment: fixed
@@ -92,7 +92,7 @@ label
 #posts
     +span-columns(4)
     @media (min-width: 768px)
-        +span-columns(6)
+        +span-columns(6,6)
 
 .ui-accordion
     font-family: "Cabin", arial
@@ -119,8 +119,6 @@ h2
     p
         +background(rgba(173, 155, 83, .4))
         +span-columns(4)
-        @media (min-width: 768px)
-            +span-columns(4)
 
     pre
         +force-wrap
