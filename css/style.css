@@ -118,11 +118,8 @@ body {
   /* line 66, ../sass/style.sass */
   #logo {
     background: url(/img/TypewriterBW.jpg) no-repeat;
-    -webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    -o-background-size: auto 100%;
-    background-size: auto 100%;
-    display: block;
+    height: 151px;
+    width: 100%;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2;
   }
