@@ -89,17 +89,6 @@ body:after {
   display: table;
   clear: both;
 }
-@media (min-width: 768px) {
-  /* line 46, ../sass/style.sass */
-  body {
-    background: url(/img/lorem_white_336x280.gif);
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    background-attachment: fixed;
-  }
-}
 
 /* line 57, ../sass/style.sass */
 #wrapper {
