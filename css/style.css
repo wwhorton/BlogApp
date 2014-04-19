@@ -124,7 +124,7 @@ body:after {
 @media (min-width: 768px) {
   /* line 57, ../sass/style.sass */
   #titleArea {
-    background-image: "/img/TypewriterBW.jpg";
+    background: url(/img/TypewriterBW.jpg);
     -webkit-background-size: auto 10%;
     -moz-background-size: auto 10%;
     -o-background-size: auto 10%;

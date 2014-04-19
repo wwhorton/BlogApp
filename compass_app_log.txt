@@ -605,3 +605,6 @@ Load paths:
 2014-04-18 22:23:38    remove css/style.css 
 2014-04-18 22:23:39    create css/screen.css 
 2014-04-18 22:23:41    create css/style.css 
+2014-04-18 22:25:20     error sass/style.sass (Line 61: Invalid CSS after "background-image": expected selector, was "("/img/Typewrit...")
+2014-04-18 22:25:20 overwrite css/style.css 
+2014-04-18 22:27:47 overwrite css/style.css 
