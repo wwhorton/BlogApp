@@ -204,12 +204,12 @@ input {
 /* line 100, ../sass/style.sass */
 .ui-dialog-content #titleField {
   width: 92.468% !important;
-  height: 1.5rem;
+  height: 1.5rem !important;
 }
 @media (min-width: 768px) {
   /* line 104, ../sass/style.sass */
   .ui-dialog-content #postField {
-    height: 15rem;
+    height: 15rem !important;
   }
 }
 
