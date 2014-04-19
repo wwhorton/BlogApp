@@ -98,15 +98,14 @@ input
     
 .ui-dialog-content
     #postField
-        cols: 40
-        rows: 8
+        //cols: 40
+        //rows: 8
         @media (min-width: 768px)
             width: 530px !important
             height: 370px !important
-            
-#titleField
-    @media (min-width: 768px)
-        @extend #postField
+    #titleField
+        @media (min-width: 768px)
+            @extend #postField
     
 label
     +span-columns(4)

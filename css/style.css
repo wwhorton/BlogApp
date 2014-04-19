@@ -200,14 +200,10 @@ input {
     display: inline;
   }
 }
-/* line 99, ../sass/style.sass */
-input #postField {
-  cols: 40;
-  rows: 8;
-}
+
 @media (min-width: 768px) {
-  /* line 99, ../sass/style.sass */
-  input #postField, input #titleField {
+  /* line 100, ../sass/style.sass */
+  .ui-dialog-content #postField, .ui-dialog-content #titleField {
     width: 530px !important;
     height: 370px !important;
   }
