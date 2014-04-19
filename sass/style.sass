@@ -99,7 +99,13 @@ input
     textarea
         cols: 40
         @media (min-width: 768px)
-            cols: 60
+            width: 530px
+            height: 370px
+            
+.modalForm
+    @media (min-width: 768px)
+        input
+        @extend textarea
     
 label
     +span-columns(4)
@@ -115,10 +121,6 @@ label
 .ui-accordion
     font-family: "Cabin", arial
     @media (min-width: 768px)
-    
-.postForm
-    +pre(1)
-    +span-columns(6,8)
     
 .ui-accordion-header,
 .ui-widget-header
