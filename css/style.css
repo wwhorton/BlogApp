@@ -206,7 +206,7 @@ input textarea {
 }
 @media (min-width: 768px) {
   /* line 99, ../sass/style.sass */
-  input textarea, input .modalForm {
+  input textarea, input .ui-dialog {
     width: 530px;
     height: 370px;
   }
