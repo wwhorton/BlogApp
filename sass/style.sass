@@ -67,6 +67,7 @@ body
     @media (min-width: 768px)
         +background(image-url("/img/TypewriterBW.jpg") no-repeat )
         +background-size(auto 100%)
+        display: block
         position: absolute
         height: 14.746%
         right: 60%
@@ -136,8 +137,9 @@ h2
         
 .ui-accordion-content
     +rhythm(.5,.5,.5,.5)
-    border: none
-
+    border-left: 1px solid grey
+    border-right: 1px solid grey
+    
     pre
         +force-wrap
         font-family: "Cabin", arial

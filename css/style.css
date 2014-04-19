@@ -288,9 +288,10 @@ h2 {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
-  border: none;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
 }
-/* line 141, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
