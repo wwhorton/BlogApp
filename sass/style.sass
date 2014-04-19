@@ -32,17 +32,20 @@ $container-style: magic
 +border-box-sizing
 
 $color: lighten(rgb(83, 173, 110), 25%)
+
+html
+    background-color: #000
   
 body
     +container
-    //+susy-grid-background
+    +susy-grid-background
     padding-left: 0
     padding-right: 0
     font-family: "Cabin", arial
     @media (min-width: 768px)
-        +background(image-url("/img/lorem_white_336x280.gif"))
-        +background-size(100%)
-        background-attachment: fixed
+        //+background(image-url("/img/lorem_white_336x280.gif"))
+        //+background-size(100%)
+        //background-attachment: fixed
         
 
 #wrapper
@@ -120,7 +123,7 @@ label
 .ui-accordion
     font-family: "Cabin", arial
     @media (min-width: 768px)
-        +single-box-shadow
+        
     
 .ui-accordion-header,
 .ui-widget-header
