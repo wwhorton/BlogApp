@@ -608,3 +608,11 @@ Load paths:
 2014-04-18 22:25:20     error sass/style.sass (Line 61: Invalid CSS after "background-image": expected selector, was "("/img/Typewrit...")
 2014-04-18 22:25:20 overwrite css/style.css 
 2014-04-18 22:27:47 overwrite css/style.css 
+2014-04-18 22:34:38     error sass/style.sass (Line 61: Invalid CSS after "...pg"),no-repeat,": expected mixin argument, was ")")
+2014-04-18 22:34:38 overwrite css/style.css 
+2014-04-18 22:34:58 overwrite css/style.css 
+2014-04-18 22:35:11    remove .sass-cache/ 
+2014-04-18 22:35:11    remove css/screen.css 
+2014-04-18 22:35:11    remove css/style.css 
+2014-04-18 22:35:12    create css/screen.css 
+2014-04-18 22:35:13    create css/style.css 

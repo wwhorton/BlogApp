@@ -58,9 +58,10 @@ body
     font-family: "Chunk", Rockwell, serif
     +span-columns(3, 6)
     @media (min-width: 768px)
-        +background(image-url("/img/TypewriterBW.jpg"))
-        +background-size(auto 10%)
+        +background(image-url("/img/TypewriterBW.jpg") no-repeat)
+        +background-size(auto 100%)
         +opacity(.2)
+        height: 10%
         
 
 nav
