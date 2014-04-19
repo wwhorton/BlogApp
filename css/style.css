@@ -143,9 +143,10 @@ nav {
 @media (min-width: 768px) {
   /* line 77, ../sass/style.sass */
   nav {
-    width: 48.71795%;
-    float: left;
-    margin-right: 2.5641%;
+    width: 35.89744%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1rem;
     display: inline;
   }
 }
