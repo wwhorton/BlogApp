@@ -148,6 +148,8 @@ nav {
     margin-right: 0;
     *margin-left: -1rem;
     display: inline;
+    position: absolute;
+    height: 14.746%;
   }
 }
 
@@ -193,6 +195,16 @@ input {
   margin-right: 0;
   *margin-left: -1rem;
   display: inline;
+}
+@media (min-width: 768px) {
+  /* line 100, ../sass/style.sass */
+  input {
+    width: 35.89744%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1rem;
+    display: inline;
+  }
 }
 /* line 105, ../sass/style.sass */
 input textarea {
