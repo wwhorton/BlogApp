@@ -48,7 +48,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 body {
   *zoom: 1;
   max-width: 640px;
@@ -81,8 +81,19 @@ body:after {
   display: table;
   clear: both;
 }
+@media (min-width: 768px) {
+  /* line 36, ../sass/style.sass */
+  body {
+    background: url(/img/lorem_white_336x280.gif);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+}
 
-/* line 46, ../sass/style.sass */
+/* line 47, ../sass/style.sass */
 #wrapper {
   overflow: hidden;
   background-color: white;
@@ -94,7 +105,7 @@ body:after {
   padding-right: 0.5rem;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/style.sass */
+  /* line 47, ../sass/style.sass */
   #wrapper {
     -webkit-box-shadow: 0px 0px 5px #333333;
     -moz-box-shadow: 0px 0px 5px #333333;
@@ -102,7 +113,7 @@ body:after {
   }
 }
 
-/* line 56, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 #titleArea {
   font-family: "Chunk", Rockwell, serif;
   width: 48.27586%;
@@ -110,8 +121,20 @@ body:after {
   margin-right: 3.44828%;
   display: inline;
 }
+@media (min-width: 768px) {
+  /* line 57, ../sass/style.sass */
+  #titleArea {
+    background-image: "/img/TypewriterBW.jpg";
+    -webkit-background-size: auto 10%;
+    -moz-background-size: auto 10%;
+    -o-background-size: auto 10%;
+    background-size: auto 10%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+    opacity: 0.2;
+  }
+}
 
-/* line 60, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 nav {
   width: 48.27586%;
   float: right;
@@ -121,8 +144,14 @@ nav {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
+@media (min-width: 768px) {
+  /* line 66, ../sass/style.sass */
+  nav {
+    height: 10%;
+  }
+}
 
-/* line 66, ../sass/style.sass */
+/* line 74, ../sass/style.sass */
 .button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -132,7 +161,7 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 480px) {
-  /* line 66, ../sass/style.sass */
+  /* line 74, ../sass/style.sass */
   .button {
     height: 2rem;
     width: 23.07692%;
@@ -147,7 +176,7 @@ nav {
   }
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/style.sass */
+  /* line 74, ../sass/style.sass */
   .button {
     width: 44.44444%;
     float: left;
@@ -157,7 +186,7 @@ nav {
   }
 }
 
-/* line 79, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 input {
   width: 48.71795%;
   float: left;
@@ -165,7 +194,7 @@ input {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 79, ../sass/style.sass */
+  /* line 87, ../sass/style.sass */
   input {
     width: 64.28571%;
     float: right;
@@ -174,18 +203,18 @@ input {
     display: inline;
   }
 }
-/* line 84, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 input textarea {
   cols: 40;
 }
 @media (min-width: 768px) {
-  /* line 84, ../sass/style.sass */
+  /* line 92, ../sass/style.sass */
   input textarea {
     cols: 60;
   }
 }
 
-/* line 89, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 label {
   width: 48.71795%;
   float: left;
@@ -193,7 +222,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 89, ../sass/style.sass */
+  /* line 97, ../sass/style.sass */
   label {
     width: 28.57143%;
     float: left;
@@ -202,7 +231,7 @@ label {
   }
 }
 
-/* line 94, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 #posts {
   width: 48.71795%;
   float: left;
@@ -210,7 +239,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 94, ../sass/style.sass */
+  /* line 102, ../sass/style.sass */
   #posts {
     width: 100%;
     float: left;
@@ -219,12 +248,12 @@ label {
   }
 }
 
-/* line 99, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 102, ../sass/style.sass */
+/* line 110, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -239,12 +268,12 @@ label {
   font-weight: bold;
 }
 
-/* line 110, ../sass/style.sass */
+/* line 118, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 113, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -253,7 +282,7 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 117, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
@@ -261,7 +290,7 @@ h2 {
   margin-bottom: 0.75em;
   border: none;
 }
-/* line 121, ../sass/style.sass */
+/* line 129, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;

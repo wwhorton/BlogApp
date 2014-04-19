@@ -590,3 +590,18 @@ Load paths:
 2014-04-18 21:52:29 overwrite css/style.css 
 2014-04-18 21:55:32 overwrite css/style.css 
 2014-04-18 21:57:52 overwrite css/style.css 
+2014-04-18 22:02:17 overwrite css/style.css 
+2014-04-18 22:22:29 overwrite css/style.css 
+2014-04-18 22:22:43    remove .sass-cache/ 
+2014-04-18 22:22:43    remove css/screen.css 
+2014-04-18 22:22:43    remove css/style.css 
+2014-04-18 22:22:44    create css/screen.css 
+2014-04-18 22:22:45    create css/style.css 
+2014-04-18 22:23:17     error sass/style.sass (Line 43: Inconsistent indentation: 7 spaces were used for indentation, but the rest of the document was indented using 4 spaces.)
+2014-04-18 22:23:17 overwrite css/style.css 
+2014-04-18 22:23:34 overwrite css/style.css 
+2014-04-18 22:23:38    remove .sass-cache/ 
+2014-04-18 22:23:38    remove css/screen.css 
+2014-04-18 22:23:38    remove css/style.css 
+2014-04-18 22:23:39    create css/screen.css 
+2014-04-18 22:23:41    create css/style.css 
