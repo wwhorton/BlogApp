@@ -3,18 +3,7 @@
 @import "compass/typography/text/force-wrap"
 @import "compass/css3/background-size"
 @import "susy"
-
-=device($type)
-    @if $type == mobile
-        @media (min-width: 480px)
-            @content
-    @else if $type == tablet
-        @media (min-width: 768px)
-            @content
-    @else if $type == desktop
-        @media (min-width: 980px)
-            @content
-
+            
 
 +font-face("Chunk", font-files("chunkfive-webfont.ttf"))
 
@@ -44,12 +33,12 @@ $container-style: magic
 $color: lighten(rgb(83, 173, 110), 25%)
   
 body
-    +container($total-columns)
+    +container
     +susy-grid-background
     padding-left: 0
     padding-right: 0
     font-family: "Cabin", arial
-    //+device(tablet)
+    //+device(tab)
     //   +background(image-url("/img/lorem_white_336x280.gif"))
     //    +background-size(100%)
     //    background-attachment: fixed
@@ -60,15 +49,16 @@ body
     +rhythm(.5,.5,.5,.5)
     padding-left: .5rem
     padding-right: .5rem
-    +device(tablet)
+    @media (min-width: 768px)
         +single-box-shadow
         +prefix(1)
     
-h1
+#titleArea
     font-family: "Chunk", Rockwell, serif
+    +span-columns(3, 6)
 
 nav
-    +span-columns(4)
+    +span-columns(3 omega, 6)
     margin-top: rhythm(.5, 16px)
     margin-bottom: rhythm(.5, 16px)
 
@@ -81,23 +71,27 @@ nav
     +nth-omega(last)
     margin-top: rhythm(.5, 16px)
     margin-bottom: rhythm(.5, 16px)
+    @media (min-width: 768px)
+        +span-columns(2, 6)
         
 input
     +span-columns(4)
+    @media (min-width: 768px)
+        +span-columns(2 omega, 3)
     
     textarea
         cols: 40
-        +device(tablet)
+        @media (min-width: 768px)
             cols: 60
     
 label
     +span-columns(4)
-    +device(tablet)
-        +span-columns(2)
+    @media (min-width: 768px)
+        +span-columns(1, 3)
 
 #posts
     +span-columns(4)
-    +device(tablet)
+    @media (min-width: 768px)
         +span-columns(6)
 
 .ui-accordion
@@ -125,7 +119,7 @@ h2
     p
         +background(rgba(173, 155, 83, .4))
         +span-columns(4)
-        +device(tablet)
+        @media (min-width: 768px)
             +span-columns(4)
 
     pre

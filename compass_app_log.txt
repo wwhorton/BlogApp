@@ -475,3 +475,112 @@ Load paths:
 2014-04-18 20:32:53    remove css/style.css 
 2014-04-18 20:32:54    create css/screen.css 
 2014-04-18 20:32:56    create css/style.css 
+2014-04-18 20:37:06 identical css/style.css 
+2014-04-18 20:51:58     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 20:51:58 overwrite css/style.css 
+2014-04-18 20:52:27    remove .sass-cache/ 
+2014-04-18 20:52:27    remove css/screen.css 
+2014-04-18 20:52:27    remove css/style.css 
+2014-04-18 20:52:28    create css/screen.css 
+2014-04-18 20:52:29     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 20:52:29    create css/style.css 
+2014-04-18 20:53:11    remove .sass-cache/ 
+2014-04-18 20:53:11    remove css/screen.css 
+2014-04-18 20:53:11    remove css/style.css 
+2014-04-18 20:53:11    create css/screen.css 
+2014-04-18 20:53:13     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 20:53:13    create css/style.css 
+2014-04-18 20:54:50     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 20:54:50 overwrite css/style.css 
+2014-04-18 20:54:51    remove .sass-cache/ 
+2014-04-18 20:54:51    remove css/screen.css 
+2014-04-18 20:54:51    remove css/style.css 
+2014-04-18 20:54:52    create css/screen.css 
+2014-04-18 20:54:53     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 20:54:53    create css/style.css 
+2014-04-18 21:01:55     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:01:55 overwrite css/style.css 
+2014-04-18 21:03:52     error sass/style.sass (Line 11: @else must come after @if.)
+2014-04-18 21:03:52 overwrite css/style.css 
+2014-04-18 21:04:20     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:04:20 overwrite css/style.css 
+2014-04-18 21:05:13     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:05:13 identical css/style.css 
+2014-04-18 21:05:53     error sass/style.sass (Line 13: The line was indented 2 levels deeper than the previous line.)
+2014-04-18 21:05:53 overwrite css/style.css 
+2014-04-18 21:06:18     error sass/style.sass (Line 11: @else must come after @if.)
+2014-04-18 21:06:18 overwrite css/style.css 
+2014-04-18 21:06:33     error sass/style.sass (Line 14: @else must come after @if.)
+2014-04-18 21:06:33 overwrite css/style.css 
+2014-04-18 21:08:16     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:08:16 overwrite css/style.css 
+2014-04-18 21:08:35     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:08:35 identical css/style.css 
+2014-04-18 21:09:35     error sass/style.sass (Line 13: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:09:35 overwrite css/style.css 
+2014-04-18 21:09:54     error sass/style.sass (Line 13: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:09:54 identical css/style.css 
+2014-04-18 21:10:10     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:10:10 overwrite css/style.css 
+2014-04-18 21:13:05     error sass/style.sass (Line 19: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.)
+2014-04-18 21:13:05 overwrite css/style.css 
+2014-04-18 21:14:23 overwrite css/style.css 
+2014-04-18 21:14:30    remove .sass-cache/ 
+2014-04-18 21:14:30    remove css/screen.css 
+2014-04-18 21:14:30    remove css/style.css 
+2014-04-18 21:14:31    create css/screen.css 
+2014-04-18 21:14:32    create css/style.css 
+2014-04-18 21:14:58     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:14:58 overwrite css/style.css 
+2014-04-18 21:15:49 overwrite css/style.css 
+2014-04-18 21:15:53    remove .sass-cache/ 
+2014-04-18 21:15:53    remove css/screen.css 
+2014-04-18 21:15:53    remove css/style.css 
+2014-04-18 21:15:54    create css/screen.css 
+2014-04-18 21:15:55    create css/style.css 
+2014-04-18 21:16:09 identical css/style.css 
+2014-04-18 21:16:10    remove .sass-cache/ 
+2014-04-18 21:16:10    remove css/screen.css 
+2014-04-18 21:16:10    remove css/style.css 
+2014-04-18 21:16:11    create css/screen.css 
+2014-04-18 21:16:12    create css/style.css 
+2014-04-18 21:16:35 identical css/style.css 
+2014-04-18 21:17:07     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:17:07 overwrite css/style.css 
+2014-04-18 21:17:39     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:17:39 identical css/style.css 
+2014-04-18 21:17:40    remove .sass-cache/ 
+2014-04-18 21:17:40    remove css/screen.css 
+2014-04-18 21:17:40    remove css/style.css 
+2014-04-18 21:17:41    create css/screen.css 
+2014-04-18 21:17:42     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:17:42    create css/style.css 
+2014-04-18 21:19:28     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:19:28 overwrite css/style.css 
+2014-04-18 21:19:29    remove .sass-cache/ 
+2014-04-18 21:19:29    remove css/screen.css 
+2014-04-18 21:19:29    remove css/style.css 
+2014-04-18 21:19:30    create css/screen.css 
+2014-04-18 21:19:31     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:19:31    create css/style.css 
+2014-04-18 21:20:33     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:20:33 overwrite css/style.css 
+2014-04-18 21:20:38    remove .sass-cache/ 
+2014-04-18 21:20:38    remove css/screen.css 
+2014-04-18 21:20:38    remove css/style.css 
+2014-04-18 21:20:39    create css/screen.css 
+2014-04-18 21:20:40     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:20:40    create css/style.css 
+2014-04-18 21:21:03     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:21:03 overwrite css/style.css 
+2014-04-18 21:23:00     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:23:00 identical css/style.css 
+2014-04-18 21:34:59    remove .sass-cache/ 
+2014-04-18 21:34:59    remove css/screen.css 
+2014-04-18 21:34:59    remove css/style.css 
+2014-04-18 21:35:00    create css/screen.css 
+2014-04-18 21:35:02     error sass/style.sass (Line 12: Illegal nesting: Only properties may be nested beneath properties.)
+2014-04-18 21:35:02    create css/style.css 
+2014-04-18 21:36:43     error sass/style.sass (Line 84: Undefined mixin 'device'.)
+2014-04-18 21:36:43 overwrite css/style.css 
+2014-04-18 21:37:00 overwrite css/style.css 
