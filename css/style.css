@@ -125,7 +125,7 @@ body {
     background-size: auto 100%;
     position: absolute;
     height: 14.746%;
-    right: 17%;
+    right: 60%;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2;
   }
@@ -143,7 +143,7 @@ nav {
 @media (min-width: 768px) {
   /* line 77, ../sass/style.sass */
   nav {
-    width: 35.89744%;
+    width: 48.71795%;
     float: right;
     margin-right: 0;
     *margin-left: -1rem;
