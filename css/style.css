@@ -144,9 +144,8 @@ nav {
   /* line 77, ../sass/style.sass */
   nav {
     width: 48.71795%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -1rem;
+    float: left;
+    margin-right: 2.5641%;
     display: inline;
   }
 }
