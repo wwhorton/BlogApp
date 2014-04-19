@@ -109,9 +109,9 @@ body:after {
 /* line 59, ../sass/style.sass */
 #titleArea {
   font-family: "Chunk", Rockwell, serif;
-  width: 48.27586%;
+  width: 35.89744%;
   float: left;
-  margin-right: 3.44828%;
+  margin-right: 2.5641%;
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -128,9 +128,9 @@ body:after {
     -o-background-size: auto 100%;
     background-size: auto 100%;
     position: absolute;
-    width: 13.7931%;
+    width: 23.07692%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 2.5641%;
     display: inline;
     height: 14.746%;
     right: 17%;
@@ -141,10 +141,9 @@ body:after {
 
 /* line 79, ../sass/style.sass */
 nav {
-  width: 48.27586%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1rem;
+  width: 35.89744%;
+  float: left;
+  margin-right: 2.5641%;
   display: inline;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -202,7 +201,7 @@ input {
 @media (min-width: 768px) {
   /* line 100, ../sass/style.sass */
   input {
-    width: 64.28571%;
+    width: 47.36842%;
     float: right;
     margin-right: 0;
     *margin-left: -1rem;
@@ -230,9 +229,9 @@ label {
 @media (min-width: 768px) {
   /* line 110, ../sass/style.sass */
   label {
-    width: 28.57143%;
+    width: 21.05263%;
     float: left;
-    margin-right: 7.14286%;
+    margin-right: 5.26316%;
     display: inline;
   }
 }
@@ -249,7 +248,7 @@ label {
   #posts {
     width: 100%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 2.5641%;
     display: inline;
   }
 }
