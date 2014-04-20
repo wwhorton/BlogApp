@@ -777,3 +777,12 @@ Load paths:
 2014-04-20 12:26:15 overwrite css/style.css 
 2014-04-20 12:26:49 overwrite css/style.css 
 2014-04-20 12:28:54 overwrite css/style.css 
+2014-04-20 12:33:48 overwrite css/style.css 
+2014-04-20 12:36:43     error sass/style.sass (Line 82: Invalid CSS after "(image-url(": expected ")", was ""/img/Typewrite...")
+2014-04-20 12:36:43 overwrite css/style.css 
+2014-04-20 12:37:09 overwrite css/style.css 
+2014-04-20 12:37:10    remove .sass-cache/ 
+2014-04-20 12:37:10    remove css/screen.css 
+2014-04-20 12:37:10    remove css/style.css 
+2014-04-20 12:37:11    create css/screen.css 
+2014-04-20 12:37:12    create css/style.css 
