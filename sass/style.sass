@@ -57,19 +57,17 @@ body
     padding-right: .5rem
     @media (min-width: 768px)
         +single-box-shadow
-        
-        
     
 #titleArea
     font-family: "Chunk", Rockwell, serif
-    +span-columns(4, 8)
-    margin-bottom: rhythm(.5, 16px)
     +adjust-leading-to(1.5)
-    height: 14.746%
     @media (min-width: 320px)
         +adjust-font-size-to(14px)
         +span-columns(4,4)
-        
+        margin-bottom: rhythm(.5, 16px)
+    @media(min-width: 768px)    
+        +span-columns(4, 8)
+        height: 14.746%
 
 #logo
     @media (min-width: 320px)
