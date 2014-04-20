@@ -1,313 +1,194 @@
-@font-face {
-  font-family: "Chunk";
-  src: url('../fonts/chunkfive-webfont.ttf') format('truetype');
-}
+/*
+Syntax error: Undefined mixin 'susy-grid-breakpoint'.
+        on line 51 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass, in `susy-grid-breakpoint'
+        from line 51 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass, in `@content'
+        from line 74 of C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `@content'
+        from line 15 of C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `layout'
+        from line 54 of C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `at-breakpoint'
+        from line 49 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass
 
-@font-face {
-  font-family: "Cabin";
-  src: url('../fonts/cabin-regular-webfont.eot');
-  src: url('../fonts/cabin-regular-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-regular-webfont.woff') format('woff'), url('../fonts/cabin-regular-webfont.ttf') format('truetype'), url('../fonts/cabin-regular-webfont.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Cabin";
-  src: url('../fonts/cabin-bold-webfont.eot');
-  src: url('../fonts/cabin-bold-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-bold-webfont.woff') format('woff'), url('../fonts/cabin-bold-webfont.ttf') format('truetype'), url('../fonts/cabin-bold-webfont.svg') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Cabin";
-  src: url('../fonts/cabin-italic-webfont.eot');
-  src: url('../fonts/cabin-italic-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-italic-webfont.woff') format('woff'), url('../fonts/cabin-italic-webfont.ttf') format('truetype'), url('../fonts/cabin-italic-webfont.svg') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Cabin";
-  src: url('../fonts/cabin-bolditalic-webfont.eot');
-  src: url('../fonts/cabin-bolditalic-webfont.eot?#iefix') format('eot'), url('../fonts/cabin-bolditalic-webfont.woff') format('woff'), url('../fonts/cabin-bolditalic-webfont.ttf') format('truetype'), url('../fonts/cabin-bolditalic-webfont.svg') format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
-
-/* line 105, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 100%;
-  line-height: 1.5em;
-}
-
-/* line 14, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 36, ../sass/style.sass */
-body {
-  padding-left: 0;
-  padding-right: 0;
-  font-family: "Cabin", arial;
-}
-@media (min-width: 768px) {
-  /* line 36, ../sass/style.sass */
-  body {
-    background: url(/img/lorem_white_336x280.gif);
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    background-attachment: fixed;
-  }
-}
-
-/* line 46, ../sass/style.sass */
-#wrapper {
-  *zoom: 1;
-  max-width: 320px;
-  max-width: 20rem;
-  _width: 320px;
-  padding-left: 8px;
-  padding-left: 0.5rem;
-  padding-right: 8px;
-  padding-right: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-position: left top;
-  -webkit-background-origin: content;
-  -moz-background-origin: content;
-  background-origin: content-box;
-  -webkit-background-clip: content;
-  -moz-background-clip: content;
-  background-clip: content-box;
-  overflow: hidden;
-  background-color: white;
-  margin-top: 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  margin-bottom: 0.75em;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-/* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media (min-width: 768px) {
-  /* line 46, ../sass/style.sass */
-  #wrapper {
-    -webkit-box-shadow: 0px 0px 5px #333333;
-    -moz-box-shadow: 0px 0px 5px #333333;
-    box-shadow: 0px 0px 5px #333333;
-  }
-}
-
-/* line 66, ../sass/style.sass */
-#titleArea {
-  font-family: "Chunk", Rockwell, serif;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-  margin-bottom: 0.75em;
-  line-height: 2.25em;
-  height: 14.746%;
-}
-
-@media (min-width: 768px) {
-  /* line 73, ../sass/style.sass */
-  #logo {
-    background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/90% auto transparent;
-    position: absolute;
-    height: 9.4375rem;
-    width: 19rem;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-    opacity: 0.2;
-  }
-}
-
-/* line 81, ../sass/style.sass */
-nav {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-@media (min-width: 768px) {
-  /* line 81, ../sass/style.sass */
-  nav {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -1rem;
-    display: inline;
-    height: 14.746%;
-  }
-}
-
-/* line 89, ../sass/style.sass */
-.button {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #a9d6b7;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-@media (min-width: 320px) {
-  /* line 89, ../sass/style.sass */
-  .button {
-    height: 2rem;
-    width: 47.36842%;
-    float: left;
-    margin-right: 5.26316%;
-    display: inline;
-  }
-  /* line 184, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
-  .button:last-child {
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 768px) {
-  /* line 89, ../sass/style.sass */
-  .button {
-    width: 47.36842%;
-    float: left;
-    margin-right: 5.26316%;
-    display: inline;
-    height: 2.5rem;
-  }
-}
-
-/* line 102, ../sass/style.sass */
-input {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) {
-  /* line 102, ../sass/style.sass */
-  input {
-    width: 73.68421%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -1rem;
-    display: inline;
-  }
-}
-
-/* line 108, ../sass/style.sass */
-.ui-dialog-content #titleField {
-  width: 99.468% !important;
-  height: 1.5rem !important;
-}
-@media (min-width: 768px) {
-  /* line 112, ../sass/style.sass */
-  .ui-dialog-content #postField {
-    width: 99.468% !important;
-    height: 24rem !important;
-  }
-}
-
-/* line 116, ../sass/style.sass */
-label {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) {
-  /* line 116, ../sass/style.sass */
-  label {
-    width: 21.05263%;
-    float: left;
-    margin-right: 5.26316%;
-    display: inline;
-  }
-}
-
-/* line 122, ../sass/style.sass */
-#posts {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) {
-  /* line 122, ../sass/style.sass */
-  #posts {
-    width: 205.26316%;
-    float: left;
-    margin-right: 5.26316%;
-    display: inline;
-  }
-}
-
-/* line 127, ../sass/style.sass */
-.ui-accordion {
-  font-family: "Cabin", arial;
-}
-
-/* line 131, ../sass/style.sass */
-.ui-accordion-header,
-.ui-widget-header {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-  background: -webkit-linear-gradient(top, #a9d6b7, #546b5b);
-  background: -moz-linear-gradient(top, #a9d6b7, #546b5b);
-  background: -o-linear-gradient(top, #a9d6b7, #546b5b);
-  background: linear-gradient(to bottom, #a9d6b7, #546b5b);
-  color: black;
-  border: none;
-  font-weight: bold;
-}
-
-/* line 139, ../sass/style.sass */
-.ui-accordion-header .ui-icon {
-  display: none;
-}
-
-/* line 142, ../sass/style.sass */
-h2 {
-  margin-top: 0.375em;
-  padding-top: 0.375em;
-  padding-bottom: 0.375em;
-  margin-bottom: 0.375em;
-  margin-left: 0.25rem;
-}
-
-/* line 146, ../sass/style.sass */
-.ui-accordion-content {
-  margin-top: 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  margin-bottom: 0.75em;
-}
-/* line 148, ../sass/style.sass */
-.ui-accordion-content pre {
+Backtrace:
+D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass:51:in `susy-grid-breakpoint'
+D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass:51:in `@content'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss:74:in `@content'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss:15:in `layout'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss:54:in `at-breakpoint'
+D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass:49
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:253:in `visit_mixin'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:362:in `visit_media'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:208:in `visit_if'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:285:in `visit_content'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:70:in `perform_arguments'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:263:in `visit_mixin'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:205:in `visit_if'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:268:in `visit_mixin'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:70:in `perform_arguments'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:263:in `visit_mixin'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+org/jruby/RubyKernel.java:2109:in `send'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/tree/root_node.rb:20:in `render'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_common/sass-3.2.10/lib/sass/../sass/engine.rb:262:in `render'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/compass_patch.rb:60:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/compiler.rb:132:in `timed'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/compass_patch.rb:59:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/logger.rb:46:in `red'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/compass_patch.rb:58:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/compiler.rb:124:in `compile_if_required'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/compiler.rb:109:in `run'
+org/jruby/RubyArray.java:1620:in `each'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/compiler.rb:107:in `run'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/compiler.rb:132:in `timed'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/compiler.rb:106:in `run'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/watcher/compiler.rb:24:in `compile'
+org/jruby/RubyKernel.java:2105:in `send'
+(__FORWARDABLE__):3:in `compile'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:92:in `sass_modified'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:85:in `sass_callback'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/lib/compass/watcher/watch.rb:17:in `run_callback'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/app_watcher.rb:32:in `listen_callback'
+org/jruby/RubyArray.java:1620:in `each'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/app_watcher.rb:27:in `listen_callback'
+org/jruby/RubyArray.java:1620:in `each'
+file:/C:/Users/William/Desktop/CompassApp/compass.app/compass-app.jar!/app_watcher.rb:26:in `listen_callback'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/listener.rb:221:in `initialize_adapter'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `poll'
+C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/jruby/listen-0.7.3/lib/listen/adapters/polling.rb:32:in `start'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
-  font-family: "Cabin", arial;
-}
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'susy-grid-breakpoint'.\A         on line 51 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass, in `susy-grid-breakpoint'\A         from line 51 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass, in `@content'\A         from line 74 of C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `@content'\A         from line 15 of C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `layout'\A         from line 54 of C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_media.scss, in `at-breakpoint'\A         from line 49 of D:/Users/Bill/Documents/GitHub/BlogApp/sass/style.sass"; }
