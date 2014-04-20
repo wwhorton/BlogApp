@@ -27,10 +27,9 @@ $container-style: magic
 +border-box-sizing
 
 //Grid setup
-@media (min-width: 768px)
-    $total-columns: 8
-@media (min-width: 980px)
-    $total-columns: 12
+$mobile: 4
+$tablet: 8
+$desktop: 12
 
 $color: lighten(rgb(83, 173, 110), 25%)
   
@@ -45,7 +44,9 @@ body
         
 
 #wrapper
-    +container
+    +container(4, $mobile)
+    +container(8, $tablet)
+    +container(12, $desktop)
     +susy-grid-background
     overflow: hidden
     background-color: #fff
