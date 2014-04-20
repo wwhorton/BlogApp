@@ -169,7 +169,7 @@ body {
   height: 14.746%;
   width: 19rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   /* line 74, ../sass/style.sass */
   #logo {
     background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/90% auto transparent;
@@ -178,7 +178,7 @@ body {
     opacity: 0.2;
   }
 }
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   /* line 74, ../sass/style.sass */
   #logo {
     background: url(/img/TypewriterBW1.jpg) no-repeat scroll 50% 0%/78% auto transparent;
