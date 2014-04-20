@@ -184,7 +184,7 @@ nav {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   /* line 82, ../sass/style.sass */
   .button {
     height: 2rem;
