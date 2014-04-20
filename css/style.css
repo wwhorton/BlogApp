@@ -152,18 +152,6 @@ body {
   height: 14.746%;
 }
 
-@media (min-width: 768px) {
-  /* line 70, ../sass/style.sass */
-  #logo {
-    background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/90% auto transparent;
-    position: absolute;
-    height: 9.4375rem;
-    width: 19rem;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-    opacity: 0.2;
-  }
-}
-
 /* line 78, ../sass/style.sass */
 nav {
   width: 100%;
