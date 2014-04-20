@@ -28,8 +28,8 @@ $container-style: magic
 
 //Grid setup
 $mobile: 320px 4
-$tablet: 768px 8 980px
-$desktop: 980px 12
+$tablet: 768px 8 
+//$desktop: 980px 12
 
 $color: lighten(rgb(83, 173, 110), 25%)
   
@@ -74,6 +74,8 @@ body
     height: 9.4375rem
     width: 19rem
     +opacity(.2)
+    @media (min-width: 320px)
+        +background(image-url("/img/TypewriterBW1.jpg") no-repeat scroll 44% 24% / 90% auto transparent)
 
 nav
     +span-columns(4)

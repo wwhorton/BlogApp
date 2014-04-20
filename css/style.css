@@ -112,7 +112,7 @@ body {
     clear: both;
   }
 }
-@media (min-width: 768px) and (max-width: 980px) {
+@media (min-width: 768px) {
   /* line 46, ../sass/style.sass */
   #wrapper {
     max-width: 640px;
@@ -161,8 +161,14 @@ body {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
+@media (min-width: 320px) {
+  /* line 70, ../sass/style.sass */
+  #logo {
+    background: url(/img/TypewriterBW1.jpg) no-repeat scroll 44% 24%/90% auto transparent;
+  }
+}
 
-/* line 78, ../sass/style.sass */
+/* line 80, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -172,7 +178,7 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 78, ../sass/style.sass */
+  /* line 80, ../sass/style.sass */
   nav {
     width: 48.71795%;
     float: right;
@@ -183,7 +189,7 @@ nav {
   }
 }
 
-/* line 86, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
 .button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -193,7 +199,7 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 320px) {
-  /* line 86, ../sass/style.sass */
+  /* line 88, ../sass/style.sass */
   .button {
     height: 2rem;
     width: 47.36842%;
@@ -208,7 +214,7 @@ nav {
   }
 }
 @media (min-width: 768px) {
-  /* line 86, ../sass/style.sass */
+  /* line 88, ../sass/style.sass */
   .button {
     width: 47.36842%;
     float: left;
@@ -218,7 +224,7 @@ nav {
   }
 }
 
-/* line 99, ../sass/style.sass */
+/* line 101, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -226,7 +232,7 @@ input {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 99, ../sass/style.sass */
+  /* line 101, ../sass/style.sass */
   input {
     width: 73.68421%;
     float: right;
@@ -236,20 +242,20 @@ input {
   }
 }
 
-/* line 105, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .ui-dialog-content #titleField {
   width: 99.468% !important;
   height: 1.5rem !important;
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/style.sass */
+  /* line 111, ../sass/style.sass */
   .ui-dialog-content #postField {
     width: 99.468% !important;
     height: 24rem !important;
   }
 }
 
-/* line 113, ../sass/style.sass */
+/* line 115, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -257,7 +263,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/style.sass */
+  /* line 115, ../sass/style.sass */
   label {
     width: 21.05263%;
     float: left;
@@ -266,7 +272,7 @@ label {
   }
 }
 
-/* line 119, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -274,7 +280,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 119, ../sass/style.sass */
+  /* line 121, ../sass/style.sass */
   #posts {
     width: 205.26316%;
     float: left;
@@ -283,12 +289,12 @@ label {
   }
 }
 
-/* line 124, ../sass/style.sass */
+/* line 126, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 128, ../sass/style.sass */
+/* line 130, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -303,12 +309,12 @@ label {
   font-weight: bold;
 }
 
-/* line 136, ../sass/style.sass */
+/* line 138, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 139, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -317,14 +323,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 143, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 145, ../sass/style.sass */
+/* line 147, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
