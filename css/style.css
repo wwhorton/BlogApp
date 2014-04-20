@@ -144,6 +144,7 @@ body {
 #titleArea {
   font-family: "Chunk", Rockwell, serif;
   line-height: 2.25em;
+  margin-bottom: 0.75em;
 }
 @media (min-width: 320px) {
   /* line 61, ../sass/style.sass */
@@ -154,7 +155,6 @@ body {
     float: left;
     margin-right: 5.26316%;
     display: inline;
-    margin-bottom: 0.75em;
   }
 }
 @media (min-width: 768px) {
