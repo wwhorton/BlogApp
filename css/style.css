@@ -304,6 +304,10 @@ label {
   float: left;
   margin-right: 5.26316%;
   display: inline;
+  margin-top: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 @media (min-width: 768px) {
   /* line 125, ../sass/style.sass */
@@ -315,12 +319,12 @@ label {
   }
 }
 
-/* line 130, ../sass/style.sass */
+/* line 131, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 134, ../sass/style.sass */
+/* line 135, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -335,17 +339,17 @@ label {
   font-weight: bold;
 }
 
-/* line 142, ../sass/style.sass */
+/* line 143, ../sass/style.sass */
 .ui-widget-content {
   border: none;
 }
 
-/* line 145, ../sass/style.sass */
+/* line 146, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 148, ../sass/style.sass */
+/* line 149, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -354,14 +358,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 152, ../sass/style.sass */
+/* line 153, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 154, ../sass/style.sass */
+/* line 155, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
