@@ -44,8 +44,15 @@ body
         
 
 #wrapper
-    +container(12, $mobile, $tablet)
+    +container
     +susy-grid-background
+    +at-breakpoint(mobile)
+        +container
+        +susy-grid-breakpoint
+    +at-breakpoint(tablet)
+        +container
+        +susy-grid-background
+    //+container(12, $mobile, $tablet)
     overflow: hidden
     background-color: #fff
     +rhythm(.5,.5,.5,.5)
