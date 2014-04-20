@@ -29,7 +29,7 @@ $container-style: magic
 //Grid setup
 $mobile: 320px 4
 $tablet: 768px 8 980px
-//$desktop: 980px 12
+$desktop: 980px 12
 
 $color: lighten(rgb(83, 173, 110), 25%)
   
@@ -62,7 +62,7 @@ body
     
 #titleArea
     font-family: "Chunk", Rockwell, serif
-    +span-columns(4)
+    +span-columns(4, 8)
     margin-bottom: rhythm(.5, 16px)
     +adjust-leading-to(1.5)
     height: 14.746%
