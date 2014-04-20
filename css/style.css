@@ -169,15 +169,6 @@ body {
   height: 14.746%;
   width: 19rem;
 }
-@media (min-width: 768px) {
-  /* line 74, ../sass/style.sass */
-  #logo {
-    background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/90% auto transparent;
-    height: 14.746%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-    opacity: 0.2;
-  }
-}
 @media (min-width: 320px) {
   /* line 74, ../sass/style.sass */
   #logo {
@@ -185,6 +176,15 @@ body {
     height: 48.746%;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
+  }
+}
+@media (min-width: 768px) {
+  /* line 74, ../sass/style.sass */
+  #logo {
+    background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/90% auto transparent;
+    height: 14.746%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+    opacity: 0.2;
   }
 }
 
