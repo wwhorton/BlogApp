@@ -308,9 +308,9 @@ label {
 @media (min-width: 768px) {
   /* line 125, ../sass/style.sass */
   #posts {
-    width: 205.26316%;
+    width: 100%;
     float: left;
-    margin-right: 5.26316%;
+    margin-right: 2.5641%;
     display: inline;
   }
 }
