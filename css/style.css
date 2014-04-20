@@ -262,10 +262,12 @@ input {
   }
 }
 
-/* line 116, ../sass/style.sass */
-.ui-dialog-content #titleField {
-  width: 99.468% !important;
-  height: 1.5rem !important;
+@media (min-width: 768px) {
+  /* line 116, ../sass/style.sass */
+  .ui-dialog-content #titleField {
+    width: 99.468% !important;
+    height: 1.5rem !important;
+  }
 }
 @media (min-width: 768px) {
   /* line 120, ../sass/style.sass */
@@ -330,11 +332,16 @@ label {
 }
 
 /* line 147, ../sass/style.sass */
+.ui-widget-content {
+  border: none;
+}
+
+/* line 150, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 150, ../sass/style.sass */
+/* line 153, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -343,14 +350,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 154, ../sass/style.sass */
+/* line 157, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 156, ../sass/style.sass */
+/* line 159, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -361,4 +368,6 @@ h2 {
   white-space: -hp-pre-wrap;
   word-wrap: break-word;
   font-family: "Cabin", arial;
+  font-size: 1.1em;
+  line-height: 1.36364em;
 }

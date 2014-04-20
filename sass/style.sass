@@ -114,9 +114,9 @@ input
     
 .ui-dialog-content
     #titleField
-        //@media (min-width: 768px)
-        width: 99.468% !important
-        height: 1.5rem !important
+        @media (min-width: 768px)
+            width: 99.468% !important
+            height: 1.5rem !important
     #postField
         @media (min-width: 768px)
             width: 99.468% !important
@@ -143,6 +143,9 @@ label
     color: #000
     border: none
     font-weight: bold
+
+.ui-widget-content
+    border: none
     
 .ui-accordion-header .ui-icon
     display: none
@@ -156,3 +159,4 @@ h2
     pre
         +force-wrap
         font-family: "Cabin", arial
+        +adjust-font-size-to(1.1em)
