@@ -107,14 +107,14 @@ body {
     clear: both;
   }
 }
-@media (min-width: 20em) {
+@media (min-width: 320px) {
   /* line 46, ../sass/style.sass */
   #wrapper {
     max-width: 320px;
     max-width: 20rem;
   }
 }
-@media (min-width: 40em) {
+@media (min-width: 768px) and (max-width: 980px) {
   /* line 46, ../sass/style.sass */
   #wrapper {
     max-width: 640px;
