@@ -169,7 +169,6 @@ body {
 /* line 72, ../sass/style.sass */
 #logo {
   position: absolute;
-  height: 14.746%;
   width: 19rem;
 }
 @media (min-width: 320px) {
@@ -191,7 +190,7 @@ body {
   }
 }
 
-/* line 87, ../sass/style.sass */
+/* line 84, ../sass/style.sass */
 nav {
   width: 100%;
   float: left;
@@ -201,7 +200,7 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 87, ../sass/style.sass */
+  /* line 84, ../sass/style.sass */
   nav {
     width: 48.71795%;
     float: right;
@@ -212,7 +211,7 @@ nav {
   }
 }
 
-/* line 95, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 .button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -222,7 +221,7 @@ nav {
   margin-bottom: 0.75em;
 }
 @media (min-width: 320px) {
-  /* line 95, ../sass/style.sass */
+  /* line 92, ../sass/style.sass */
   .button {
     height: 2rem;
     width: 47.36842%;
@@ -237,7 +236,7 @@ nav {
   }
 }
 @media (min-width: 768px) {
-  /* line 95, ../sass/style.sass */
+  /* line 92, ../sass/style.sass */
   .button {
     width: 47.36842%;
     float: left;
@@ -247,7 +246,7 @@ nav {
   }
 }
 
-/* line 108, ../sass/style.sass */
+/* line 105, ../sass/style.sass */
 input {
   width: 100%;
   float: left;
@@ -255,7 +254,7 @@ input {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 108, ../sass/style.sass */
+  /* line 105, ../sass/style.sass */
   input {
     width: 73.68421%;
     float: right;
@@ -266,21 +265,21 @@ input {
 }
 
 @media (min-width: 768px) {
-  /* line 114, ../sass/style.sass */
+  /* line 111, ../sass/style.sass */
   .ui-dialog-content #titleField {
     width: 99.468% !important;
     height: 1.5rem !important;
   }
 }
 @media (min-width: 768px) {
-  /* line 118, ../sass/style.sass */
+  /* line 115, ../sass/style.sass */
   .ui-dialog-content #postField {
     width: 99.468% !important;
     height: 24rem !important;
   }
 }
 
-/* line 122, ../sass/style.sass */
+/* line 119, ../sass/style.sass */
 label {
   width: 100%;
   float: left;
@@ -288,7 +287,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 122, ../sass/style.sass */
+  /* line 119, ../sass/style.sass */
   label {
     width: 21.05263%;
     float: left;
@@ -297,7 +296,7 @@ label {
   }
 }
 
-/* line 128, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 #posts {
   width: 100%;
   float: left;
@@ -305,7 +304,7 @@ label {
   display: inline;
 }
 @media (min-width: 768px) {
-  /* line 128, ../sass/style.sass */
+  /* line 125, ../sass/style.sass */
   #posts {
     width: 205.26316%;
     float: left;
@@ -314,12 +313,12 @@ label {
   }
 }
 
-/* line 133, ../sass/style.sass */
+/* line 130, ../sass/style.sass */
 .ui-accordion {
   font-family: "Cabin", arial;
 }
 
-/* line 137, ../sass/style.sass */
+/* line 134, ../sass/style.sass */
 .ui-accordion-header,
 .ui-widget-header {
   -webkit-border-radius: 4px;
@@ -334,17 +333,17 @@ label {
   font-weight: bold;
 }
 
-/* line 145, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 .ui-widget-content {
   border: none;
 }
 
-/* line 148, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .ui-accordion-header .ui-icon {
   display: none;
 }
 
-/* line 151, ../sass/style.sass */
+/* line 148, ../sass/style.sass */
 h2 {
   margin-top: 0.375em;
   padding-top: 0.375em;
@@ -353,14 +352,14 @@ h2 {
   margin-left: 0.25rem;
 }
 
-/* line 155, ../sass/style.sass */
+/* line 152, ../sass/style.sass */
 .ui-accordion-content {
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0.75em;
 }
-/* line 157, ../sass/style.sass */
+/* line 154, ../sass/style.sass */
 .ui-accordion-content pre {
   white-space: pre;
   white-space: pre-wrap;
