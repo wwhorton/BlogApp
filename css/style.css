@@ -68,16 +68,6 @@ body {
 
 /* line 46, ../sass/style.sass */
 #wrapper {
-  *zoom: 1;
-  max-width: 320px;
-  max-width: 20rem;
-  _width: 320px;
-  padding-left: 8px;
-  padding-left: 0.5rem;
-  padding-right: 8px;
-  padding-right: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
@@ -98,11 +88,24 @@ body {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-/* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
+@media (min-width: 60em) {
+  /* line 46, ../sass/style.sass */
+  #wrapper {
+    max-width: 960px;
+    max-width: 60rem;
+    padding-left: 8px;
+    padding-left: 0.5rem;
+    padding-right: 8px;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, C:/Users/William/Desktop/CompassApp/compass.app/lib/ruby/compass_0.13/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  #wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 @media (min-width: 20em) {
   /* line 46, ../sass/style.sass */
@@ -111,11 +114,11 @@ body {
     max-width: 20rem;
   }
 }
-@media (min-width: 40em) {
+@media (min-width: 60em) {
   /* line 46, ../sass/style.sass */
   #wrapper {
-    max-width: 640px;
-    max-width: 40rem;
+    max-width: 960px;
+    max-width: 60rem;
     padding-left: 8px;
     padding-left: 0.5rem;
     padding-right: 8px;
