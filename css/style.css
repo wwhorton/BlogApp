@@ -185,8 +185,8 @@ body {
 @media (min-width: 768px) {
   /* line 72, ../sass/style.sass */
   #logo {
-    background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/90% auto transparent;
-    height: 14.746%;
+    background: url(/img/TypewriterBW2.jpg) no-repeat scroll 44% 24%/50% auto transparent;
+    height: 23.746%;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2;
   }
